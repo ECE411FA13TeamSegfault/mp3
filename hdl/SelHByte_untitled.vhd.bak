@@ -1,0 +1,23 @@
+--
+-- VHDL Architecture ece411.SelHByte.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 21:25:26 10/18/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+ENTITY SelHByte IS
+END ENTITY SelHByte;
+
+--
+ARCHITECTURE untitled OF SelHByte IS
+BEGIN
+END ARCHITECTURE untitled;
+

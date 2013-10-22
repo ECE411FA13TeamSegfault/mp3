@@ -1,0 +1,30 @@
+--
+-- VHDL Architecture ece411.CLKgen.untitled
+--
+-- Created:
+--          by - schen79.ews (gelib-057-26.ews.illinois.edu)
+--          at - 10:59:28 08/30/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY CLKgen IS
+   PORT( 
+      clk : INOUT  std_logic  := '0'
+   );
+
+-- Declarations
+
+END CLKgen ;
+
+--
+ARCHITECTURE untitled OF CLKgen IS
+BEGIN
+END ARCHITECTURE untitled;
+

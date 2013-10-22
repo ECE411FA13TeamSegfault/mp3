@@ -1,0 +1,53 @@
+--
+-- VHDL Architecture ece411.LRUArray.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a2.ews.illinois.edu)
+--          at - 11:28:02 09/20/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY LRUArray IS
+   PORT( 
+      RESET_L       : IN     std_logic;
+      WaySel        : IN     std_logic;
+      LRUout        : OUT    std_logic;
+      ADDRESS_INDEX : IN     LC3b_C_set;
+      MRESP_H       : IN     std_logic
+   );
+
+-- Declarations
+
+END LRUArray ;
+
+--
+ARCHITECTURE untitled OF LRUArray IS
+	
+	TYPE LRUArray IS array(7 downto 0) of std_logic;
+	SIGNAL LRU : LRUArray;
+	
+BEGIN
+	PROCESS (RESET_L, ADDRESS_INDEX, CacheHit_H, WaySel)
+		VARIABLE DataIndex : integer;
+		BEGIN
+			DataIndex    := to_integer(unsigned(ADDRESS_INDEX));
+			
+			IF RESET_L = '0' THEN
+				LRU <= ('1', '1', '1', '1', '1', '1', '1', '1');
+			END IF;
+			
+			IF CacheHit_H = '1' THEN
+				LRU(DataIndex) <= WaySel;
+			END IF;
+			
+			LRUout <= LRU(DataIndex) after 20ns;
+	END PROCESS;
+END ARCHITECTURE untitled;
+

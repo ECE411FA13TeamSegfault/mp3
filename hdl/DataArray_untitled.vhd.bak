@@ -1,0 +1,83 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY DataArray IS
+   PORT( 
+      Reset_L   : IN     std_logic;
+      DataWrite : IN     std_logic;
+      Index     : IN     LC3B_C_INDEX;
+      DataIn    : IN     LC3B_OWORD;
+      TagIn     : IN     LC3B_C_TAG;
+      DirtyIn   : IN     std_logic;
+      Dataout   : OUT    LC3B_OWORD;
+      TagOut				: OUT		 LC3B_C_TAG;
+      ValidOut		: OUT			 std_logic;
+      DirtyOut  : OUT    std_logic
+   );
+-- Declarations
+END DataArray ;
+
+--
+ARCHITECTURE untitled OF DataArray IS
+	TYPE DataArray  IS array(7 downto 0) of LC3B_OWORD;
+	TYPE TagArray	  IS array(7 downto 0) of LC3B_C_TAG;
+	TYPE ValidArray IS array(7 downto 0) of std_logic;
+	TYPE DirtyArray IS array(7 downto 0) of std_logic;
+	
+	SIGNAL Data : DataArray;
+	SIGNAL Tag : TagArray;
+	SIGNAL Valid : ValidArray;
+	SIGNAL Dirty: DirtyArray;
+	
+	BEGIN
+		--------------------------------------------------------------
+		ReadFromDataArray : PROCESS (Data, Tag, Valid, Dirty, Index)
+		--------------------------------------------------------------
+    
+			VARIABLE DataIndex : integer;
+			BEGIN
+				DataIndex    := to_integer(unsigned(Index));
+				DataOut      <= Data(DataIndex)  after 20 ns;
+				TagOut       <= Tag(DataIndex)   after 20 ns;
+				ValidOut     <= Valid(DataIndex) after 20 ns;
+				DirtyOut     <= Dirty(DataIndex) after 20 ns;		
+		END PROCESS ReadFromDataArray;
+	
+		--------------------------------------------------------------
+		WriteToDataArray : PROCESS (RESET_L, Index, DataWrite, DataIn, TagIn, DirtyIn)
+		-------------------------------------------------------	------	
+			VARIABLE DataIndex : integer;
+			BEGIN
+				DataIndex := to_integer(unsigned(Index));
+			IF RESET_L = '0' THEN
+				Data(0)  <= (OTHERS => 'X');
+				Data(1)  <= (OTHERS => 'X');
+				Data(2)  <= (OTHERS => 'X');
+				Data(3)  <= (OTHERS => 'X');
+				Data(4)  <= (OTHERS => 'X');
+				Data(5)  <= (OTHERS => 'X');
+				Data(6)  <= (OTHERS => 'X');
+				Data(7)  <= (OTHERS => 'X');
+--		Tag(0)   <= (OTHERS => 'X');
+				Tag   <= ((OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'), (OTHERS=>'X'));
+				Valid <= ('0', '0', '0', '0', '0', '0', '0', '0');
+				Dirty <= ('0', '0', '0', '0', '0', '0', '0', '0');
+			END IF;
+
+			IF (DataWrite = '1') THEN
+				Data(DataIndex)  <= DataIn;
+				Tag(DataIndex)   <= TagIn;
+				Valid(DataIndex) <= '1';
+				
+				IF (DirtyIn = '1') THEN
+					Dirty(DataIndex) <= '1';
+				Else
+					Dirty(DataIndex) <= '0';
+				END IF;
+			END IF;
+		
+		END PROCESS WriteToDataArray;
+END ARCHITECTURE untitled;

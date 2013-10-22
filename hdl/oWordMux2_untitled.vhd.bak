@@ -1,0 +1,46 @@
+--
+-- VHDL Architecture ece411.oWordMux2.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 22:31:56 09/18/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY oWordMux2 IS
+   PORT( 
+      A   : IN     LC3B_OWORD;
+      B   : IN     LC3B_OWORD;
+      Sel : IN     std_logic;
+      F   : OUT    LC3_OWORD
+   );
+
+-- Declarations
+
+END oWordMux2 ;
+
+--
+ARCHITECTURE untitled OF oWordMux2 IS
+BEGIN
+	PROCESS (A, B, Sel)
+	VARIABLE State : LC3B_OWORD;
+	BEGIN
+		CASE Sel is
+			WHEN '0' =>
+				State := A;
+			WHEN '1' =>
+				State := B;
+			WHEN OTHERS =>
+				State := (OTHERS => 'X');
+		END CASE;
+	F <= State AFTER DELAY_MUX2;
+	END PROCESS;
+END ARCHITECTURE untitled;
+

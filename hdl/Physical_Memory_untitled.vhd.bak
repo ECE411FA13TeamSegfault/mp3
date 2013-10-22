@@ -1,0 +1,37 @@
+--
+-- VHDL Architecture ece411.Physical_Memory.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 21:00:00 09/16/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY Physical_Memory IS
+   PORT( 
+      RESET_L   : IN     std_logic;
+      clk       : IN     std_logic;
+      pmaddress : IN     LC3b_word;
+      pmdataout : IN     LC3b_oword;
+      pmread_l  : IN     std_logic;
+      pmwrite_l : IN     std_logic;
+      pmdatain  : OUT    LC3b_oword;
+      pmresp_h  : OUT    std_logic
+   );
+
+-- Declarations
+
+END Physical_Memory ;
+
+--
+ARCHITECTURE untitled OF Physical_Memory IS
+BEGIN
+END ARCHITECTURE untitled;
+

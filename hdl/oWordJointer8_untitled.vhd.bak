@@ -1,0 +1,39 @@
+--
+-- VHDL Architecture ece411.oWordJointer8.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a2.ews.illinois.edu)
+--          at - 11:00:08 09/20/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY oWordJointer8 IS
+   PORT( 
+      Word0out         : IN     LC3b_word;
+      Word1out         : IN     LC3B_Word;
+      Word2out         : IN     LC3B_Word;
+      Word3out         : IN     LC3B_Word;
+      Word4out         : IN     LC3B_Word;
+      Word5out         : IN     LC3B_Word;
+      Word6out         : IN     LC3B_Word;
+      Word7out         : IN     LC3B_Word;
+      aoWordJoiner8out : OUT    LC3B_oWord
+   );
+
+-- Declarations
+
+END oWordJointer8 ;
+
+--
+ARCHITECTURE untitled OF oWordJointer8 IS
+BEGIN
+	oWordout <= Word7out & Word6out & Word5out & Word4out & Word3out & Word2out & Word1out & Word0out;
+END ARCHITECTURE untitled;
+

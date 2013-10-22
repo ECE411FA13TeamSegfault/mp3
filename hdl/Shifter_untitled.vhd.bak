@@ -1,0 +1,73 @@
+--
+-- VHDL Architecture ece411.Shifter.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 20:56:50 09/11/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY Shifter IS
+   PORT( 
+      ALUop  : IN     LC3b_aluop;
+      RFAout : IN     LC3b_word;
+      clk    : IN     std_logic;
+      index6 : IN     LC3b_index6
+   );
+
+-- Declarations
+
+END Shifter ;
+
+--
+architecture untitled of shifter is
+begin
+	----------------------------------------
+	vhdl_shifter : process (rfaout, aluop, index6)
+	----------------------------------------
+	variable shift_amt : integer;
+	variable temp_aluout : lc3b_word;
+	begin
+		shift_amt := to_integer(unsigned(alumuxout(3 downto 0)));
+		case aluop is
+			when alu_sll =>
+				if (shift_amt = 0) then
+					temp_aluout := rfaout;
+				else
+					temp_aluout(15 downto shift_amt) := rfaout(shift_amt downto 0);
+					temp_aluout(shift_amt-1 downto 0) := (others => '0');
+				end if;
+				
+			when alu_srl =>
+				if (shift_amt = 0) then
+					temp_aluout := rfaout;
+				else
+					temp_aluout(15-shift_amt downto 0) := rfaout(15 downto shift_amt);
+					temp_aluout(15 downto shift_amt+1) := (others => '0');
+				end if;
+				
+			when alu_sra =>
+				if (shift_amt = 0) then
+					temp_aluout := rfaout;
+				else
+					temp_aluout(15-shift_amt downto 0) := rfaout(15 downto shift_amt);
+					temp_aluout(15 downto shift_amt+1) := (others => rfaout(15));
+				end if;		
+				
+			when others =>
+				temp_aluout := (others => 'X');
+				
+		end case;
+		
+	    ALUOUT <= TEMP_ALUOUT after DELAY_SHIFTER;
+	    
+	end process vhdl_shifter;	
+end architecture untitled;
+

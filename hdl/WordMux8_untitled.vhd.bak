@@ -1,0 +1,39 @@
+--
+-- VHDL Architecture ece411.WordMux8.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 22:44:19 09/18/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY WordMux8 IS
+   PORT( 
+      A      : IN     LC3B_word;
+      B      : IN     LC3B_word;
+      C      : IN     LC3B_word;
+      D      : IN     LC3B_word;
+      E      : IN     LC3B_word;
+      F      : IN     LC3B_word;
+      G      : IN     LC3B_word;
+      H      : IN     LC3B_word;
+      Sel    : IN     LC3B_8MUX_SEL;
+      Output : OUT    LC3B_word
+   );
+
+-- Declarations
+
+END WordMux8 ;
+
+--
+ARCHITECTURE untitled OF WordMux8 IS
+BEGIN
+END ARCHITECTURE untitled;
+

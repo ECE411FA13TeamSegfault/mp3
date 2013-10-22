@@ -1,0 +1,33 @@
+--
+-- VHDL Architecture ece411.address_0.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 23:50:35 09/12/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY ADDR0 IS
+   PORT( 
+      ADDRESS   : IN     LC3b_word;
+      clk       : IN     std_logic;
+      ADDRESS_0 : OUT    std_logic
+   );
+
+-- Declarations
+
+END ADDR0 ;
+
+--
+ARCHITECTURE untitled OF ADDR0 IS
+BEGIN
+	ADDRESS_0 <= ADDRESS(0);
+END ARCHITECTURE untitled;
+

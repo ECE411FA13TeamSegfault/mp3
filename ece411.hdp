@@ -1,0 +1,13 @@
+[ModelSim]
+ece411 = $HDS_PROJECT_DIR/compile
+[hdl]
+ece411 = $HDS_PROJECT_DIR/hdl
+[hds]
+ece411 = $HDS_PROJECT_DIR/hds
+[hds_settings]
+default_library = ece411
+version = 2
+[library_files_inclusion]
+ece411 = specify
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

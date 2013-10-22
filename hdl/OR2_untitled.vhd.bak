@@ -1,0 +1,38 @@
+--
+-- VHDL Architecture ece411.OR2.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a2.ews.illinois.edu)
+--          at - 11:46:36 09/20/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY OR2 IS
+   PORT( 
+      A : IN     std_logic;
+      B : IN     std_logic;
+      F : OUT    std_logic
+   );
+
+-- Declarations
+
+END OR2 ;
+
+--
+ARCHITECTURE untitled OF OR2 IS
+BEGIN
+	PROCESS(A, B)
+		VARIABLE ORInternal : std_logic;
+		BEGIN
+			ORInternal := A OR B;
+			F <= ORInternal after DELAY_LOGIC2;
+		END PROCESS
+END ARCHITECTURE untitled;
+

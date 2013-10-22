@@ -1,0 +1,33 @@
+--
+-- VHDL Architecture ece411.AddressJoiner.untitled
+--
+-- Created:
+--          by - chng2.ews (linux-a2.ews.illinois.edu)
+--          at - 22:22:09 10/02/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY AddressJoiner IS
+   PORT( 
+      ADDRESS_INDEX : IN     LC3b_C_set;
+      CacheTag      : IN     lc3b_C_Tag;
+      Cache_Address : OUT    LC3b_word
+   );
+
+-- Declarations
+
+END AddressJoiner ;
+
+--
+ARCHITECTURE untitled OF AddressJoiner IS
+BEGIN
+  Cache_Address <= ADDRESS_INDEX & CacheTag & "0000";
+END ARCHITECTURE untitled;
+

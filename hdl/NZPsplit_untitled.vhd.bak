@@ -1,0 +1,23 @@
+--
+-- VHDL Architecture ece411.NZPsplit.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a1.ews.illinois.edu)
+--          at - 22:04:25 10/18/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+ENTITY NZPsplit IS
+END ENTITY NZPsplit;
+
+--
+ARCHITECTURE untitled OF NZPsplit IS
+BEGIN
+END ARCHITECTURE untitled;
+

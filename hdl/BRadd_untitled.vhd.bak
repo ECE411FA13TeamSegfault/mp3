@@ -1,0 +1,34 @@
+--
+-- VHDL Architecture ece411.BRadd.untitled
+--
+-- Created:
+--          by - schen79.ews (gelib-057-32.ews.illinois.edu)
+--          at - 14:54:27 08/30/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY BRadd IS
+   PORT( 
+      ADDR2Muxout : IN     LC3b_word;
+      PCout       : IN     LC3b_word;
+      clk         : IN     std_logic;
+      BRAddout    : OUT    LC3b_word
+   );
+
+-- Declarations
+
+END BRadd ;
+
+--
+ARCHITECTURE untitled OF BRadd IS
+BEGIN
+          BRaddout <= LC3b_word(SIGNED(ADJ9out) + SIGNED(PCout));
+END ARCHITECTURE untitled;
+

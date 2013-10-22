@@ -1,0 +1,23 @@
+--
+-- VHDL Architecture ece411.ADJ11.untitled
+--
+-- Created:
+--          by - schen79.ews (linux-a3.ews.illinois.edu)
+--          at - 11:33:55 10/18/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+ENTITY ADJ11 IS
+END ENTITY ADJ11;
+
+--
+ARCHITECTURE untitled OF ADJ11 IS
+BEGIN
+END ARCHITECTURE untitled;
+

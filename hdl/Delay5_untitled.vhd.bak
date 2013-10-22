@@ -1,0 +1,32 @@
+--
+-- VHDL Architecture ece411.Delay5.untitled
+--
+-- Created:
+--          by - chng2.ews (linux-a2.ews.illinois.edu)
+--          at - 01:40:17 10/04/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY Delay5 IS
+   PORT( 
+      F9 : IN     std_logic;
+      B  : OUT    std_logic
+   );
+
+-- Declarations
+
+END Delay5 ;
+
+--
+ARCHITECTURE untitled OF Delay5 IS
+BEGIN
+  B <= F9; --after 5 ns;
+END ARCHITECTURE untitled;
+

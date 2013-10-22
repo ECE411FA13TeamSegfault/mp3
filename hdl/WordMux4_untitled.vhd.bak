@@ -1,0 +1,32 @@
+--
+-- VHDL Architecture ece411.WordMux4.untitled
+--
+-- Created:
+--          by - chng2.ews (gelib-057-32.ews.illinois.edu)
+--          at - 10:35:28 09/09/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY WordMux4 IS
+   PORT (
+      A   : IN     LC3b_word;
+      B   : IN     LC3b_word;
+      C   : IN     LC3b_word;
+      D   : IN     LC3b_word;
+      F   : OUT    LC3b_word;
+      Sel : IN     LC3b_4mux_sel
+   );
+END WordMux4;
+
+--
+ARCHITECTURE untitled OF WordMux4 IS
+BEGIN
+END ARCHITECTURE untitled;
+
