@@ -11,6 +11,7 @@ ECE411_MP3_LIB1 = $HDS_PROJECT_DIR/ECE411_MP3_LIB1/hds
 mp3lib = $HDS_PROJECT_DIR/mp3lib/hds
 [hds_settings]
 default_library = ece411
+design_root = .()
 version = 2
 [library_files_inclusion]
 ece411 = specify

@@ -30,17 +30,16 @@ END ByteMux2 ;
 ARCHITECTURE untitled OF ByteMux2 IS
 BEGIN
 PROCESS (A, B, SEL)
-	VARIABLE STATE : LC3B_byte;
-	BEGIN
-		CASE SEL IS
-			WHEN '0' =>
-				STATE := A;
-			WHEN '1' =>
-				STATE := B;
-			WHEN OTHERS =>
-				STATE := (OTHERS => 'X');
-		END CASE;
-	F <= STATE AFTER DELAY_MUX2;
-	END PROCESS;
+  VARIABLE STATE : LC3B_byte;
+    BEGIN
+       CASE SEL IS
+          WHEN '0' =>
+            STATE := A;
+          WHEN '1' =>
+            STATE := B;
+          WHEN OTHERS =>
+            STATE := (OTHERS => 'X');
+       END CASE;
+       F <= STATE AFTER DELAY_MUX2;
+    END PROCESS;
 END ARCHITECTURE untitled;
-
