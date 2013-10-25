@@ -238,7 +238,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:43:54"
+value "21:44:34"
 )
 (vvPair
 variable "unit"
@@ -2247,7 +2247,7 @@ uid 723,0
 lang 11
 decl (Decl
 n "StoreMuxsel"
-t "LC3b_reg"
+t "std_logic"
 o 8
 suid 40,0
 )
@@ -2256,8 +2256,8 @@ uid 724,0
 va (VaSet
 font "courier,8,0"
 )
-xt "2000,15300,14000,16200"
-st "StoreMuxsel  : LC3b_reg
+xt "2000,15300,14500,16200"
+st "StoreMuxsel  : std_logic
 "
 )
 )
@@ -2266,7 +2266,7 @@ uid 725,0
 lang 11
 decl (Decl
 n "DRMuxsel"
-t "LC3b_reg"
+t "std_logic"
 o 1
 suid 41,0
 )
@@ -2275,8 +2275,8 @@ uid 726,0
 va (VaSet
 font "courier,8,0"
 )
-xt "2000,9000,14000,9900"
-st "DRMuxsel     : LC3b_reg
+xt "2000,9000,14500,9900"
+st "DRMuxsel     : std_logic
 "
 )
 )
@@ -3291,7 +3291,6 @@ shape (OrthoPolyLine
 uid 742,0
 va (VaSet
 vasetType 3
-lineWidth 2
 )
 xt "25000,9000,32000,9000"
 pts [
@@ -3302,7 +3301,6 @@ pts [
 end &70
 sat 16
 eat 32
-sty 1
 stc 0
 st 0
 sf 1
@@ -3331,7 +3329,6 @@ shape (OrthoPolyLine
 uid 750,0
 va (VaSet
 vasetType 3
-lineWidth 2
 )
 xt "25000,10000,32000,10000"
 pts [
@@ -3342,7 +3339,6 @@ pts [
 end &71
 sat 16
 eat 32
-sty 1
 stc 0
 st 0
 sf 1
@@ -4728,7 +4724,7 @@ port (LogicalPort
 lang 11
 decl (Decl
 n "StoreMuxsel"
-t "LC3b_reg"
+t "std_logic"
 o 8
 suid 40,0
 )
@@ -4740,7 +4736,7 @@ port (LogicalPort
 lang 11
 decl (Decl
 n "DRMuxsel"
-t "LC3b_reg"
+t "std_logic"
 o 1
 suid 41,0
 )

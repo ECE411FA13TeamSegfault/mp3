@@ -292,7 +292,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:39:39"
+value "21:40:12"
 )
 (vvPair
 variable "unit"
@@ -4260,7 +4260,7 @@ tm "WireNameMgr"
 uid 2257,0
 decl (Decl
 n "RESET_L"
-t "LC3b_4mux_sel"
+t "std_logic"
 o 29
 suid 81,0
 )
@@ -4269,8 +4269,8 @@ uid 2258,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-2000,13300,13000,14200"
-st "RESET_L       : LC3b_4mux_sel
+xt "-2000,13300,11000,14200"
+st "RESET_L       : std_logic
 "
 )
 )
@@ -6972,7 +6972,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-6,23,2548,1350"
-viewArea "44260,7498,130507,51306"
+viewArea "-36215,-5600,50032,38208"
 cachedDiagramExtent "-4000,0,127400,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-5000,0"
@@ -8426,7 +8426,7 @@ uid 2086,0
 port (LogicalPort
 decl (Decl
 n "RESET_L"
-t "LC3b_4mux_sel"
+t "std_logic"
 o 29
 suid 81,0
 )
