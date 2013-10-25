@@ -3,17 +3,21 @@ ece411 = $HDS_PROJECT_DIR/compile
 mp3lib = $HDS_PROJECT_DIR/mp3lib/compile
 [hdl]
 ece411 = $HDS_PROJECT_DIR/hdl
+ECE411_MP3_LIB1 = /home/schen79/ece411/mp3/given/mp2-mp3
 mp3lib = $HDS_PROJECT_DIR/mp3lib/hdl
 [hds]
 ece411 = $HDS_PROJECT_DIR/hds
+ECE411_MP3_LIB1 = $HDS_PROJECT_DIR/ECE411_MP3_LIB1/hds
 mp3lib = $HDS_PROJECT_DIR/mp3lib/hds
 [hds_settings]
 default_library = ece411
 version = 2
 [library_files_inclusion]
 ece411 = specify
+ECE411_MP3_LIB1 = specify
 [library_type]
 ece411 = regular
+ECE411_MP3_LIB1 = regular
 mp3lib = regular
 [shared]
 others = $HDS_TEAM_HOME/shared.hdp
