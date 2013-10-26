@@ -106,20 +106,20 @@ BEGIN
       end if;
     end if;
     
-    ID_RFA        <= tempRFAout;
-    ID_RFB        <= tempRFBout;
+    ID_RFA        <= tempRFAout after delay_reg;
+    ID_RFB        <= tempRFBout after delay_reg;
     
-    ID_IR5        <= tempIR5;
-    ID_IR11       <= tempIR11;
+    ID_IR5        <= tempIR5 after delay_reg;
+    ID_IR11       <= tempIR11 after delay_reg;
     
-    ID_ADJ6out    <= tempADJ6;
-    ID_ADJ8out    <= tempADJ8;
-    ID_ADJ9out    <= tempADJ9;
-    ID_ADJ11out   <= tempADJ11;
-    ID_IMM5out    <= tempIMM5;
-    ID_SEXT6out   <= tempSEXT6;
+    ID_ADJ6out    <= tempADJ6 after delay_reg;
+    ID_ADJ8out    <= tempADJ8 after delay_reg;
+    ID_ADJ9out    <= tempADJ9 after delay_reg;
+    ID_ADJ11out   <= tempADJ11 after delay_reg;
+    ID_IMM5out    <= tempIMM5 after delay_reg;
+    ID_SEXT6out   <= tempSEXT6 after delay_reg;
     
-    ID_PCPlus2    <= tempPCPlus2;
+    ID_PCPlus2    <= tempPCPlus2 after delay_reg;
     
   END PROCESS VHDL_REG_ID;
 END ARCHITECTURE untitled;

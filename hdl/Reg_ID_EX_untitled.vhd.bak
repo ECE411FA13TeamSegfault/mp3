@@ -62,7 +62,7 @@ BEGIN
   VHDL_REG_ID : PROCESS(clk, Load, Reset_L, 
                         ID_RFAout, ID_RFBout,
                         IF_IR5, IF_IR11, IF_ADJ6out, IF_ADJ8out, IF_ADJ9out, IF_ADJ11out,
-                        IF_IMM5out, IF_SEXT6out
+                        IF_IMM5out, IF_SEXT6out,
                         IF_PCPlus2)
   -----------------------------------
   variable tempRFAout   : LC3b_word;
