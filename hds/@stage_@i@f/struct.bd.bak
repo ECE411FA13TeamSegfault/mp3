@@ -160,19 +160,19 @@ value "/home/schen79/ece411/mp3/hds/Stage_IF"
 )
 (vvPair
 variable "date"
-value "10/19/13"
+value "10/25/13"
 )
 (vvPair
 variable "day"
-value "Sat"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Saturday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "19"
+value "25"
 )
 (vvPair
 variable "entity_name"
@@ -200,7 +200,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "siebl-0222-22.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -292,7 +292,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:40:12"
+value "11:02:24"
 )
 (vvPair
 variable "unit"
@@ -349,7 +349,7 @@ uid 22,0
 decl (Decl
 n "clk"
 t "std_logic"
-o 6
+o 7
 suid 1,0
 )
 declText (MLText
@@ -801,7 +801,7 @@ lang 11
 decl (Decl
 n "IMM5"
 t "LC3B_IMM5"
-o 20
+o 24
 suid 5,0
 )
 declText (MLText
@@ -820,7 +820,7 @@ lang 11
 decl (Decl
 n "INDEX6"
 t "LC3B_INDEX6"
-o 21
+o 25
 suid 6,0
 )
 declText (MLText
@@ -838,7 +838,7 @@ uid 224,0
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 2
+o 3
 suid 7,0
 )
 declText (MLText
@@ -857,7 +857,7 @@ lang 11
 decl (Decl
 n "MDRout"
 t "LC3b_word"
-o 4
+o 26
 suid 8,0
 )
 declText (MLText
@@ -876,7 +876,7 @@ lang 11
 decl (Decl
 n "OFFSET11"
 t "LC3B_OFFSET11"
-o 24
+o 27
 suid 9,0
 )
 declText (MLText
@@ -895,7 +895,7 @@ lang 11
 decl (Decl
 n "OFFSET9"
 t "LC3B_OFFSET9"
-o 25
+o 28
 suid 10,0
 )
 declText (MLText
@@ -914,7 +914,7 @@ lang 11
 decl (Decl
 n "TRAPVECT8"
 t "LC3B_TRAPVECT8"
-o 27
+o 30
 suid 15,0
 )
 declText (MLText
@@ -3256,7 +3256,7 @@ n "PCMuxout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 26
+o 29
 suid 45,0
 )
 declText (MLText
@@ -3703,7 +3703,7 @@ uid 1350,0
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 3
+o 4
 suid 58,0
 )
 declText (MLText
@@ -3812,7 +3812,7 @@ uid 1686,0
 decl (Decl
 n "IF_ADJ6out"
 t "LC3b_word"
-o 8
+o 9
 suid 60,0
 )
 declText (MLText
@@ -3848,7 +3848,7 @@ uid 1692,0
 decl (Decl
 n "IF_ADJ11out"
 t "LC3b_word"
-o 7
+o 8
 suid 63,0
 )
 declText (MLText
@@ -3884,7 +3884,7 @@ uid 1696,0
 decl (Decl
 n "IF_SEXT6out"
 t "LC3b_word"
-o 14
+o 17
 suid 65,0
 )
 declText (MLText
@@ -3902,7 +3902,7 @@ uid 1698,0
 decl (Decl
 n "IF_PCout"
 t "LC3b_word"
-o 13
+o 16
 suid 66,0
 )
 declText (MLText
@@ -3920,7 +3920,7 @@ uid 1700,0
 decl (Decl
 n "IF_PCPlus2out"
 t "LC3b_word"
-o 12
+o 15
 suid 67,0
 )
 declText (MLText
@@ -3938,7 +3938,7 @@ uid 1869,0
 decl (Decl
 n "IF_TRAPVECT8"
 t "LC3b_word"
-o 9
+o 20
 suid 68,0
 )
 declText (MLText
@@ -3956,7 +3956,7 @@ uid 2024,0
 decl (Decl
 n "IF_Opcode"
 t "LC3b_opcode"
-o 15
+o 14
 suid 69,0
 )
 declText (MLText
@@ -3974,7 +3974,7 @@ uid 2026,0
 decl (Decl
 n "IF_SrcA"
 t "LC3b_reg"
-o 16
+o 18
 suid 70,0
 )
 declText (MLText
@@ -3992,7 +3992,7 @@ uid 2028,0
 decl (Decl
 n "IF_SrcB"
 t "LC3b_reg"
-o 17
+o 19
 suid 71,0
 )
 declText (MLText
@@ -4010,7 +4010,7 @@ uid 2030,0
 decl (Decl
 n "IF_dest"
 t "LC3b_reg"
-o 18
+o 21
 suid 72,0
 )
 declText (MLText
@@ -4029,7 +4029,7 @@ lang 11
 decl (Decl
 n "IF_shftop"
 t "LC3b_shftop"
-o 19
+o 22
 suid 73,0
 )
 declText (MLText
@@ -4138,7 +4138,7 @@ lang 11
 decl (Decl
 n "IF_IR5"
 t "std_logic"
-o 23
+o 13
 suid 76,0
 )
 declText (MLText
@@ -4157,7 +4157,7 @@ lang 11
 decl (Decl
 n "IF_IR11"
 t "std_logic"
-o 22
+o 12
 suid 77,0
 )
 declText (MLText
@@ -4197,7 +4197,7 @@ lang 11
 decl (Decl
 n "IF_MDRout"
 t "LC3b_word"
-o 4
+o 2
 suid 79,0
 )
 declText (MLText
@@ -4261,7 +4261,7 @@ uid 2257,0
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 29
+o 6
 suid 81,0
 )
 declText (MLText
@@ -4282,7 +4282,7 @@ n "D"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 30
+o 23
 suid 93,0
 )
 declText (MLText
@@ -6971,12 +6971,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-6,23,2548,1350"
-viewArea "-36215,-5600,50032,38208"
+windowSize "-6,27,1594,1179"
+viewArea "20120,-5600,95855,49895"
 cachedDiagramExtent "-4000,0,127400,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-5000,0"
-lastUid 2539,0
+lastUid 2716,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8078,7 +8078,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 6
+o 7
 suid 1,0
 )
 )
@@ -8091,7 +8091,7 @@ m 4
 decl (Decl
 n "IMM5"
 t "LC3B_IMM5"
-o 20
+o 24
 suid 5,0
 )
 )
@@ -8104,7 +8104,7 @@ m 4
 decl (Decl
 n "INDEX6"
 t "LC3B_INDEX6"
-o 21
+o 25
 suid 6,0
 )
 )
@@ -8115,7 +8115,7 @@ port (LogicalPort
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 2
+o 3
 suid 7,0
 )
 )
@@ -8128,7 +8128,7 @@ m 4
 decl (Decl
 n "MDRout"
 t "LC3b_word"
-o 4
+o 26
 suid 8,0
 )
 )
@@ -8141,7 +8141,7 @@ m 4
 decl (Decl
 n "OFFSET11"
 t "LC3B_OFFSET11"
-o 24
+o 27
 suid 9,0
 )
 )
@@ -8154,7 +8154,7 @@ m 4
 decl (Decl
 n "OFFSET9"
 t "LC3B_OFFSET9"
-o 25
+o 28
 suid 10,0
 )
 )
@@ -8167,7 +8167,7 @@ m 4
 decl (Decl
 n "TRAPVECT8"
 t "LC3B_TRAPVECT8"
-o 27
+o 30
 suid 15,0
 )
 )
@@ -8182,7 +8182,7 @@ n "PCMuxout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 26
+o 29
 suid 45,0
 )
 )
@@ -8207,7 +8207,7 @@ port (LogicalPort
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 3
+o 4
 suid 58,0
 )
 )
@@ -8219,7 +8219,7 @@ m 1
 decl (Decl
 n "IF_ADJ6out"
 t "LC3b_word"
-o 8
+o 9
 suid 60,0
 )
 )
@@ -8243,7 +8243,7 @@ m 1
 decl (Decl
 n "IF_ADJ11out"
 t "LC3b_word"
-o 7
+o 8
 suid 63,0
 )
 )
@@ -8267,7 +8267,7 @@ m 1
 decl (Decl
 n "IF_SEXT6out"
 t "LC3b_word"
-o 14
+o 17
 suid 65,0
 )
 )
@@ -8279,7 +8279,7 @@ m 1
 decl (Decl
 n "IF_PCout"
 t "LC3b_word"
-o 13
+o 16
 suid 66,0
 )
 )
@@ -8291,7 +8291,7 @@ m 1
 decl (Decl
 n "IF_PCPlus2out"
 t "LC3b_word"
-o 12
+o 15
 suid 67,0
 )
 )
@@ -8303,7 +8303,7 @@ m 1
 decl (Decl
 n "IF_TRAPVECT8"
 t "LC3b_word"
-o 9
+o 20
 suid 68,0
 )
 )
@@ -8315,7 +8315,7 @@ m 1
 decl (Decl
 n "IF_Opcode"
 t "LC3b_opcode"
-o 15
+o 14
 suid 69,0
 )
 )
@@ -8327,7 +8327,7 @@ m 1
 decl (Decl
 n "IF_SrcA"
 t "LC3b_reg"
-o 16
+o 18
 suid 70,0
 )
 )
@@ -8339,7 +8339,7 @@ m 1
 decl (Decl
 n "IF_SrcB"
 t "LC3b_reg"
-o 17
+o 19
 suid 71,0
 )
 )
@@ -8351,7 +8351,7 @@ m 1
 decl (Decl
 n "IF_dest"
 t "LC3b_reg"
-o 18
+o 21
 suid 72,0
 )
 )
@@ -8364,7 +8364,7 @@ m 1
 decl (Decl
 n "IF_shftop"
 t "LC3b_shftop"
-o 19
+o 22
 suid 73,0
 )
 )
@@ -8377,7 +8377,7 @@ m 1
 decl (Decl
 n "IF_IR5"
 t "std_logic"
-o 23
+o 13
 suid 76,0
 )
 )
@@ -8390,7 +8390,7 @@ m 1
 decl (Decl
 n "IF_IR11"
 t "std_logic"
-o 22
+o 12
 suid 77,0
 )
 )
@@ -8416,7 +8416,7 @@ lang 11
 decl (Decl
 n "IF_MDRout"
 t "LC3b_word"
-o 4
+o 2
 suid 79,0
 )
 )
@@ -8427,7 +8427,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 29
+o 6
 suid 81,0
 )
 )
@@ -8442,7 +8442,7 @@ n "D"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 30
+o 23
 suid 93,0
 )
 )
@@ -8506,61 +8506,61 @@ uid 25,0
 )
 *288 (MRCItem
 litem &253
-pos 12
+pos 23
 dimension 20
 uid 313,0
 )
 *289 (MRCItem
 litem &254
-pos 13
+pos 24
 dimension 20
 uid 315,0
 )
 *290 (MRCItem
 litem &255
-pos 8
+pos 18
 dimension 20
 uid 317,0
 )
 *291 (MRCItem
 litem &256
-pos 10
+pos 22
 dimension 20
 uid 319,0
 )
 *292 (MRCItem
 litem &257
-pos 14
+pos 25
 dimension 20
 uid 321,0
 )
 *293 (MRCItem
 litem &258
-pos 15
+pos 26
 dimension 20
 uid 323,0
 )
 *294 (MRCItem
 litem &259
-pos 16
+pos 27
 dimension 20
 uid 333,0
 )
 *295 (MRCItem
 litem &260
-pos 17
+pos 28
 dimension 20
 uid 1152,0
 )
 *296 (MRCItem
 litem &261
-pos 11
+pos 20
 dimension 20
 uid 1353,0
 )
 *297 (MRCItem
 litem &262
-pos 9
+pos 19
 dimension 20
 uid 1355,0
 )
@@ -8584,91 +8584,91 @@ uid 1709,0
 )
 *301 (MRCItem
 litem &266
-pos 4
+pos 6
 dimension 20
 uid 1711,0
 )
 *302 (MRCItem
 litem &267
-pos 7
+pos 13
 dimension 20
 uid 1713,0
 )
 *303 (MRCItem
 litem &268
-pos 5
+pos 11
 dimension 20
 uid 1715,0
 )
 *304 (MRCItem
 litem &269
-pos 6
+pos 12
 dimension 20
 uid 1717,0
 )
 *305 (MRCItem
 litem &270
-pos 18
+pos 17
 dimension 20
 uid 1872,0
 )
 *306 (MRCItem
 litem &271
-pos 19
+pos 10
 dimension 20
 uid 2071,0
 )
 *307 (MRCItem
 litem &272
-pos 20
+pos 15
 dimension 20
 uid 2073,0
 )
 *308 (MRCItem
 litem &273
-pos 21
+pos 16
 dimension 20
 uid 2075,0
 )
 *309 (MRCItem
 litem &274
-pos 22
+pos 5
 dimension 20
 uid 2077,0
 )
 *310 (MRCItem
 litem &275
-pos 23
+pos 14
 dimension 20
 uid 2079,0
 )
 *311 (MRCItem
 litem &276
-pos 24
+pos 8
 dimension 20
 uid 2081,0
 )
 *312 (MRCItem
 litem &277
-pos 25
+pos 7
 dimension 20
 uid 2083,0
 )
 *313 (MRCItem
 litem &278
-pos 26
+pos 4
 dimension 20
 uid 2085,0
 )
 *314 (MRCItem
 litem &279
-pos 27
+pos 9
 dimension 20
 uid 2087,0
 )
 *315 (MRCItem
 litem &280
-pos 28
+pos 21
 dimension 20
 uid 2260,0
 )
