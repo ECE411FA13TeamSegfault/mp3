@@ -23,6 +23,7 @@ ENTITY Reg_ID_EX IS
     ID_RFAout     : IN LC3b_word;
     ID_RFBout     : IN LC3b_word;
     
+    IF_dest				  : IN LC3b_reg;
     IF_IR5        : IN std_logic;
     IF_IR11       : IN std_logic;    
     
@@ -38,6 +39,7 @@ ENTITY Reg_ID_EX IS
     ID_RFA        : OUT LC3b_word;
     ID_RFB        : OUT LC3b_word;
     
+    ID_dest				  : OUT LC3b_reg;
     ID_IR5        : OUT std_logic;
     ID_IR11       : OUT std_logic;
     
@@ -61,12 +63,13 @@ BEGIN
     -----------------------------------
   VHDL_REG_ID : PROCESS(clk, Load, Reset_L, 
                         ID_RFAout, ID_RFBout,
-                        IF_IR5, IF_IR11, IF_ADJ6out, IF_ADJ8out, IF_ADJ9out, IF_ADJ11out,
+                        IF_dest, IF_IR5, IF_IR11, IF_ADJ6out, IF_ADJ8out, IF_ADJ9out, IF_ADJ11out,
                         IF_IMM5out, IF_SEXT6out,
                         IF_PCPlus2)
   -----------------------------------
   variable tempRFAout   : LC3b_word;
   variable tempRFBout   : LC3b_word;
+  variable tempdest				 : LC3b_reg;
   variable tempIR5      : std_logic;
   variable tempIR11     : std_logic;
   variable tempADJ6     : LC3b_word;
@@ -81,6 +84,7 @@ BEGIN
     if (Reset_L = '0') then
       tempRFAout    := "0000000000000000";
       tempRFBout    := "0000000000000000";
+      tempdest					:= "000";
       tempIR5       := '0';
       tempIR11      := '0';
       tempADJ6      := "0000000000000000";
@@ -94,6 +98,7 @@ BEGIN
       if (Load = '1') then
         tempRFAout    := ID_RFAout;
         tempRFBout    := ID_RFBout;
+        tempdest					 := IF_dest;
         tempIR5       := IF_IR5;
         tempIR11      := IF_IR11;
         tempADJ6      := IF_ADJ6out;
@@ -109,6 +114,7 @@ BEGIN
     ID_RFA        <= tempRFAout after delay_reg;
     ID_RFB        <= tempRFBout after delay_reg;
     
+    ID_dest				  <= tempdest after delay_reg;
     ID_IR5        <= tempIR5 after delay_reg;
     ID_IR11       <= tempIR11 after delay_reg;
     

@@ -57,7 +57,7 @@ BEGIN
 				tempBRAdd			:= EX_BRAdd;
 				tempPCPlus2	:= EX_PCPlus2;
 				tempMDR			:= MEM_MDRout;
-			end if
+			end if;
 		end if;
 		
 		MEM_ALU			<= tempALU after delay_reg;

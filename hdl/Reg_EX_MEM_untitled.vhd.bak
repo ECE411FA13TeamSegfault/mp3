@@ -23,7 +23,13 @@ ENTITY Reg_EX_MEM IS
 		EX_BRAddout				: IN LC3b_word;
 		
 		ID_ADJ8out				: IN LC3b_word;
-		ID_PCPlus2				: IN LC3b_word
+		ID_PCPlus2				: IN LC3b_word;
+		
+		EX_ALU				: OUT LC3b_word;
+		EX_BRAdd				: OUT LC3b_word;
+		
+		EX_ADJ8out				: OUT LC3b_word;
+		EX_PCPlus2				: OUT LC3b_word
 	);
 END ENTITY Reg_EX_MEM;
 
@@ -54,6 +60,11 @@ BEGIN
 				tempPCPlus2	:= ID_PCPlus2;
 			end if;
 		end if;
+		
+		EX_ALU			<= tempALU after delay_reg;
+		EX_BRAdd			<= tempBRAdd after delay_reg;
+		EX_ADJ8out		<= tempADJ8 after delay_reg;
+		EX_PCPlus2		<= tempPCPlus2 after delay_reg;
 
 	END PROCESS VHDL_REG_EX;				
 END ARCHITECTURE untitled;

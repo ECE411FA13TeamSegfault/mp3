@@ -22,13 +22,15 @@ ENTITY Reg_MEM_WB IS
 		EX_ALU				: IN LC3b_word;
 		EX_BRAdd				: IN LC3b_word;
 		EX_PCPlus2				: IN LC3b_word;
+		EX_dest				: IN LC3b_reg;
 		
 		MEM_MDRout				: IN LC3b_word;
 		
 		MEM_ALU				: OUT LC3b_word;
 		MEM_BRAdd				: OUT LC3b_word;
 		MEM_PCPlus2				: OUT LC3b_word;
-		MEM_MDR				: OUT LC3b_word
+		MEM_MDR				: OUT LC3b_word;
+		MEM_dest				: OUT LC3b_reg
 	);
 END ENTITY Reg_MEM_WB;
 
@@ -37,12 +39,13 @@ ARCHITECTURE untitled OF Reg_MEM_WB IS
 BEGIN
 	----------------------------------------------------
 	VHDL_REG_MEM : PROCESS(clk, Reset_L, Load,
-						   EX_ALU, EX_BRAdd, EX_PCPlus2,
+						   EX_ALU, EX_BRAdd, EX_PCPlus2, EX_dest,
 						   MEM_MDRout)
 	----------------------------------------------------
 	variable tempALU						: LC3b_word;
 	variable tempBRAdd						: LC3b_word;
 	variable tempPCPlus2				: LC3b_word;
+	variable tempdest						: LC3b_reg;
 	variable tempMDR						: LC3b_word;
 	
 	BEGIN
@@ -50,12 +53,14 @@ BEGIN
 			tempALU			:= "000000000000";
 			tempBRAdd			:= "000000000000";
 			tempPCPlus2	:= "000000000000";
+			tempdest			:= "000";
 			tempMDR			:= "000000000000";
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
 				tempALU			:= EX_ALU;
 				tempBRAdd			:= EX_BRAdd;
 				tempPCPlus2	:= EX_PCPlus2;
+				tempdest			:= EX_dest;
 				tempMDR			:= MEM_MDRout;
 			end if;
 		end if;
@@ -63,6 +68,7 @@ BEGIN
 		MEM_ALU			<= tempALU after delay_reg;
 		MEM_BRAdd			<= tempBRAdd after delay_reg;
 		MEM_PCPlus2	<= tempPCPlus2 after delay_reg;
+		MEM_dest			<= tempdest after delay_reg;
 		MEM_MDR			<= tempMDR after delay_reg;
 						   
    END PROCESS VHDL_REG_MEM;
