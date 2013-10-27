@@ -73,7 +73,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 19
+o 12
 suid 67,0
 )
 )
@@ -87,7 +87,7 @@ n "DATAIN"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 43
+o 1
 suid 68,0
 )
 )
@@ -98,7 +98,7 @@ port (LogicalPort
 decl (Decl
 n "Load"
 t "std_logic"
-o 78
+o 2
 suid 69,0
 )
 )
@@ -112,7 +112,7 @@ n "MARMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 46
+o 3
 suid 70,0
 )
 )
@@ -126,7 +126,7 @@ n "MDRMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 47
+o 4
 suid 71,0
 )
 )
@@ -140,7 +140,7 @@ n "MEM_ALUout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 48
+o 5
 suid 72,0
 )
 )
@@ -152,7 +152,7 @@ m 1
 decl (Decl
 n "MEM_MARout"
 t "LC3b_word"
-o 49
+o 13
 suid 73,0
 )
 )
@@ -167,7 +167,7 @@ n "MEM_MDRout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 50
+o 14
 suid 74,0
 )
 )
@@ -181,7 +181,7 @@ n "MEM_PCPlus2"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 51
+o 6
 suid 75,0
 )
 )
@@ -195,7 +195,7 @@ n "MEM_TRAPVECT8"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 52
+o 7
 suid 76,0
 )
 )
@@ -207,7 +207,7 @@ m 1
 decl (Decl
 n "MREAD_L"
 t "std_logic"
-o 79
+o 15
 suid 77,0
 )
 )
@@ -218,7 +218,7 @@ port (LogicalPort
 decl (Decl
 n "MRESP_H"
 t "STD_LOGIC"
-o 80
+o 8
 suid 78,0
 )
 )
@@ -230,7 +230,7 @@ m 1
 decl (Decl
 n "MWRITE_L"
 t "std_logic"
-o 81
+o 16
 suid 79,0
 )
 )
@@ -241,7 +241,7 @@ port (LogicalPort
 decl (Decl
 n "Read_H"
 t "STD_LOGIC"
-o 82
+o 10
 suid 80,0
 )
 )
@@ -252,7 +252,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 21
+o 9
 suid 81,0
 )
 )
@@ -263,7 +263,7 @@ port (LogicalPort
 decl (Decl
 n "Write_H"
 t "STD_LOGIC"
-o 83
+o 11
 suid 82,0
 )
 )
@@ -333,85 +333,85 @@ uid 814,0
 )
 *37 (MRCItem
 litem &16
-pos 2
+pos 10
 dimension 20
 uid 816,0
 )
 *38 (MRCItem
 litem &17
-pos 3
+pos 2
 dimension 20
 uid 818,0
 )
 *39 (MRCItem
 litem &18
-pos 4
+pos 3
 dimension 20
 uid 820,0
 )
 *40 (MRCItem
 litem &19
-pos 5
+pos 4
 dimension 20
 uid 822,0
 )
 *41 (MRCItem
 litem &20
-pos 6
+pos 5
 dimension 20
 uid 824,0
 )
 *42 (MRCItem
 litem &21
-pos 7
+pos 6
 dimension 20
 uid 826,0
 )
 *43 (MRCItem
 litem &22
-pos 8
+pos 7
 dimension 20
 uid 828,0
 )
 *44 (MRCItem
 litem &23
-pos 9
+pos 8
 dimension 20
 uid 830,0
 )
 *45 (MRCItem
 litem &24
-pos 10
+pos 14
 dimension 20
 uid 832,0
 )
 *46 (MRCItem
 litem &25
-pos 11
+pos 13
 dimension 20
 uid 834,0
 )
 *47 (MRCItem
 litem &26
-pos 12
+pos 15
 dimension 20
 uid 836,0
 )
 *48 (MRCItem
 litem &27
-pos 13
+pos 11
 dimension 20
 uid 838,0
 )
 *49 (MRCItem
 litem &28
-pos 14
+pos 9
 dimension 20
 uid 840,0
 )
 *50 (MRCItem
 litem &29
-pos 15
+pos 12
 dimension 20
 uid 842,0
 )
@@ -652,11 +652,11 @@ value "/home/schen79/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/interface.info"
+value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/interface.user"
+value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
@@ -668,7 +668,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "config"
@@ -708,15 +708,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_logical"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_noext"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "group"
@@ -724,7 +724,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "linux-a3.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -756,11 +756,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/interface"
+value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_Memory/interface"
+value "/home/schen79/ece411/mp3/hds/Stage_Memory/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -804,19 +804,19 @@ value "<TBD>"
 )
 (vvPair
 variable "this_ext"
-value "<TBD>"
+value "sb"
 )
 (vvPair
 variable "this_file"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "this_file_logical"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "time"
-value "11:05:01"
+value "22:23:59"
 )
 (vvPair
 variable "unit"
@@ -832,7 +832,7 @@ value "2012.1 (Build 6)"
 )
 (vvPair
 variable "view"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "year"
@@ -882,12 +882,15 @@ uid 735,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,11700,62000,12600"
+st "clk           : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 19
+o 12
 suid 67,0
 )
 )
@@ -924,6 +927,9 @@ uid 740,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,1800,62000,2700"
+st "DATAIN        : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -932,7 +938,7 @@ n "DATAIN"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 43
+o 1
 suid 68,0
 )
 )
@@ -969,12 +975,15 @@ uid 745,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,2700,62000,3600"
+st "Load          : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Load"
 t "std_logic"
-o 78
+o 2
 suid 69,0
 )
 )
@@ -1011,6 +1020,9 @@ uid 750,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,3600,64000,4500"
+st "MARMuxsel     : IN     LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1019,7 +1031,7 @@ n "MARMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 46
+o 3
 suid 70,0
 )
 )
@@ -1056,6 +1068,9 @@ uid 755,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,4500,64000,5400"
+st "MDRMuxsel     : IN     LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1064,7 +1079,7 @@ n "MDRMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 47
+o 4
 suid 71,0
 )
 )
@@ -1101,6 +1116,9 @@ uid 760,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,5400,62000,6300"
+st "MEM_ALUout    : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1109,7 +1127,7 @@ n "MEM_ALUout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 48
+o 5
 suid 72,0
 )
 )
@@ -1147,13 +1165,16 @@ uid 765,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,12600,62000,13500"
+st "MEM_MARout    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MEM_MARout"
 t "LC3b_word"
-o 49
+o 13
 suid 73,0
 )
 )
@@ -1191,6 +1212,9 @@ uid 770,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,13500,62000,14400"
+st "MEM_MDRout    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1200,7 +1224,7 @@ n "MEM_MDRout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 50
+o 14
 suid 74,0
 )
 )
@@ -1237,6 +1261,9 @@ uid 775,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,6300,62000,7200"
+st "MEM_PCPlus2   : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1245,7 +1272,7 @@ n "MEM_PCPlus2"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 51
+o 6
 suid 75,0
 )
 )
@@ -1282,6 +1309,9 @@ uid 780,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,7200,62000,8100"
+st "MEM_TRAPVECT8 : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1290,7 +1320,7 @@ n "MEM_TRAPVECT8"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 52
+o 7
 suid 76,0
 )
 )
@@ -1328,13 +1358,16 @@ uid 785,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,14400,62000,15300"
+st "MREAD_L       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MREAD_L"
 t "std_logic"
-o 79
+o 15
 suid 77,0
 )
 )
@@ -1371,12 +1404,15 @@ uid 790,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,8100,62000,9000"
+st "MRESP_H       : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "MRESP_H"
 t "STD_LOGIC"
-o 80
+o 8
 suid 78,0
 )
 )
@@ -1414,13 +1450,16 @@ uid 795,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,15300,61000,16200"
+st "MWRITE_L      : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MWRITE_L"
 t "std_logic"
-o 81
+o 16
 suid 79,0
 )
 )
@@ -1457,12 +1496,15 @@ uid 800,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9900,62000,10800"
+st "Read_H        : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Read_H"
 t "STD_LOGIC"
-o 82
+o 10
 suid 80,0
 )
 )
@@ -1499,12 +1541,15 @@ uid 805,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9000,62000,9900"
+st "RESET_L       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 21
+o 9
 suid 81,0
 )
 )
@@ -1541,12 +1586,15 @@ uid 810,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,10800,62000,11700"
+st "Write_H       : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Write_H"
 t "STD_LOGIC"
-o 83
+o 11
 suid 82,0
 )
 )
@@ -1922,7 +1970,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,47200,49950"
+xt "32200,49050,45700,49950"
 st "
 %library/%unit/%view
 "
@@ -2262,6 +2310,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 842,0
+lastUid 865,0
 activeModelName "Symbol:CDM"
 )

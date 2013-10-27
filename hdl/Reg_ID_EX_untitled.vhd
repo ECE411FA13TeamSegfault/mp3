@@ -50,10 +50,12 @@ ENTITY Reg_ID_EX IS
     ID_IMM5out    : OUT LC3b_word;
     ID_SEXT6out   : OUT LC3b_word;
     
-    ID_PCPlus2    : OUT LC3b_word
+    ID_PCPlus2    : OUT LC3b_word;
 
     
     -- Add control word here
+    ID_CONTROL_IN		: IN CONTROL_WORD;
+    ID_CONTROL_OUT	: OUT CONTROL_WORD
   );
 END ENTITY Reg_ID_EX;
 
@@ -79,6 +81,7 @@ BEGIN
   variable tempIMM5     : LC3b_word;
   variable tempSEXT6    : LC3b_word;
   variable tempPCPlus2  : LC3b_word;
+  variable tempCONTROL		: CONTROL_WORD;
   
   BEGIN
     if (Reset_L = '0') then
@@ -94,6 +97,7 @@ BEGIN
       tempIMM5      := "0000000000000000";
       tempSEXT6     := "0000000000000000";
       tempPCPlus2   := "0000000000000000";
+      tempCONTROL			:= (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then
         tempRFAout    := ID_RFAout;
@@ -108,6 +112,7 @@ BEGIN
         tempIMM5      := IF_IMM5out;
         tempSEXT6     := IF_SEXT6out;
         tempPCPlus2   := IF_PCPlus2;
+        tempCONTROL			:= ID_CONTROL_IN;
       end if;
     end if;
     
@@ -126,6 +131,8 @@ BEGIN
     ID_SEXT6out   <= tempSEXT6 after delay_reg;
     
     ID_PCPlus2    <= tempPCPlus2 after delay_reg;
+    
+    ID_CONTROL_OUT<= tempCONTROL after delay_reg;
     
   END PROCESS VHDL_REG_ID;
 END ARCHITECTURE untitled;

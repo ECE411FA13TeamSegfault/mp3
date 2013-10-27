@@ -34,9 +34,11 @@ ENTITY Reg_IF_ID IS
     IF_shftop     : OUT   LC3b_shftop;
     IF_IR5        : OUT   std_logic;
     IF_IR11       : OUT   std_logic;
-    IF_PCPlus2    : OUT   LC3b_word
+    IF_PCPlus2    : OUT   LC3b_word;
     
-    -- Add control word here    
+    -- Add control word here
+    IF_CONTROL_IN 	: IN				CONTROL_WORD;
+    IF_CONTROL_OUT	: OUT			CONTROL_WORD   
   );      
 END ENTITY Reg_IF_ID;
 
@@ -44,18 +46,21 @@ END ENTITY Reg_IF_ID;
 ARCHITECTURE untitled OF Reg_IF_ID IS
 BEGIN
   -----------------------------------
-  VHDL_REG_IR : PROCESS(clk, Load, I_DATAIN)
+  VHDL_REG_IR : PROCESS(clk, Load, Reset_L, I_DATAIN)
   -----------------------------------
   variable tempIR       : LC3b_word;
   variable tempPCPlus2  : LC3b_word;
+  variable tempCONTROL		: CONTROL_WORD;
   BEGIN
     if (Reset_L = '0') then
       tempIR  :=  "0000000000000000";
       tempPCPlus2 := "0000000000000000";
+      tempCONTROL := (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then
         tempIR          := I_DATAIN;
-        tempPCPlus2out  := IF_PCPlus2out; 
+        tempPCPlus2out  := IF_PCPlus2out;
+        tempCONTROL					:= IF_CONTROL_INl 
       end if;
     end if;
     
@@ -74,6 +79,8 @@ BEGIN
     IF_IR11       <= tempIR(11) after delay_reg;
     
     IF_PCPlus2    <= tempPCPlus2 after delay_reg;
+    
+    IF_CONTROL_OUT<= tempCONTROL after delay_reg;
   
   END PROCESS VHDL_REG_IR;     
 END ARCHITECTURE untitled;
