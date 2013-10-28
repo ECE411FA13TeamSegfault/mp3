@@ -26,13 +26,14 @@ ENTITY Reg_IF_ID IS
     IF_IMM5       : OUT   LC3B_IMM5;
     IF_INDEX6     : OUT   LC3B_INDEX6;
     IF_TRAPVECT8  : OUT   LC3B_TRAPVECT8;
-    IF_OFFSET9    : OUT   C3B_OFFSET9;
+    IF_OFFSET9    : OUT   LC3B_OFFSET9;
     IF_OFFSET11   : OUT   LC3B_OFFSET11;
     IF_Opcode     : OUT   LC3b_opcode;
     IF_SrcA       : OUT   LC3b_reg;
     IF_SrcB       : OUT   LC3b_reg;
     IF_dest       : OUT   LC3b_reg;
     IF_shftop     : OUT   LC3b_shftop;
+    IF_IR4        : OUT   std_logic;
     IF_IR5        : OUT   std_logic;
     IF_IR11       : OUT   std_logic;
     IF_PCPlus2    : OUT   LC3b_word;
@@ -56,13 +57,13 @@ BEGIN
     if (Reset_L = '0') then
       tempIR  :=  "0000000000000000";
       tempPCPlus2 := "0000000000000000";
-      tempCONTROL := (others => '0');
+--      tempCONTROL := (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then
         if (I_MRESP_H = '1') then
           tempIR          := I_DATAIN;
         end if;
-        tempPCPlus2out  := IF_PCPlus2out;
+        tempPCPlus2  := IF_PCPlus2out;
         tempCONTROL					:= IF_CONTROL_IN; 
       end if;
     end if;
@@ -78,6 +79,7 @@ BEGIN
     IF_SrcB       <= tempIR(2 downto 0) after delay_reg;
     IF_dest       <= tempIR(11 downto 9) after delay_reg;
     IF_shftop     <= tempIR(5 downto 4) after delay_reg;
+    IF_IR4        <= tempIR(4) after delay_reg;
     IF_IR5        <= tempIR(5) after delay_reg;
     IF_IR11       <= tempIR(11) after delay_reg;
     

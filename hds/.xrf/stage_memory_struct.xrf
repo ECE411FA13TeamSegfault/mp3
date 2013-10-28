@@ -1,257 +1,555 @@
 DESIGN @stage_@memory
-VIEW interface
+VIEW symbol.sb
 NO_GRAPHIC 0
 DESIGN @stage_@memory
-VIEW interface
+VIEW symbol.sb
 GRAPHIC 50,0 8 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 564,0 18 0 
+VIEW symbol.sb
+GRAPHIC 736,0 18 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 569,0 19 0 
+VIEW symbol.sb
+GRAPHIC 741,0 19 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 574,0 20 0 
+VIEW symbol.sb
+GRAPHIC 746,0 20 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 579,0 21 0 
+VIEW symbol.sb
+GRAPHIC 751,0 21 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 584,0 22 0 
+VIEW symbol.sb
+GRAPHIC 756,0 22 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 589,0 23 0 
+VIEW symbol.sb
+GRAPHIC 771,0 23 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 604,0 24 0 
+VIEW symbol.sb
+GRAPHIC 776,0 24 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 609,0 25 0 
+VIEW symbol.sb
+GRAPHIC 786,0 25 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 614,0 26 0 
+VIEW symbol.sb
+GRAPHIC 801,0 26 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 559,0 27 0 
+VIEW symbol.sb
+GRAPHIC 796,0 27 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 594,0 28 0 
+VIEW symbol.sb
+GRAPHIC 806,0 28 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 599,0 29 0 
+VIEW symbol.sb
+GRAPHIC 731,0 29 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 1,0 32 0 
+VIEW symbol.sb
+GRAPHIC 761,0 30 0 
 DESIGN @stage_@memory
-VIEW interface
-GRAPHIC 1,0 33 0 
+VIEW symbol.sb
+GRAPHIC 766,0 31 0 
 DESIGN @stage_@memory
-VIEW struct.bd
-NO_GRAPHIC 36
+VIEW symbol.sb
+GRAPHIC 781,0 32 0 
 DESIGN @stage_@memory
-VIEW struct.bd
-GRAPHIC 41,0 45 0 
+VIEW symbol.sb
+GRAPHIC 791,0 33 0 
 DESIGN @stage_@memory
-VIEW struct.bd
-NO_GRAPHIC 51
+VIEW symbol.sb
+GRAPHIC 1,0 36 0 
 DESIGN @stage_@memory
-VIEW struct.bd
-GRAPHIC 0,0 53 2 
-DESIGN @stage_@memory
-VIEW struct.bd
-GRAPHIC 580,0 58 0 
+VIEW symbol.sb
+GRAPHIC 1,0 37 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 578,0 59 0 
+NO_GRAPHIC 40
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 300,0 60 0 
+GRAPHIC 41,0 49 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 306,0 61 0 
+NO_GRAPHIC 55
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 62
+GRAPHIC 0,0 58 2 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 510,0 64 0 
+GRAPHIC 994,0 63 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 66
+GRAPHIC 1035,0 64 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1153,0 65 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1474,0 66 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1480,0 67 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1507,0 68 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1623,0 69 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1629,0 70 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1672,0 71 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 450,0 72 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 448,0 73 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 580,0 74 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 578,0 75 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1000,0 76 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 300,0 77 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 306,0 78 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+NO_GRAPHIC 79
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1393,0 81 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 510,0 82 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+NO_GRAPHIC 84
 LIBRARY ece411
-DESIGN @reg16
+DESIGN @delay_@reg
 VIEW untitled
-GRAPHIC 186,0 68 0 
-DESIGN @reg16
-VIEW untitled
-GRAPHIC 113,0 70 0 
-DESIGN @reg16
-VIEW untitled
-GRAPHIC 123,0 71 0 
-DESIGN @reg16
-VIEW untitled
-GRAPHIC 118,0 72 0 
-DESIGN @reg16
-VIEW untitled
-GRAPHIC 108,0 73 0 
-DESIGN @reg16
-VIEW untitled
-GRAPHIC 136,0 74 0 
+GRAPHIC 952,0 86 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 272,0 77 0 
+NO_GRAPHIC 90
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 81
+GRAPHIC 186,0 92 0 
+DESIGN @reg16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 113,0 94 0 
+DESIGN @reg16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 123,0 95 0 
+DESIGN @reg16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 118,0 96 0 
+DESIGN @reg16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 108,0 97 0 
+DESIGN @reg16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 136,0 98 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 290,0 83 0 
+GRAPHIC 272,0 101 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 87
+NO_GRAPHIC 105
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 254,0 89 0 
+GRAPHIC 290,0 107 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+NO_GRAPHIC 111
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 254,0 113 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 48,0 91 0 
+GRAPHIC 48,0 115 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 53,0 92 0 
+GRAPHIC 53,0 116 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 58,0 93 0 
+GRAPHIC 58,0 117 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 63,0 94 0 
+GRAPHIC 63,0 118 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 68,0 95 0 
+GRAPHIC 68,0 119 0 
 DESIGN @word@mux4
 VIEW untitled
-GRAPHIC 73,0 96 0 
+GRAPHIC 73,0 120 0 
+LIBRARY mp3lib
+DESIGN @a@n@d2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 1124,0 123 0 
+DESIGN @a@n@d2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 52,0 125 0 
+DESIGN @a@n@d2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 57,0 126 0 
+DESIGN @a@n@d2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 62,0 127 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 930,0 130 0 
+DESIGN @a@n@d3
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 52,0 132 0 
+DESIGN @a@n@d3
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 57,0 133 0 
+DESIGN @a@n@d3
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 62,0 134 0 
+DESIGN @a@n@d3
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 67,0 135 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1378,0 138 0 
+DESIGN @c@o@m@p16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 52,0 140 0 
+DESIGN @c@o@m@p16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 57,0 141 0 
+DESIGN @c@o@m@p16
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 62,0 142 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1023,0 145 0 
+DESIGN @n@o@t1
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 52,0 147 0 
+DESIGN @n@o@t1
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 57,0 148 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 901,0 151 0 
+DESIGN @o@r2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 52,0 153 0 
+DESIGN @o@r2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 57,0 154 0 
+DESIGN @o@r2
+VIEW @u@n@t@i@t@l@e@d
+GRAPHIC 62,0 155 0 
 LIBRARY ece411
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 99
+NO_GRAPHIC 158
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 186,0 102 0 
+GRAPHIC 1124,0 161 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 272,0 103 0 
+GRAPHIC 1550,0 162 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 290,0 104 0 
+GRAPHIC 1588,0 163 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 254,0 105 0 
+GRAPHIC 952,0 164 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 108
+GRAPHIC 1023,0 165 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 110
+GRAPHIC 901,0 166 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 186,0 112 0 
+GRAPHIC 154,0 167 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 428,0 114 0 
+GRAPHIC 272,0 168 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 641,0 115 0 
+GRAPHIC 290,0 169 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 617,0 116 0 
+GRAPHIC 220,0 170 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 434,0 117 0 
+NO_GRAPHIC 173
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 649,0 118 0 
+NO_GRAPHIC 175
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 154,0 120 0 
+GRAPHIC 952,0 177 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 314,0 122 0 
+GRAPHIC 980,0 179 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 633,0 123 0 
+GRAPHIC 1002,0 180 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 625,0 124 0 
+GRAPHIC 186,0 182 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 442,0 125 0 
+GRAPHIC 428,0 184 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 657,0 126 0 
+GRAPHIC 641,0 185 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 272,0 128 0 
+GRAPHIC 617,0 186 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 564,0 130 0 
+GRAPHIC 434,0 187 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 302,0 131 0 
+GRAPHIC 649,0 188 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 290,0 133 0 
+GRAPHIC 154,0 190 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 570,0 135 0 
+GRAPHIC 314,0 192 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 308,0 136 0 
+GRAPHIC 633,0 193 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 254,0 138 0 
+GRAPHIC 625,0 194 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 494,0 140 0 
+GRAPHIC 442,0 195 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 502,0 141 0 
+GRAPHIC 657,0 196 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 510,0 142 0 
+GRAPHIC 272,0 198 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 518,0 143 0 
+GRAPHIC 564,0 200 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 416,0 144 0 
+GRAPHIC 302,0 201 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 428,0 145 0 
+GRAPHIC 290,0 203 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 220,0 147 0 
+GRAPHIC 570,0 205 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 526,0 149 0 
+GRAPHIC 308,0 206 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 302,0 150 0 
+GRAPHIC 254,0 208 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 308,0 151 0 
+GRAPHIC 494,0 210 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 534,0 152 0 
+GRAPHIC 502,0 211 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 408,0 153 0 
+GRAPHIC 510,0 212 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 314,0 154 0 
+GRAPHIC 518,0 213 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-GRAPHIC 510,0 158 0 
+GRAPHIC 416,0 214 0 
 DESIGN @stage_@memory
 VIEW struct.bd
-NO_GRAPHIC 160
+GRAPHIC 428,0 215 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 220,0 217 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 526,0 219 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 302,0 220 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 308,0 221 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 534,0 222 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 408,0 223 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 314,0 224 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1124,0 226 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1139,0 228 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1147,0 229 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1155,0 230 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 930,0 232 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 996,0 234 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1037,0 235 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1002,0 236 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1053,0 237 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1423,0 239 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1476,0 241 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1468,0 242 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1482,0 243 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1509,0 244 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1550,0 246 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1631,0 248 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1582,0 249 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1625,0 250 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1674,0 251 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1378,0 253 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1393,0 255 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1401,0 256 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1482,0 257 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1588,0 259 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1637,0 261 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1645,0 262 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1625,0 263 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1023,0 265 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1043,0 267 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1037,0 268 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1446,0 270 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1460,0 272 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1476,0 273 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1495,0 275 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1509,0 277 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1515,0 278 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1521,0 280 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1544,0 282 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1631,0 283 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1651,0 285 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1674,0 287 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1680,0 288 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 901,0 290 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 964,0 292 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 972,0 293 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 996,0 294 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1099,0 296 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1155,0 298 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1161,0 299 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1183,0 300 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 1393,0 304 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+GRAPHIC 510,0 305 0 
+DESIGN @stage_@memory
+VIEW struct.bd
+NO_GRAPHIC 307

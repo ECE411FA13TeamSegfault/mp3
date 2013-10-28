@@ -70,7 +70,7 @@ m 1
 decl (Decl
 n "MREAD_L"
 t "std_logic"
-o 19
+o 28
 suid 670,0
 )
 )
@@ -81,7 +81,7 @@ port (LogicalPort
 decl (Decl
 n "MRESP_H"
 t "std_logic"
-o 20
+o 5
 suid 671,0
 )
 )
@@ -93,7 +93,7 @@ m 1
 decl (Decl
 n "MWRITEH_L"
 t "std_logic"
-o 21
+o 29
 suid 672,0
 )
 )
@@ -105,7 +105,7 @@ m 1
 decl (Decl
 n "MWRITEL_L"
 t "std_logic"
-o 22
+o 30
 suid 673,0
 )
 )
@@ -116,7 +116,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 7
 suid 674,0
 )
 )
@@ -127,7 +127,7 @@ port (LogicalPort
 decl (Decl
 n "START_H"
 t "std_logic"
-o 2
+o 8
 suid 675,0
 )
 )
@@ -139,7 +139,7 @@ m 1
 decl (Decl
 n "ADDR2MuxSel"
 t "std_logic"
-o 34
+o 15
 suid 676,0
 )
 )
@@ -151,7 +151,7 @@ lang 11
 decl (Decl
 n "ADDRESS_0"
 t "std_logic"
-o 36
+o 1
 suid 677,0
 )
 )
@@ -163,7 +163,7 @@ m 1
 decl (Decl
 n "ALUMuxSel"
 t "std_logic"
-o 4
+o 16
 suid 678,0
 )
 )
@@ -175,7 +175,7 @@ m 1
 decl (Decl
 n "ALUop"
 t "LC3b_aluop"
-o 5
+o 17
 suid 679,0
 )
 )
@@ -186,7 +186,7 @@ port (LogicalPort
 decl (Decl
 n "bit11"
 t "std_logic"
-o 39
+o 9
 suid 680,0
 )
 )
@@ -197,7 +197,7 @@ port (LogicalPort
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 6
+o 2
 suid 681,0
 )
 )
@@ -208,7 +208,7 @@ port (LogicalPort
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 7
+o 3
 suid 682,0
 )
 )
@@ -219,7 +219,7 @@ port (LogicalPort
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 8
+o 4
 suid 683,0
 )
 )
@@ -231,7 +231,7 @@ lang 11
 decl (Decl
 n "clk"
 t "std_logic"
-o 28
+o 10
 suid 684,0
 )
 )
@@ -244,7 +244,7 @@ m 1
 decl (Decl
 n "DRMuxSel"
 t "std_logic"
-o 38
+o 18
 suid 685,0
 )
 )
@@ -256,7 +256,7 @@ m 1
 decl (Decl
 n "GenCCMuxSel"
 t "std_logic"
-o 35
+o 19
 suid 686,0
 )
 )
@@ -268,7 +268,7 @@ m 1
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 12
+o 20
 suid 687,0
 )
 )
@@ -280,7 +280,7 @@ m 1
 decl (Decl
 n "LoadMAR"
 t "std_logic"
-o 13
+o 21
 suid 688,0
 )
 )
@@ -292,7 +292,7 @@ m 1
 decl (Decl
 n "LoadMDR"
 t "std_logic"
-o 14
+o 22
 suid 689,0
 )
 )
@@ -304,7 +304,7 @@ m 1
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 15
+o 23
 suid 690,0
 )
 )
@@ -316,7 +316,7 @@ m 1
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 16
+o 24
 suid 691,0
 )
 )
@@ -328,7 +328,7 @@ m 1
 decl (Decl
 n "MARMuxSel"
 t "LC3b_4Mux_Sel"
-o 17
+o 25
 suid 692,0
 )
 )
@@ -343,7 +343,7 @@ n "MDRMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 37
+o 26
 suid 693,0
 )
 )
@@ -355,7 +355,7 @@ m 1
 decl (Decl
 n "MDRMuxSel"
 t "std_logic"
-o 18
+o 27
 suid 694,0
 )
 )
@@ -366,7 +366,7 @@ port (LogicalPort
 decl (Decl
 n "n"
 t "std_logic"
-o 29
+o 11
 suid 695,0
 )
 )
@@ -378,7 +378,7 @@ m 1
 decl (Decl
 n "offset6MuxSel"
 t "std_logic"
-o 30
+o 36
 suid 696,0
 )
 )
@@ -389,7 +389,7 @@ port (LogicalPort
 decl (Decl
 n "Opcode"
 t "LC3b_opcode"
-o 23
+o 6
 suid 697,0
 )
 )
@@ -400,7 +400,7 @@ port (LogicalPort
 decl (Decl
 n "p"
 t "std_logic"
-o 31
+o 12
 suid 698,0
 )
 )
@@ -412,7 +412,7 @@ m 1
 decl (Decl
 n "PCMuxSel"
 t "LC3b_4Mux_Sel"
-o 24
+o 31
 suid 699,0
 )
 )
@@ -424,7 +424,7 @@ m 1
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 26
+o 34
 suid 700,0
 )
 )
@@ -439,7 +439,7 @@ n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 36
+o 32
 suid 701,0
 )
 )
@@ -451,7 +451,7 @@ m 1
 decl (Decl
 n "RFMuxSel"
 t "LC3b_4Mux_Sel"
-o 25
+o 33
 suid 702,0
 )
 )
@@ -463,7 +463,7 @@ lang 11
 decl (Decl
 n "shftop"
 t "LC3b_shftop"
-o 32
+o 13
 suid 703,0
 )
 )
@@ -475,7 +475,7 @@ m 1
 decl (Decl
 n "StoreSR"
 t "std_logic"
-o 27
+o 35
 suid 704,0
 )
 )
@@ -486,7 +486,7 @@ port (LogicalPort
 decl (Decl
 n "z"
 t "std_logic"
-o 33
+o 14
 suid 705,0
 )
 )
@@ -1067,7 +1067,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a3.ews.illinois.edu"
+value "siebl-0220-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -1159,7 +1159,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "12:20:12"
+value "14:57:44"
 )
 (vvPair
 variable "unit"
@@ -1225,13 +1225,16 @@ uid 5922,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,26100,62000,27000"
+st "MREAD_L       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MREAD_L"
 t "std_logic"
-o 19
+o 28
 suid 670,0
 )
 )
@@ -1268,12 +1271,15 @@ uid 5927,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,5400,62000,6300"
+st "MRESP_H       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "MRESP_H"
 t "std_logic"
-o 20
+o 5
 suid 671,0
 )
 )
@@ -1310,13 +1316,16 @@ uid 5932,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,27000,62000,27900"
+st "MWRITEH_L     : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MWRITEH_L"
 t "std_logic"
-o 21
+o 29
 suid 672,0
 )
 )
@@ -1353,13 +1362,16 @@ uid 5937,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,27900,62000,28800"
+st "MWRITEL_L     : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MWRITEL_L"
 t "std_logic"
-o 22
+o 30
 suid 673,0
 )
 )
@@ -1398,12 +1410,15 @@ uid 5942,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,7200,62000,8100"
+st "RESET_L       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 7
 suid 674,0
 )
 )
@@ -1442,12 +1457,15 @@ uid 5947,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,8100,62000,9000"
+st "START_H       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "START_H"
 t "std_logic"
-o 2
+o 8
 suid 675,0
 )
 )
@@ -1485,13 +1503,16 @@ uid 5952,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,14400,62000,15300"
+st "ADDR2MuxSel   : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "ADDR2MuxSel"
 t "std_logic"
-o 34
+o 15
 suid 676,0
 )
 )
@@ -1528,13 +1549,16 @@ uid 5957,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,1800,62000,2700"
+st "ADDRESS_0     : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "ADDRESS_0"
 t "std_logic"
-o 36
+o 1
 suid 677,0
 )
 )
@@ -1572,13 +1596,16 @@ uid 5962,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,15300,62000,16200"
+st "ALUMuxSel     : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "ALUMuxSel"
 t "std_logic"
-o 4
+o 16
 suid 678,0
 )
 )
@@ -1616,13 +1643,16 @@ uid 5967,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,16200,62500,17100"
+st "ALUop         : OUT    LC3b_aluop  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "ALUop"
 t "LC3b_aluop"
-o 5
+o 17
 suid 679,0
 )
 )
@@ -1659,12 +1689,15 @@ uid 5972,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9000,62000,9900"
+st "bit11         : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "bit11"
 t "std_logic"
-o 39
+o 9
 suid 680,0
 )
 )
@@ -1701,12 +1734,15 @@ uid 5977,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,2700,62000,3600"
+st "CheckN        : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 6
+o 2
 suid 681,0
 )
 )
@@ -1743,12 +1779,15 @@ uid 5982,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,3600,62000,4500"
+st "CheckP        : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 7
+o 3
 suid 682,0
 )
 )
@@ -1785,12 +1824,15 @@ uid 5987,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,4500,62000,5400"
+st "CheckZ        : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 8
+o 4
 suid 683,0
 )
 )
@@ -1827,13 +1869,16 @@ uid 5992,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9900,62000,10800"
+st "clk           : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "clk"
 t "std_logic"
-o 28
+o 10
 suid 684,0
 )
 )
@@ -1871,6 +1916,9 @@ uid 5997,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,17100,62000,18000"
+st "DRMuxSel      : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1878,7 +1926,7 @@ m 1
 decl (Decl
 n "DRMuxSel"
 t "std_logic"
-o 38
+o 18
 suid 685,0
 )
 )
@@ -1916,13 +1964,16 @@ uid 6002,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,18000,62000,18900"
+st "GenCCMuxSel   : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "GenCCMuxSel"
 t "std_logic"
-o 35
+o 19
 suid 686,0
 )
 )
@@ -1960,13 +2011,16 @@ uid 6007,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,18900,62000,19800"
+st "LoadIR        : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 12
+o 20
 suid 687,0
 )
 )
@@ -2004,13 +2058,16 @@ uid 6012,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,19800,62000,20700"
+st "LoadMAR       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "LoadMAR"
 t "std_logic"
-o 13
+o 21
 suid 688,0
 )
 )
@@ -2048,13 +2105,16 @@ uid 6017,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,20700,62000,21600"
+st "LoadMDR       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "LoadMDR"
 t "std_logic"
-o 14
+o 22
 suid 689,0
 )
 )
@@ -2092,13 +2152,16 @@ uid 6022,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,21600,62000,22500"
+st "LoadNZP       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 15
+o 23
 suid 690,0
 )
 )
@@ -2136,13 +2199,16 @@ uid 6027,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,22500,62000,23400"
+st "LoadPC        : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 16
+o 24
 suid 691,0
 )
 )
@@ -2180,13 +2246,16 @@ uid 6032,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,23400,64000,24300"
+st "MARMuxSel     : OUT    LC3b_4Mux_Sel  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MARMuxSel"
 t "LC3b_4Mux_Sel"
-o 17
+o 25
 suid 692,0
 )
 )
@@ -2224,6 +2293,9 @@ uid 6037,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,24300,64000,25200"
+st "MDRMux2Sel    : OUT    LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -2233,7 +2305,7 @@ n "MDRMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 37
+o 26
 suid 693,0
 )
 )
@@ -2271,13 +2343,16 @@ uid 6042,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,25200,62000,26100"
+st "MDRMuxSel     : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "MDRMuxSel"
 t "std_logic"
-o 18
+o 27
 suid 694,0
 )
 )
@@ -2314,12 +2389,15 @@ uid 6047,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,10800,62000,11700"
+st "n             : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "n"
 t "std_logic"
-o 29
+o 11
 suid 695,0
 )
 )
@@ -2357,13 +2435,16 @@ uid 6052,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,33300,61000,34200"
+st "offset6MuxSel : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "offset6MuxSel"
 t "std_logic"
-o 30
+o 36
 suid 696,0
 )
 )
@@ -2400,12 +2481,15 @@ uid 6057,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,6300,63000,7200"
+st "Opcode        : IN     LC3b_opcode  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Opcode"
 t "LC3b_opcode"
-o 23
+o 6
 suid 697,0
 )
 )
@@ -2442,12 +2526,15 @@ uid 6062,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,11700,62000,12600"
+st "p             : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "p"
 t "std_logic"
-o 31
+o 12
 suid 698,0
 )
 )
@@ -2485,13 +2572,16 @@ uid 6067,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,28800,64000,29700"
+st "PCMuxSel      : OUT    LC3b_4Mux_Sel  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "PCMuxSel"
 t "LC3b_4Mux_Sel"
-o 24
+o 31
 suid 699,0
 )
 )
@@ -2529,13 +2619,16 @@ uid 6072,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,31500,62000,32400"
+st "RegWrite      : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 26
+o 34
 suid 700,0
 )
 )
@@ -2573,6 +2666,9 @@ uid 6077,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,29700,64000,30600"
+st "RFMux2Sel     : OUT    LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -2582,7 +2678,7 @@ n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 36
+o 32
 suid 701,0
 )
 )
@@ -2620,13 +2716,16 @@ uid 6082,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,30600,64000,31500"
+st "RFMuxSel      : OUT    LC3b_4Mux_Sel  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "RFMuxSel"
 t "LC3b_4Mux_Sel"
-o 25
+o 33
 suid 702,0
 )
 )
@@ -2663,13 +2762,16 @@ uid 6087,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,12600,63000,13500"
+st "shftop        : IN     LC3b_shftop  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "shftop"
 t "LC3b_shftop"
-o 32
+o 13
 suid 703,0
 )
 )
@@ -2707,13 +2809,16 @@ uid 6092,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,32400,62000,33300"
+st "StoreSR       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "StoreSR"
 t "std_logic"
-o 27
+o 35
 suid 704,0
 )
 )
@@ -2750,12 +2855,15 @@ uid 6097,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,13500,62000,14400"
+st "z             : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "z"
 t "std_logic"
-o 33
+o 14
 suid 705,0
 )
 )
@@ -3471,7 +3579,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 6169,0
+lastUid 6192,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
