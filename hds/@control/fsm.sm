@@ -73,23 +73,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chng2/ece411/mp2/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chng2/ece411/mp2/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chng2/ece411/mp2/hds/@control/fsm.sm.info"
+value "/home/li151/ece411/mp3/hds/@control/fsm.sm.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chng2/ece411/mp2/hds/@control/fsm.sm.user"
+value "/home/li151/ece411/mp3/hds/@control/fsm.sm.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chng2/ece411/mp2/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -105,27 +105,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chng2/ece411/mp2/hds/@control"
+value "/home/li151/ece411/mp3/hds/@control"
 )
 (vvPair
 variable "d_logical"
-value "/home/chng2/ece411/mp2/hds/Control"
+value "/home/li151/ece411/mp3/hds/Control"
 )
 (vvPair
 variable "date"
-value "09/13/13"
+value "10/28/13"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "13"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -153,7 +153,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a2.ews.illinois.edu"
+value "linux-a3.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -169,7 +169,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "09"
+value "10"
 )
 (vvPair
 variable "module_name"
@@ -177,19 +177,19 @@ value "Control"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Oct"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "October"
 )
 (vvPair
 variable "p"
-value "/home/chng2/ece411/mp2/hds/@control/fsm.sm"
+value "/home/li151/ece411/mp3/hds/@control/fsm.sm"
 )
 (vvPair
 variable "p_logical"
-value "/home/chng2/ece411/mp2/hds/Control/fsm.sm"
+value "/home/li151/ece411/mp3/hds/Control/fsm.sm"
 )
 (vvPair
 variable "package_name"
@@ -197,7 +197,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "ece411"
+value "ece411_mp3"
 )
 (vvPair
 variable "series"
@@ -213,7 +213,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -221,7 +221,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -245,7 +245,7 @@ value "fsm"
 )
 (vvPair
 variable "time"
-value "11:41:27"
+value "12:20:11"
 )
 (vvPair
 variable "unit"
@@ -253,7 +253,7 @@ value "Control"
 )
 (vvPair
 variable "user"
-value "chng2"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -17853,7 +17853,7 @@ fg "65535,65535,65535"
 bg "0,0,0"
 lineColor "0,32768,49152"
 )
-xt "35889,29618,49589,33318"
+xt "42527,28213,56227,31913"
 )
 autoResize 1
 lineShape (Line
@@ -17862,10 +17862,10 @@ va (VaSet
 vasetType 3
 isHidden 1
 )
-xt "38639,31418,38639,31418"
+xt "45277,30013,45277,30013"
 pts [
-"38639,31418"
-"38639,31418"
+"45277,30013"
+"45277,30013"
 ]
 )
 condition (MLText
@@ -17873,7 +17873,7 @@ uid 463,0
 va (VaSet
 font "courier,8,0"
 )
-xt "36389,30118,49089,32818"
+xt "43027,28713,55727,31413"
 st "( ( n AND CheckN ) OR
 ( p AND CheckP ) OR
 ( z AND CheckZ ) ) = '1'"
@@ -17884,7 +17884,7 @@ uid 464,0
 va (VaSet
 font "courier,8,0"
 )
-xt "42739,33218,42739,33218"
+xt "49377,31813,49377,31813"
 tm "Actions"
 )
 )
@@ -19826,8 +19826,8 @@ tm "SmCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "16,23,1134,1326"
-viewArea "-15900,-38414,53015,50906"
+windowSize "10,23,1128,747"
+viewArea "-2481,-42682,57031,-5778"
 cachedDiagramExtent "-672,-52720,79986,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-1000,-53000"
@@ -20283,7 +20283,7 @@ stateOrder [
 name "csm"
 )
 ]
-lastUid 3648,0
+lastUid 3677,0
 commonDM (CommonDM
 ldm (LogicalDM
 emptyRow *283 (LEmptyRow
@@ -20835,31 +20835,31 @@ uid 808,0
 )
 *343 (MRCItem
 litem &302
-pos 11
+pos 5
 dimension 20
 uid 159,0
 )
 *344 (MRCItem
 litem &303
-pos 12
+pos 3
 dimension 20
 uid 161,0
 )
 *345 (MRCItem
 litem &304
-pos 13
+pos 1
 dimension 20
 uid 163,0
 )
 *346 (MRCItem
 litem &305
-pos 1
+pos 0
 dimension 20
 uid 165,0
 )
 *347 (MRCItem
 litem &306
-pos 27
+pos 2
 dimension 20
 uid 167,0
 )
@@ -20871,109 +20871,109 @@ uid 169,0
 )
 *349 (MRCItem
 litem &308
-pos 5
+pos 6
 dimension 20
 uid 171,0
 )
 *350 (MRCItem
 litem &309
-pos 14
+pos 9
 dimension 20
 uid 173,0
 )
 *351 (MRCItem
 litem &310
-pos 25
+pos 10
 dimension 20
 uid 175,0
 )
 *352 (MRCItem
 litem &311
-pos 28
+pos 11
 dimension 20
 uid 177,0
 )
 *353 (MRCItem
 litem &312
-pos 35
+pos 13
 dimension 20
 uid 179,0
 )
 *354 (MRCItem
 litem &313
-pos 8
+pos 14
 dimension 20
 uid 181,0
 )
 *355 (MRCItem
 litem &314
-pos 9
+pos 15
 dimension 20
 uid 183,0
 )
 *356 (MRCItem
 litem &315
-pos 17
+pos 19
 dimension 20
 uid 185,0
 )
 *357 (MRCItem
 litem &316
-pos 18
+pos 20
 dimension 20
 uid 187,0
 )
 *358 (MRCItem
 litem &317
-pos 19
+pos 21
 dimension 20
 uid 189,0
 )
 *359 (MRCItem
 litem &318
-pos 20
+pos 22
 dimension 20
 uid 191,0
 )
 *360 (MRCItem
 litem &319
-pos 21
+pos 23
 dimension 20
 uid 193,0
 )
 *361 (MRCItem
 litem &320
-pos 22
+pos 24
 dimension 20
 uid 195,0
 )
 *362 (MRCItem
 litem &321
-pos 24
+pos 26
 dimension 20
 uid 197,0
 )
 *363 (MRCItem
 litem &322
-pos 0
+pos 27
 dimension 20
 uid 199,0
 )
 *364 (MRCItem
 litem &323
-pos 2
+pos 28
 dimension 20
 uid 201,0
 )
 *365 (MRCItem
 litem &324
-pos 3
+pos 29
 dimension 20
 uid 203,0
 )
 *366 (MRCItem
 litem &325
-pos 29
+pos 30
 dimension 20
 uid 205,0
 )
@@ -20985,7 +20985,7 @@ uid 207,0
 )
 *368 (MRCItem
 litem &327
-pos 30
+pos 33
 dimension 20
 uid 209,0
 )
@@ -20997,25 +20997,25 @@ uid 211,0
 )
 *370 (MRCItem
 litem &329
-pos 33
+pos 12
 dimension 20
 uid 1275,0
 )
 *371 (MRCItem
 litem &330
-pos 26
+pos 35
 dimension 20
 uid 1529,0
 )
 *372 (MRCItem
 litem &331
-pos 6
+pos 16
 dimension 20
 uid 2039,0
 )
 *373 (MRCItem
 litem &332
-pos 16
+pos 18
 dimension 20
 uid 2041,0
 )
@@ -21033,19 +21033,19 @@ uid 2103,0
 )
 *376 (MRCItem
 litem &335
-pos 23
+pos 25
 dimension 20
 uid 2237,0
 )
 *377 (MRCItem
 litem &336
-pos 15
+pos 17
 dimension 20
 uid 2908,0
 )
 *378 (MRCItem
 litem &337
-pos 10
+pos 8
 dimension 20
 uid 3149,0
 )
@@ -21076,6 +21076,7 @@ uid 811,0
 litem &290
 pos 2
 dimension 70
+sortAscending 0
 uid 812,0
 )
 *382 (MRCItem

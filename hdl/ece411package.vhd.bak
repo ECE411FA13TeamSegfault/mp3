@@ -45,9 +45,38 @@ PACKAGE LC3B_TYPES IS
 	END RECORD;
 	
 	TYPE CONTROL_WORD IS RECORD
-	    ex : EX_CONTROL;
-	    mem, wb : LC3B_WORD;
-	    name : OPNAME;
+	    ex 					: EX_CONTROL;
+	    mem, wb 					: LC3B_WORD;
+	    name 					: OPNAME;
+	    
+	    -- Stage IF
+	    PCMuxsel					: LC3B_4MUX_SEL;
+	    
+	    -- Stage ID
+	    DRMuxsel					: std_logic;
+	    StoreMuxsel					: std_logic;
+	    
+	    -- Stage EX
+	    ADDR1Muxsel					: std_logic;
+	    ADDR2Muxsel					: LC3B_4MUX_SEL;
+	    ALUMuxsel					: LC3B_4MUX_SEL;
+	    ALUop					: LC3B_ALUOP;
+	    
+	    -- Stage MEM
+	    MARMuxsel					: LC3B_4MUX_SEL;
+	    MDRMuxsel					: LC3B_4MUX_SEL;
+	    Read_H					: std_logic;
+	    Write_H					: std_logic;
+	    
+	    -- Stage WB
+	    GenCCMuxsel					: std_logic;
+	    LoadNZP					: std_logic;
+	    RFMux2sel					: LC3B_4MUX_SEL;
+	    RFMuxsel					: LC3B_4MUX_SEL;
+	    RegWrite					: std_logic;
+	    
+	    
+	    
 	END RECORD;
 	
 	-- ALU OP DEFINITIONS

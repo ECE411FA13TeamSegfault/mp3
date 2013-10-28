@@ -57,23 +57,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/schen79/ece411/mp3/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/schen79/ece411/mp3/hds/mp2_@c@p@u/struct.bd.info"
+value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/schen79/ece411/mp3/hds/mp2_@c@p@u/struct.bd.user"
+value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -89,27 +89,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/schen79/ece411/mp3/hds/mp2_@c@p@u"
+value "/home/li151/ece411/mp3/hds/mp2_@c@p@u"
 )
 (vvPair
 variable "d_logical"
-value "/home/schen79/ece411/mp3/hds/mp2_CPU"
+value "/home/li151/ece411/mp3/hds/mp2_CPU"
 )
 (vvPair
 variable "date"
-value "10/19/13"
+value "10/28/13"
 )
 (vvPair
 variable "day"
-value "Sat"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Saturday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "19"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -137,7 +137,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "linux-a3.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -169,11 +169,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/schen79/ece411/mp3/hds/mp2_@c@p@u/struct.bd"
+value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/schen79/ece411/mp3/hds/mp2_CPU/struct.bd"
+value "/home/li151/ece411/mp3/hds/mp2_CPU/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -197,7 +197,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -205,7 +205,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -229,7 +229,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:48:12"
+value "12:20:12"
 )
 (vvPair
 variable "unit"
@@ -237,7 +237,7 @@ value "mp2_CPU"
 )
 (vvPair
 variable "user"
-value "schen79"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -1592,12 +1592,9 @@ st "SIGNAL bit11         : std_logic
 )
 *52 (Net
 uid 3629,0
-lang 11
 decl (Decl
-n "ALUMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "ALUMuxSel"
+t "std_logic"
 o 4
 suid 96,0
 )
@@ -1606,8 +1603,8 @@ uid 3630,0
 va (VaSet
 font "courier,8,0"
 )
-xt "66000,8900,84500,9800"
-st "SIGNAL ALUMuxsel     : LC3b_4mux_sel
+xt "66000,8900,82500,9800"
+st "SIGNAL ALUMuxSel     : std_logic
 "
 )
 )
@@ -1721,12 +1718,9 @@ st "SIGNAL LoadPC        : std_logic
 )
 *59 (Net
 uid 3671,0
-lang 11
 decl (Decl
-n "MARMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "MARMuxSel"
+t "LC3b_4Mux_Sel"
 o 17
 suid 103,0
 )
@@ -1736,18 +1730,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,21500,84500,22400"
-st "SIGNAL MARMuxsel     : LC3b_4mux_sel
+st "SIGNAL MARMuxSel     : LC3b_4Mux_Sel
 "
 )
 )
 *60 (Net
 uid 3677,0
-lang 11
 decl (Decl
-n "MDRMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "MDRMuxSel"
+t "std_logic"
 o 18
 suid 104,0
 )
@@ -1756,19 +1747,16 @@ uid 3678,0
 va (VaSet
 font "courier,8,0"
 )
-xt "66000,23300,84500,24200"
-st "SIGNAL MDRMuxsel     : LC3b_4mux_sel
+xt "66000,23300,82500,24200"
+st "SIGNAL MDRMuxSel     : std_logic
 "
 )
 )
 *61 (Net
 uid 3683,0
-lang 11
 decl (Decl
 n "PCMuxSel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+t "LC3b_4Mux_Sel"
 o 24
 suid 105,0
 )
@@ -1778,18 +1766,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,28700,84500,29600"
-st "SIGNAL PCMuxSel      : LC3b_4mux_sel
+st "SIGNAL PCMuxSel      : LC3b_4Mux_Sel
 "
 )
 )
 *62 (Net
 uid 3689,0
-lang 11
 decl (Decl
-n "RFMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "RFMuxSel"
+t "LC3b_4Mux_Sel"
 o 25
 suid 106,0
 )
@@ -1799,7 +1784,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,30500,84500,31400"
-st "SIGNAL RFMuxsel      : LC3b_4mux_sel
+st "SIGNAL RFMuxSel      : LC3b_4Mux_Sel
 "
 )
 )
@@ -2045,12 +2030,9 @@ st "SIGNAL offset6MuxSel : std_logic
 )
 *73 (Net
 uid 5201,0
-lang 11
 decl (Decl
-n "ADDR2Muxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "ADDR2MuxSel"
+t "std_logic"
 o 34
 suid 125,0
 )
@@ -2059,15 +2041,15 @@ uid 5202,0
 va (VaSet
 font "courier,8,0"
 )
-xt "66000,6200,84500,7100"
-st "SIGNAL ADDR2Muxsel   : LC3b_4mux_sel
+xt "66000,6200,82500,7100"
+st "SIGNAL ADDR2MuxSel   : std_logic
 "
 )
 )
 *74 (Net
 uid 5480,0
 decl (Decl
-n "GenCCMuxsel"
+n "GenCCMuxSel"
 t "std_logic"
 o 35
 suid 126,0
@@ -2078,7 +2060,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,16100,82500,17000"
-st "SIGNAL GenCCMuxsel   : std_logic
+st "SIGNAL GenCCMuxSel   : std_logic
 "
 )
 )
@@ -2086,7 +2068,7 @@ st "SIGNAL GenCCMuxsel   : std_logic
 uid 5491,0
 lang 11
 decl (Decl
-n "RFMux2sel"
+n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
@@ -2099,7 +2081,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,29600,84500,30500"
-st "SIGNAL RFMux2sel     : LC3b_4mux_sel
+st "SIGNAL RFMux2Sel     : LC3b_4mux_sel
 "
 )
 )
@@ -2140,7 +2122,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4500,900"
-st "ALUMuxsel"
+st "ALUMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2420,7 +2402,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4500,900"
-st "MARMuxsel"
+st "MARMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2460,7 +2442,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4500,900"
-st "MDRMuxsel"
+st "MDRMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2540,7 +2522,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4000,900"
-st "RFMuxsel"
+st "RFMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2700,7 +2682,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,6000,900"
-st "ADDR2Muxsel"
+st "ADDR2MuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2740,7 +2722,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,6000,900"
-st "GenCCMuxsel"
+st "GenCCMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2780,7 +2762,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4500,900"
-st "RFMux2sel"
+st "RFMux2Sel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2880,7 +2862,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "0,0,4000,900"
-st "DRMuxsel"
+st "DRMuxSel"
 blo "0,700"
 tm "WireNameMgr"
 )
@@ -2889,7 +2871,7 @@ on *97 (Net
 uid 6306,0
 lang 11
 decl (Decl
-n "DRMuxsel"
+n "DRMuxSel"
 t "std_logic"
 o 38
 suid 132,0
@@ -2900,7 +2882,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,15200,82500,16100"
-st "SIGNAL DRMuxsel      : std_logic
+st "SIGNAL DRMuxSel      : std_logic
 "
 )
 )
@@ -3627,7 +3609,7 @@ isHidden 1
 font "courier,8,0"
 )
 xt "44000,16000,133500,16900"
-st "(ADDR2Muxsel,ALUMuxsel,ALUop,DRMuxsel,GenCCMuxsel,LoadIR,LoadMAR,LoadMDR,LoadNZP,LoadPC,MARMuxsel,MDRMux2Sel,MDRMuxsel,PCMuxSel,RFMux2sel,RFMuxsel,RegWrite,StoreSR,offset6MuxSel)"
+st "(ADDR2MuxSel,ALUMuxSel,ALUop,DRMuxSel,GenCCMuxSel,LoadIR,LoadMAR,LoadMDR,LoadNZP,LoadPC,MARMuxSel,MDRMux2Sel,MDRMuxSel,PCMuxSel,RFMux2Sel,RFMuxSel,RegWrite,StoreSR,offset6MuxSel)"
 tm "BundleContentsMgr"
 )
 )
@@ -4439,7 +4421,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,35100,49000,36000"
-st "ADDR2Muxsel"
+st "ADDR2MuxSel"
 blo "43000,35800"
 tm "WireNameMgr"
 )
@@ -4448,8 +4430,8 @@ uid 8610,0
 va (VaSet
 font "courier,8,0"
 )
-xt "43000,36000,50000,36900"
-st "LC3b_4mux_sel"
+xt "43000,36000,47500,36900"
+st "std_logic"
 blo "43000,36700"
 tm "SignalTypeMgr"
 )
@@ -4484,7 +4466,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,37100,47500,38000"
-st "ALUMuxsel"
+st "ALUMuxSel"
 blo "43000,37800"
 tm "WireNameMgr"
 )
@@ -4493,8 +4475,8 @@ uid 8619,0
 va (VaSet
 font "courier,8,0"
 )
-xt "43000,38000,50000,38900"
-st "LC3b_4mux_sel"
+xt "43000,38000,47500,38900"
+st "std_logic"
 blo "43000,38700"
 tm "SignalTypeMgr"
 )
@@ -4799,7 +4781,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,43100,47000,44000"
-st "DRMuxsel"
+st "DRMuxSel"
 blo "43000,43800"
 tm "WireNameMgr"
 )
@@ -4844,7 +4826,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,45100,49000,46000"
-st "GenCCMuxsel"
+st "GenCCMuxSel"
 blo "43000,45800"
 tm "WireNameMgr"
 )
@@ -5114,7 +5096,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,57100,47500,58000"
-st "MARMuxsel"
+st "MARMuxSel"
 blo "43000,57800"
 tm "WireNameMgr"
 )
@@ -5124,7 +5106,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,58000,50000,58900"
-st "LC3b_4mux_sel"
+st "LC3b_4Mux_Sel"
 blo "43000,58700"
 tm "SignalTypeMgr"
 )
@@ -5159,7 +5141,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,59100,47500,60000"
-st "MDRMuxsel"
+st "MDRMuxSel"
 blo "43000,59800"
 tm "WireNameMgr"
 )
@@ -5168,8 +5150,8 @@ uid 8754,0
 va (VaSet
 font "courier,8,0"
 )
-xt "43000,60000,50000,60900"
-st "LC3b_4mux_sel"
+xt "43000,60000,47500,60900"
+st "std_logic"
 blo "43000,60700"
 tm "SignalTypeMgr"
 )
@@ -5304,7 +5286,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,62000,50000,62900"
-st "LC3b_4mux_sel"
+st "LC3b_4Mux_Sel"
 blo "43000,62700"
 tm "SignalTypeMgr"
 )
@@ -5429,7 +5411,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,67100,47500,68000"
-st "RFMux2sel"
+st "RFMux2Sel"
 blo "43000,67800"
 tm "WireNameMgr"
 )
@@ -5474,7 +5456,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,69100,47000,70000"
-st "RFMuxsel"
+st "RFMuxSel"
 blo "43000,69800"
 tm "WireNameMgr"
 )
@@ -5484,7 +5466,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "43000,70000,50000,70900"
-st "LC3b_4mux_sel"
+st "LC3b_4Mux_Sel"
 blo "43000,70700"
 tm "SignalTypeMgr"
 )
@@ -5717,7 +5699,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 9558,0
+lastUid 9797,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -6942,13 +6924,10 @@ uid 3597,0
 )
 *212 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
-n "ALUMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "ALUMuxSel"
+t "std_logic"
 o 4
 suid 96,0
 )
@@ -7029,13 +7008,10 @@ uid 3865,0
 )
 *219 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
-n "MARMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "MARMuxSel"
+t "LC3b_4Mux_Sel"
 o 17
 suid 103,0
 )
@@ -7044,13 +7020,10 @@ uid 3867,0
 )
 *220 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
-n "MDRMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "MDRMuxSel"
+t "std_logic"
 o 18
 suid 104,0
 )
@@ -7059,13 +7032,10 @@ uid 3869,0
 )
 *221 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
 n "PCMuxSel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+t "LC3b_4Mux_Sel"
 o 24
 suid 105,0
 )
@@ -7074,13 +7044,10 @@ uid 3871,0
 )
 *222 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
-n "RFMuxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "RFMuxSel"
+t "LC3b_4Mux_Sel"
 o 25
 suid 106,0
 )
@@ -7236,13 +7203,10 @@ uid 4665,0
 )
 *235 (LeafLogPort
 port (LogicalPort
-lang 11
 m 4
 decl (Decl
-n "ADDR2Muxsel"
-t "LC3b_4mux_sel"
-preAdd 0
-posAdd 0
+n "ADDR2MuxSel"
+t "std_logic"
 o 34
 suid 125,0
 )
@@ -7253,7 +7217,7 @@ uid 5267,0
 port (LogicalPort
 m 4
 decl (Decl
-n "GenCCMuxsel"
+n "GenCCMuxSel"
 t "std_logic"
 o 35
 suid 126,0
@@ -7266,7 +7230,7 @@ port (LogicalPort
 lang 11
 m 4
 decl (Decl
-n "RFMux2sel"
+n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
@@ -7309,7 +7273,7 @@ port (LogicalPort
 lang 11
 m 4
 decl (Decl
-n "DRMuxsel"
+n "DRMuxSel"
 t "std_logic"
 o 38
 suid 132,0
