@@ -17,8 +17,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY pulse45 IS
    PORT( 
-      clk   : IN     std_logic;
-      sig45 : OUT    std_logic
+      clk  : IN     std_logic;
+      Load : OUT    std_logic
    );
 
 -- Declarations

@@ -69,7 +69,7 @@ port (LogicalPort
 decl (Decl
 n "ADDR1Muxsel"
 t "std_logic"
-o 40
+o 1
 suid 1016,0
 )
 )
@@ -80,7 +80,7 @@ port (LogicalPort
 decl (Decl
 n "ADDR2MuxSel"
 t "std_logic"
-o 34
+o 2
 suid 1017,0
 )
 )
@@ -91,7 +91,7 @@ port (LogicalPort
 decl (Decl
 n "ALUMuxSel"
 t "std_logic"
-o 4
+o 3
 suid 1018,0
 )
 )
@@ -102,7 +102,7 @@ port (LogicalPort
 decl (Decl
 n "ALUop"
 t "LC3b_aluop"
-o 5
+o 4
 suid 1019,0
 )
 )
@@ -114,7 +114,7 @@ m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 6
+o 22
 suid 1020,0
 )
 )
@@ -126,7 +126,7 @@ m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 7
+o 23
 suid 1021,0
 )
 )
@@ -138,7 +138,7 @@ m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 8
+o 24
 suid 1022,0
 )
 )
@@ -152,7 +152,7 @@ n "DATAIN"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 10
+o 5
 suid 1023,0
 )
 )
@@ -164,7 +164,7 @@ m 1
 decl (Decl
 n "DATAOUT"
 t "LC3b_word"
-o 11
+o 25
 suid 1024,0
 )
 )
@@ -176,7 +176,7 @@ lang 11
 decl (Decl
 n "DRMuxSel"
 t "std_logic"
-o 38
+o 6
 suid 1025,0
 )
 )
@@ -187,7 +187,7 @@ port (LogicalPort
 decl (Decl
 n "GenCCMuxSel"
 t "std_logic"
-o 35
+o 7
 suid 1026,0
 )
 )
@@ -198,7 +198,7 @@ port (LogicalPort
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 12
+o 8
 suid 1027,0
 )
 )
@@ -209,7 +209,7 @@ port (LogicalPort
 decl (Decl
 n "LoadMAR"
 t "std_logic"
-o 13
+o 9
 suid 1028,0
 )
 )
@@ -220,7 +220,7 @@ port (LogicalPort
 decl (Decl
 n "LoadMDR"
 t "std_logic"
-o 14
+o 10
 suid 1029,0
 )
 )
@@ -231,7 +231,7 @@ port (LogicalPort
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 15
+o 11
 suid 1030,0
 )
 )
@@ -242,7 +242,7 @@ port (LogicalPort
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 16
+o 12
 suid 1031,0
 )
 )
@@ -253,7 +253,7 @@ port (LogicalPort
 decl (Decl
 n "MARMuxSel"
 t "LC3b_4Mux_Sel"
-o 17
+o 13
 suid 1032,0
 )
 )
@@ -264,7 +264,7 @@ port (LogicalPort
 decl (Decl
 n "MDRMuxSel"
 t "std_logic"
-o 18
+o 14
 suid 1033,0
 )
 )
@@ -276,7 +276,7 @@ m 1
 decl (Decl
 n "n"
 t "std_logic"
-o 29
+o 26
 suid 1034,0
 )
 )
@@ -288,7 +288,7 @@ m 1
 decl (Decl
 n "p"
 t "std_logic"
-o 31
+o 27
 suid 1035,0
 )
 )
@@ -299,7 +299,7 @@ port (LogicalPort
 decl (Decl
 n "PCMuxSel"
 t "LC3b_4Mux_Sel"
-o 24
+o 15
 suid 1036,0
 )
 )
@@ -310,7 +310,7 @@ port (LogicalPort
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 26
+o 19
 suid 1037,0
 )
 )
@@ -321,7 +321,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 16
 suid 1038,0
 )
 )
@@ -335,7 +335,7 @@ n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 36
+o 17
 suid 1039,0
 )
 )
@@ -346,7 +346,7 @@ port (LogicalPort
 decl (Decl
 n "RFMuxSel"
 t "LC3b_4Mux_Sel"
-o 25
+o 18
 suid 1040,0
 )
 )
@@ -358,7 +358,7 @@ lang 11
 decl (Decl
 n "StoreMuxsel"
 t "std_logic"
-o 41
+o 20
 suid 1041,0
 )
 )
@@ -370,7 +370,7 @@ m 1
 decl (Decl
 n "z"
 t "std_logic"
-o 33
+o 28
 suid 1042,0
 )
 )
@@ -382,7 +382,7 @@ lang 11
 decl (Decl
 n "clk"
 t "std_logic"
-o 28
+o 21
 suid 1043,0
 )
 )
@@ -915,7 +915,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a3.ews.illinois.edu"
+value "siebl-0220-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -1007,7 +1007,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "12:20:12"
+value "14:10:51"
 )
 (vvPair
 variable "unit"
@@ -1081,7 +1081,7 @@ thePort (LogicalPort
 decl (Decl
 n "ADDR1Muxsel"
 t "std_logic"
-o 40
+o 1
 suid 1016,0
 )
 )
@@ -1126,7 +1126,7 @@ thePort (LogicalPort
 decl (Decl
 n "ADDR2MuxSel"
 t "std_logic"
-o 34
+o 2
 suid 1017,0
 )
 )
@@ -1171,7 +1171,7 @@ thePort (LogicalPort
 decl (Decl
 n "ALUMuxSel"
 t "std_logic"
-o 4
+o 3
 suid 1018,0
 )
 )
@@ -1216,7 +1216,7 @@ thePort (LogicalPort
 decl (Decl
 n "ALUop"
 t "LC3b_aluop"
-o 5
+o 4
 suid 1019,0
 )
 )
@@ -1263,7 +1263,7 @@ m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 6
+o 22
 suid 1020,0
 )
 )
@@ -1310,7 +1310,7 @@ m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 7
+o 23
 suid 1021,0
 )
 )
@@ -1357,7 +1357,7 @@ m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 8
+o 24
 suid 1022,0
 )
 )
@@ -1405,7 +1405,7 @@ n "DATAIN"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 10
+o 5
 suid 1023,0
 )
 )
@@ -1452,7 +1452,7 @@ m 1
 decl (Decl
 n "DATAOUT"
 t "LC3b_word"
-o 11
+o 25
 suid 1024,0
 )
 )
@@ -1498,7 +1498,7 @@ lang 11
 decl (Decl
 n "DRMuxSel"
 t "std_logic"
-o 38
+o 6
 suid 1025,0
 )
 )
@@ -1543,7 +1543,7 @@ thePort (LogicalPort
 decl (Decl
 n "GenCCMuxSel"
 t "std_logic"
-o 35
+o 7
 suid 1026,0
 )
 )
@@ -1588,7 +1588,7 @@ thePort (LogicalPort
 decl (Decl
 n "LoadIR"
 t "std_logic"
-o 12
+o 8
 suid 1027,0
 )
 )
@@ -1633,7 +1633,7 @@ thePort (LogicalPort
 decl (Decl
 n "LoadMAR"
 t "std_logic"
-o 13
+o 9
 suid 1028,0
 )
 )
@@ -1678,7 +1678,7 @@ thePort (LogicalPort
 decl (Decl
 n "LoadMDR"
 t "std_logic"
-o 14
+o 10
 suid 1029,0
 )
 )
@@ -1723,7 +1723,7 @@ thePort (LogicalPort
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 15
+o 11
 suid 1030,0
 )
 )
@@ -1768,7 +1768,7 @@ thePort (LogicalPort
 decl (Decl
 n "LoadPC"
 t "std_logic"
-o 16
+o 12
 suid 1031,0
 )
 )
@@ -1813,7 +1813,7 @@ thePort (LogicalPort
 decl (Decl
 n "MARMuxSel"
 t "LC3b_4Mux_Sel"
-o 17
+o 13
 suid 1032,0
 )
 )
@@ -1858,7 +1858,7 @@ thePort (LogicalPort
 decl (Decl
 n "MDRMuxSel"
 t "std_logic"
-o 18
+o 14
 suid 1033,0
 )
 )
@@ -1905,7 +1905,7 @@ m 1
 decl (Decl
 n "n"
 t "std_logic"
-o 29
+o 26
 suid 1034,0
 )
 )
@@ -1952,7 +1952,7 @@ m 1
 decl (Decl
 n "p"
 t "std_logic"
-o 31
+o 27
 suid 1035,0
 )
 )
@@ -1997,7 +1997,7 @@ thePort (LogicalPort
 decl (Decl
 n "PCMuxSel"
 t "LC3b_4Mux_Sel"
-o 24
+o 15
 suid 1036,0
 )
 )
@@ -2042,7 +2042,7 @@ thePort (LogicalPort
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 26
+o 19
 suid 1037,0
 )
 )
@@ -2087,7 +2087,7 @@ thePort (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 16
 suid 1038,0
 )
 )
@@ -2135,7 +2135,7 @@ n "RFMux2Sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 36
+o 17
 suid 1039,0
 )
 )
@@ -2180,7 +2180,7 @@ thePort (LogicalPort
 decl (Decl
 n "RFMuxSel"
 t "LC3b_4Mux_Sel"
-o 25
+o 18
 suid 1040,0
 )
 )
@@ -2226,7 +2226,7 @@ lang 11
 decl (Decl
 n "StoreMuxsel"
 t "std_logic"
-o 41
+o 20
 suid 1041,0
 )
 )
@@ -2273,7 +2273,7 @@ m 1
 decl (Decl
 n "z"
 t "std_logic"
-o 33
+o 28
 suid 1042,0
 )
 )
@@ -2319,7 +2319,7 @@ lang 11
 decl (Decl
 n "clk"
 t "std_logic"
-o 28
+o 21
 suid 1043,0
 )
 )
@@ -3035,7 +3035,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 10122,0
+lastUid 10145,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

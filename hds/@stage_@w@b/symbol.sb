@@ -74,7 +74,7 @@ m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 53
+o 12
 suid 37,0
 )
 )
@@ -86,7 +86,7 @@ m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 54
+o 13
 suid 38,0
 )
 )
@@ -98,7 +98,7 @@ m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 55
+o 14
 suid 39,0
 )
 )
@@ -109,7 +109,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 19
+o 11
 suid 40,0
 )
 )
@@ -120,7 +120,7 @@ port (LogicalPort
 decl (Decl
 n "GenCCMuxsel"
 t "std_logic"
-o 56
+o 1
 suid 41,0
 )
 )
@@ -131,7 +131,7 @@ port (LogicalPort
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 57
+o 2
 suid 42,0
 )
 )
@@ -143,7 +143,7 @@ m 1
 decl (Decl
 n "n"
 t "std_logic"
-o 58
+o 17
 suid 43,0
 )
 )
@@ -155,7 +155,7 @@ m 1
 decl (Decl
 n "p"
 t "std_logic"
-o 59
+o 18
 suid 44,0
 )
 )
@@ -166,7 +166,7 @@ port (LogicalPort
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 71
+o 5
 suid 45,0
 )
 )
@@ -180,7 +180,7 @@ n "RFMux2sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 60
+o 3
 suid 46,0
 )
 )
@@ -194,7 +194,7 @@ n "RFMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 61
+o 4
 suid 47,0
 )
 )
@@ -208,7 +208,7 @@ n "WB_ALUout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 62
+o 6
 suid 48,0
 )
 )
@@ -222,7 +222,7 @@ n "WB_BRAddout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 63
+o 7
 suid 49,0
 )
 )
@@ -233,7 +233,7 @@ port (LogicalPort
 decl (Decl
 n "WB_dest"
 t "LC3b_reg"
-o 64
+o 10
 suid 50,0
 )
 )
@@ -247,7 +247,7 @@ n "WB_MDRout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 65
+o 8
 suid 51,0
 )
 )
@@ -261,7 +261,7 @@ n "WB_PCPlus2out"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 66
+o 9
 suid 52,0
 )
 )
@@ -276,7 +276,7 @@ n "WB_RFMuxout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 67
+o 15
 suid 53,0
 )
 )
@@ -288,7 +288,7 @@ m 1
 decl (Decl
 n "WB_WriteRegisters"
 t "std_logic"
-o 73
+o 16
 suid 54,0
 )
 )
@@ -300,7 +300,7 @@ m 1
 decl (Decl
 n "z"
 t "std_logic"
-o 68
+o 19
 suid 55,0
 )
 )
@@ -699,23 +699,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/schen79/ece411/mp3/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@w@b/interface.info"
+value "/home/li151/ece411/mp3/hds/@stage_@w@b/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@w@b/interface.user"
+value "/home/li151/ece411/mp3/hds/@stage_@w@b/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -723,7 +723,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "config"
@@ -731,27 +731,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/schen79/ece411/mp3/hds/@stage_@w@b"
+value "/home/li151/ece411/mp3/hds/@stage_@w@b"
 )
 (vvPair
 variable "d_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_WB"
+value "/home/li151/ece411/mp3/hds/Stage_WB"
 )
 (vvPair
 variable "date"
-value "10/25/13"
+value "10/28/13"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "25"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -763,15 +763,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_logical"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_noext"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "group"
@@ -779,7 +779,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0222-22.ews.illinois.edu"
+value "siebl-0220-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -811,11 +811,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/schen79/ece411/mp3/hds/@stage_@w@b/interface"
+value "/home/li151/ece411/mp3/hds/@stage_@w@b/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_WB/interface"
+value "/home/li151/ece411/mp3/hds/Stage_WB/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -839,7 +839,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -847,7 +847,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -859,19 +859,19 @@ value "<TBD>"
 )
 (vvPair
 variable "this_ext"
-value "<TBD>"
+value "sb"
 )
 (vvPair
 variable "this_file"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "this_file_logical"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "time"
-value "10:42:04"
+value "14:39:39"
 )
 (vvPair
 variable "unit"
@@ -879,7 +879,7 @@ value "Stage_WB"
 )
 (vvPair
 variable "user"
-value "schen79"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -887,7 +887,7 @@ value "2012.1 (Build 6)"
 )
 (vvPair
 variable "view"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "year"
@@ -938,13 +938,16 @@ uid 433,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,11700,64000,12600"
+st "CheckN            : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 53
+o 12
 suid 37,0
 )
 )
@@ -982,13 +985,16 @@ uid 438,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,12600,64000,13500"
+st "CheckP            : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 54
+o 13
 suid 38,0
 )
 )
@@ -1026,13 +1032,16 @@ uid 443,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,13500,64000,14400"
+st "CheckZ            : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 55
+o 14
 suid 39,0
 )
 )
@@ -1069,12 +1078,15 @@ uid 448,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,10800,64000,11700"
+st "clk               : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 19
+o 11
 suid 40,0
 )
 )
@@ -1111,12 +1123,15 @@ uid 453,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,1800,64000,2700"
+st "GenCCMuxsel       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "GenCCMuxsel"
 t "std_logic"
-o 56
+o 1
 suid 41,0
 )
 )
@@ -1153,12 +1168,15 @@ uid 458,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,2700,64000,3600"
+st "LoadNZP           : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "LoadNZP"
 t "std_logic"
-o 57
+o 2
 suid 42,0
 )
 )
@@ -1196,13 +1214,16 @@ uid 463,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,16200,64000,17100"
+st "n                 : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "n"
 t "std_logic"
-o 58
+o 17
 suid 43,0
 )
 )
@@ -1240,13 +1261,16 @@ uid 468,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,17100,64000,18000"
+st "p                 : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "p"
 t "std_logic"
-o 59
+o 18
 suid 44,0
 )
 )
@@ -1283,12 +1307,15 @@ uid 473,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,5400,64000,6300"
+st "RegWrite          : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "RegWrite"
 t "std_logic"
-o 71
+o 5
 suid 45,0
 )
 )
@@ -1325,6 +1352,9 @@ uid 478,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,3600,66000,4500"
+st "RFMux2sel         : IN     LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1333,7 +1363,7 @@ n "RFMux2sel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 60
+o 3
 suid 46,0
 )
 )
@@ -1370,6 +1400,9 @@ uid 483,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,4500,66000,5400"
+st "RFMuxsel          : IN     LC3b_4mux_sel  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1378,7 +1411,7 @@ n "RFMuxsel"
 t "LC3b_4mux_sel"
 preAdd 0
 posAdd 0
-o 61
+o 4
 suid 47,0
 )
 )
@@ -1415,6 +1448,9 @@ uid 488,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,6300,64000,7200"
+st "WB_ALUout         : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1423,7 +1459,7 @@ n "WB_ALUout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 62
+o 6
 suid 48,0
 )
 )
@@ -1460,6 +1496,9 @@ uid 493,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,7200,64000,8100"
+st "WB_BRAddout       : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1468,7 +1507,7 @@ n "WB_BRAddout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 63
+o 7
 suid 49,0
 )
 )
@@ -1505,12 +1544,15 @@ uid 498,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9900,63500,10800"
+st "WB_dest           : IN     LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "WB_dest"
 t "LC3b_reg"
-o 64
+o 10
 suid 50,0
 )
 )
@@ -1547,6 +1589,9 @@ uid 503,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,8100,64000,9000"
+st "WB_MDRout         : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1555,7 +1600,7 @@ n "WB_MDRout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 65
+o 8
 suid 51,0
 )
 )
@@ -1592,6 +1637,9 @@ uid 508,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9000,64000,9900"
+st "WB_PCPlus2out     : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1600,7 +1648,7 @@ n "WB_PCPlus2out"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 66
+o 9
 suid 52,0
 )
 )
@@ -1638,6 +1686,9 @@ uid 513,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,14400,64000,15300"
+st "WB_RFMuxout       : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1647,7 +1698,7 @@ n "WB_RFMuxout"
 t "LC3b_word"
 preAdd 0
 posAdd 0
-o 67
+o 15
 suid 53,0
 )
 )
@@ -1685,13 +1736,16 @@ uid 518,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,15300,64000,16200"
+st "WB_WriteRegisters : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "WB_WriteRegisters"
 t "std_logic"
-o 73
+o 16
 suid 54,0
 )
 )
@@ -1729,13 +1783,16 @@ uid 523,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,18000,63000,18900"
+st "z                 : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "z"
 t "std_logic"
-o 68
+o 19
 suid 55,0
 )
 )
@@ -2111,7 +2168,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,45200,49950"
+xt "32200,49050,43700,49950"
 st "
 %library/%unit/%view
 "
@@ -2451,6 +2508,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 561,0
+lastUid 584,0
 activeModelName "Symbol:CDM"
 )

@@ -20,6 +20,7 @@ ENTITY Control_ROM IS
       -- opcode and IR4, IR5, IR11 in. IR5 chooses Imm or shift. IR4 chooses shift. IR11 chooses JSR/JSRR.
       clk : IN     std_logic;
       opcode  : IN  LC3b_OPCODE;
+      takeBr  : IN  std_logic;
       IR4 : IN std_logic;
       IR5 : IN std_logic;
       IR11  : IN std_logic;
@@ -43,7 +44,7 @@ BEGIN
       -- somemuxSel <= '1';
   ELSE
     CASE opcode is
-      when OP_ADD =>
+      when OP_ADD => --cp1
         cWord.PCMuxSel <= "00";
         cWord.LoadPC <= '1';
         
@@ -70,7 +71,7 @@ BEGIN
         ELSE
           cWord.ALUMuxSel <= "00";
         END IF;
-      when OP_AND => --imm
+      when OP_AND => --imm cp1
         cWord.PCMuxSel <= "00";
         cWord.LoadPC <= '1';
         
@@ -97,8 +98,7 @@ BEGIN
         ELSE
           cWord.ALUMuxSel <= "00";
         END IF;
-      when OP_BR => --where to check nzp condition?
-        cWord.PCMuxSel <= "01";
+      when OP_BR => --where to check nzp condition? cp1
         cWord.LoadPC <= '1';
         
         cWord.DRMuxSel <= '1';
@@ -119,6 +119,11 @@ BEGIN
         cWord.RFMuxSel <= "00";
         cWord.RFMux2Sel <= "00";
         cWord.RegWrite <= '0'; --unsure
+        IF takeBR = '1' THEN --take branch
+          PCMuxSel <= "01";
+        ELSE
+          PCMuxSel <= "00";
+        END IF;
       when OP_JMP => --also RET --not done
         
         cWord.PCMuxSel <= "01";
@@ -214,7 +219,7 @@ BEGIN
         cWord.RFMuxSel <= "00";
         cWord.RFMux2Sel <= "01";
         cWord.RegWrite <= '1'; --unsure
-      when OP_LDR => --not done
+      when OP_LDR => --not done cp1
         cWord.PCMuxSel <= "00";
         cWord.LoadPC <= '1';
         
@@ -228,7 +233,7 @@ BEGIN
         
         cWord.MARMuxSel <= "10";
         cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
+        cWord.Read_H <= '1'; --unsure
         cWord.Write_H <= '0'; --unsure
         
         cWord.GenCCMuxSel <= '0';
@@ -258,7 +263,7 @@ BEGIN
         cWord.RFMuxSel <= "00";
         cWord.RFMux2Sel <= "01";
         cWord.RegWrite <= '1'; --unsure
-      when OP_NOT =>
+      when OP_NOT => --cp1
         cWord.PCMuxSel <= "00";
         cWord.LoadPC <= '1';
         
@@ -373,7 +378,7 @@ BEGIN
         cWord.RFMuxSel <= "00";
         cWord.RFMux2Sel <= "01";
         cWord.RegWrite <= '1'; --unsure
-      when OP_STR => --not done
+      when OP_STR => --not done cp1
         cWord.PCMuxSel <= "00";
         cWord.LoadPC <= '1';
         
@@ -388,10 +393,10 @@ BEGIN
         cWord.MARMuxSel <= "10";
         cWord.MDRMuxSel <= "11";
         cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.Write_H <= '1'; --unsure
         
         cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
+        cWord.LoadNZP <= '0';
         cWord.RFMuxSel <= "00";
         cWord.RFMux2Sel <= "01";
         cWord.RegWrite <= '1'; --unsure

@@ -21,6 +21,7 @@ ENTITY Reg_IF_ID IS
     Load          : IN    std_logic;
     I_DATAIN      : IN    LC3b_word;
     IF_PCPlus2out : IN    LC3b_word;
+    I_MRESP_H     : IN    std_logic;
     IF_IR         : OUT   LC3b_word;
     IF_IMM5       : OUT   LC3B_IMM5;
     IF_INDEX6     : OUT   LC3B_INDEX6;
@@ -60,7 +61,7 @@ BEGIN
       if (Load = '1') then
         tempIR          := I_DATAIN;
         tempPCPlus2out  := IF_PCPlus2out;
-        tempCONTROL					:= IF_CONTROL_INl 
+        tempCONTROL					:= IF_CONTROL_IN; 
       end if;
     end if;
     
