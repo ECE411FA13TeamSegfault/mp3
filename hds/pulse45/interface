@@ -29,7 +29,8 @@ appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 4,0
+ordering 1
+suid 28,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -70,27 +71,27 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
-m 1
-decl (Decl
-n "Load"
-t "std_logic"
-o 80
-suid 3,0
-)
-)
-uid 155,0
-)
-*15 (LogPort
-port (LogicalPort
 lang 11
 decl (Decl
 n "clk"
 t "std_logic"
-o 21
-suid 4,0
+o 1
+suid 27,0
 )
 )
-uid 157,0
+uid 622,0
+)
+*15 (LogPort
+port (LogicalPort
+m 1
+decl (Decl
+n "delayed"
+t "std_logic"
+o 2
+suid 28,0
+)
+)
+uid 624,0
 )
 ]
 )
@@ -146,13 +147,13 @@ uid 85,0
 litem &14
 pos 0
 dimension 20
-uid 156,0
+uid 623,0
 )
 *22 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 158,0
+uid 625,0
 )
 ]
 )
@@ -555,7 +556,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "14:42:03"
+value "17:01:52"
 )
 (vvPair
 variable "unit"
@@ -590,10 +591,53 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *56 (CptPort
-uid 145,0
+uid 612,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 146,0
+uid 613,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "14250,8625,15000,9375"
+)
+tg (CPTG
+uid 614,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 615,0
+va (VaSet
+font "courier,8,0"
+)
+xt "16000,8550,17500,9450"
+st "clk"
+blo "16000,9250"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 616,0
+va (VaSet
+font "courier,8,0"
+)
+)
+thePort (LogicalPort
+lang 11
+decl (Decl
+n "clk"
+t "std_logic"
+o 1
+suid 27,0
+)
+)
+)
+*57 (CptPort
+uid 617,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 618,0
 ro 90
 va (VaSet
 vasetType 1
@@ -602,83 +646,34 @@ fg "0,65535,0"
 xt "23000,8625,23750,9375"
 )
 tg (CPTG
-uid 147,0
+uid 619,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 148,0
+uid 620,0
 va (VaSet
 font "courier,8,0"
 )
-xt "20000,8550,22000,9450"
-st "Load"
+xt "18500,8550,22000,9450"
+st "delayed"
 ju 2
 blo "22000,9250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 149,0
+uid 621,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,2700,56500,3600"
-st "Load : OUT    std_logic 
-"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
-n "Load"
+n "delayed"
 t "std_logic"
-o 80
-suid 3,0
-)
-)
-)
-*57 (CptPort
-uid 150,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 151,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "14250,6625,15000,7375"
-)
-tg (CPTG
-uid 152,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 153,0
-va (VaSet
-font "courier,8,0"
-)
-xt "16000,6550,17500,7450"
-st "clk"
-blo "16000,7250"
-tm "CptPortNameMgr"
-)
-)
-dt (MLText
-uid 154,0
-va (VaSet
-font "courier,8,0"
-)
-xt "44000,1800,57500,2700"
-st "clk  : IN     std_logic  ;
-"
-)
-thePort (LogicalPort
-lang 11
-decl (Decl
-n "clk"
-t "std_logic"
-o 21
-suid 4,0
+o 2
+suid 28,0
 )
 )
 )
@@ -1394,6 +1389,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 158,0
+lastUid 625,0
 activeModelName "Symbol:CDM"
 )

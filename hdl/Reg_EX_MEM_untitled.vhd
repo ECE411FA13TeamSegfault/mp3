@@ -54,13 +54,15 @@ BEGIN
 	variable tempCONTROL				: CONTROL_WORD;
 	
 	BEGIN
+	  tempCONTROL.PCMuxsel := "00";
 		if (Reset_L = '0') then
 			tempALU				:= "0000000000000000";
 			tempBRAdd				:= "0000000000000000";
 			tempdest				:= "000";
 			tempADJ8				:= "0000000000000000";
 			tempPCPlus2				:= "0000000000000000";
-			tempCONTROL				:= (others => '0');
+--			tempCONTROL				:= (others => '0');
+      tempCONTROL.PCMuxsel := "00";
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
 				tempALU			:= EX_ALUout;

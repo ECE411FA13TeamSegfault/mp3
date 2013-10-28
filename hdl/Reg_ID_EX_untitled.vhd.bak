@@ -55,7 +55,7 @@ ENTITY Reg_ID_EX IS
     
     -- Add control word here
     ID_CONTROL_IN		: IN CONTROL_WORD;
-    ID_CONTROL_OUT	: OUT CONTROL_WORD;
+    ID_CONTROL_OUT	: OUT CONTROL_WORD
   );
 END ENTITY Reg_ID_EX;
 

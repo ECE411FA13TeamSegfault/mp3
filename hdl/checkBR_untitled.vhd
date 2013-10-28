@@ -20,7 +20,6 @@ ENTITY checkBR IS
       CheckN : IN     std_logic;
       CheckP : IN     std_logic;
       CheckZ : IN     std_logic;
-      clk    : IN     std_logic;
       n      : IN     std_logic;
       p      : IN     std_logic;
       z      : IN     std_logic;

@@ -17,8 +17,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY pulse45 IS
    PORT( 
-      clk  : IN     std_logic;
-      Load : OUT    std_logic
+      delayed : OUT    std_logic;
+      clk  : IN     std_logic
    );
 
 -- Declarations
@@ -27,12 +27,10 @@ END pulse45 ;
 
 --
 ARCHITECTURE untitled OF pulse45 IS
-  signal delayed : std_logic;
 BEGIN
   delayer : process(clk)
   begin
     delayed <= clk'delayed(45ns);
   end process;
-  sig45 <= ((not clk) and delayed);
 END ARCHITECTURE untitled;
 

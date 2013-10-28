@@ -14,10 +14,15 @@ USE ieee.NUMERIC_STD.all;
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
 ENTITY Delay_Reg IS
+	PORT (
+		INPUT			: IN std_logic;
+		OUTPUT			: OUT std_logic
+	);
 END ENTITY Delay_Reg;
 
 --
 ARCHITECTURE untitled OF Delay_Reg IS
 BEGIN
+	OUTPUT <= INPUT after delay_reg;
 END ARCHITECTURE untitled;
 

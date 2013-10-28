@@ -59,7 +59,7 @@ BEGIN
 			tempPCPlus2	:= "000000000000";
 			tempdest			:= "000";
 			tempMDR			:= "000000000000";
-			tempCONTROL	:= (others => '0');
+--			tempCONTROL	:= (others => '0');
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
 				tempALU			:= EX_ALU;

@@ -492,23 +492,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/schen79/ece411/mp3/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@i@f/symbol.sb.info"
+value "/home/li151/ece411/mp3/hds/@stage_@i@f/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@i@f/symbol.sb.user"
+value "/home/li151/ece411/mp3/hds/@stage_@i@f/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -524,27 +524,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/schen79/ece411/mp3/hds/@stage_@i@f"
+value "/home/li151/ece411/mp3/hds/@stage_@i@f"
 )
 (vvPair
 variable "d_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_IF"
+value "/home/li151/ece411/mp3/hds/Stage_IF"
 )
 (vvPair
 variable "date"
-value "10/26/13"
+value "10/28/13"
 )
 (vvPair
 variable "day"
-value "Sat"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Saturday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "26"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -572,7 +572,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "siebl-0220-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -604,11 +604,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/schen79/ece411/mp3/hds/@stage_@i@f/symbol.sb"
+value "/home/li151/ece411/mp3/hds/@stage_@i@f/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_IF/symbol.sb"
+value "/home/li151/ece411/mp3/hds/Stage_IF/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -632,7 +632,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -640,7 +640,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -664,7 +664,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:50:10"
+value "17:50:45"
 )
 (vvPair
 variable "unit"
@@ -672,7 +672,7 @@ value "Stage_IF"
 )
 (vvPair
 variable "user"
-value "schen79"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -731,8 +731,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,62000,7200"
-st "clk           : IN     std_logic  ;
-"
+st "clk           : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -776,8 +775,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,62000,2700"
-st "IF_BRAddout   : IN     LC3b_word  ;
-"
+st "IF_BRAddout   : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -824,8 +822,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,62000,3600"
-st "IF_MDRout     : IN     LC3b_word  ;
-"
+st "IF_MDRout     : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -871,8 +868,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,61000,9000"
-st "IF_PCout      : OUT    LC3b_word 
-"
+st "IF_PCout      : OUT    LC3b_word "
 )
 thePort (LogicalPort
 m 1
@@ -918,8 +914,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,62000,8100"
-st "IF_PCPlus2out : OUT    LC3b_word  ;
-"
+st "IF_PCPlus2out : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 m 1
@@ -964,8 +959,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,62000,4500"
-st "LoadPC        : IN     std_logic  ;
-"
+st "LoadPC        : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1009,8 +1003,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,64000,5400"
-st "PCMuxSel      : IN     LC3b_4mux_sel  ;
-"
+st "PCMuxSel      : IN     LC3b_4mux_sel  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1057,8 +1050,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,62000,6300"
-st "RESET_L       : IN     std_logic  ;
-"
+st "RESET_L       : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1155,7 +1147,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45200,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1781,6 +1773,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2595,0
+lastUid 2664,0
 activeModelName "Symbol:CDM"
 )

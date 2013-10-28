@@ -19,6 +19,7 @@ ENTITY Control_ROM IS
    PORT( 
       -- opcode and IR4, IR5, IR11 in. IR5 chooses Imm or shift. IR4 chooses shift. IR11 chooses JSR/JSRR.
       clk : IN     std_logic;
+      start_h : IN  std_logic;
       opcode  : IN  LC3b_OPCODE;
       takeBr  : IN  std_logic;
       IR4 : IN std_logic;
@@ -38,9 +39,9 @@ ARCHITECTURE untitled OF Control_ROM IS
   signal cWord  : CONTROL_WORD;
   signal ALUop  : LC3B_ALUOP;
 BEGIN
-  ctrl_sigs : process(opcode)
+  ctrl_sigs : process(opcode, start_h)
   BEGIN
-  IF(0) THEN -- other team checks a fetch, loadUse, and ZextSel_EX signal
+  IF(start_h = '0') THEN -- other team checks a fetch, loadUse, and ZextSel_EX signal
       -- somemuxSel <= '1';
   ELSE
     CASE opcode is
@@ -120,9 +121,9 @@ BEGIN
         cWord.RFMux2Sel <= "00";
         cWord.RegWrite <= '0'; --unsure
         IF takeBR = '1' THEN --take branch
-          PCMuxSel <= "01";
+          cWord.PCMuxSel <= "01";
         ELSE
-          PCMuxSel <= "00";
+          cWord.PCMuxSel <= "00";
         END IF;
       when OP_JMP => --also RET --not done
         
@@ -155,7 +156,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_PASS;
         
@@ -170,10 +171,10 @@ BEGIN
         cWord.RFMux2Sel <= "11";
         cWord.RegWrite <= '1'; --unsure
         IF IR11 = '1' THEN
-          ADDR2MuxSel <= '1';
-          PCMuxSel <= "01";
+          cWord.ADDR2MuxSel <= "01";
+          cWord.PCMuxSel <= "01";
         ELSE
-          PCMuxSel <= '1';
+          cWord.PCMuxSel <= "10";
         END IF;
       when OP_LDI => --check me
         cWord.PCMuxSel <= "00";
@@ -183,7 +184,7 @@ BEGIN
         cWord.StoreMuxSel <= '1';
         
         cWord.ADDR1MuxSel <= '0';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "10";
         cWord.ALUop <= ALU_PASS;
         
@@ -205,7 +206,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -227,7 +228,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -249,7 +250,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -293,7 +294,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -342,7 +343,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -364,7 +365,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -386,7 +387,7 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_ADD;
         
@@ -408,11 +409,11 @@ BEGIN
         cWord.StoreMuxSel <= '0';
         
         cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= '0';
+        cWord.ADDR2MuxSel <= "00";
         cWord.ALUMuxSel <= "00";
         cWord.ALUop <= ALU_PASS;
         
-        cWord.MARMuxSel <= "12";
+        cWord.MARMuxSel <= "10";
         cWord.MDRMuxSel <= "11";
         cWord.Read_H <= '1'; --unsure
         cWord.Write_H <= '0'; --unsure
@@ -447,7 +448,7 @@ BEGIN
     END CASE;
   END IF;
   END PROCESS;
-  CONTROL_WORD <= cWord after delay_rom;
+  CONTROL <= cWord after delay_rom;
   --and create single control word? control_word <= sig1 & sig2 & sig3...
         
 END ARCHITECTURE untitled;

@@ -97,7 +97,7 @@ BEGIN
       tempIMM5      := "0000000000000000";
       tempSEXT6     := "0000000000000000";
       tempPCPlus2   := "0000000000000000";
-      tempCONTROL			:= (others => '0');
+--      tempCONTROL			:= (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then
         tempRFAout    := ID_RFAout;

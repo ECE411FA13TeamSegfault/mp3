@@ -644,23 +644,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/schen79/ece411/mp3/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb.info"
+value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb.user"
+value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/schen79/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -676,27 +676,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory"
+value "/home/li151/ece411/mp3/hds/@stage_@memory"
 )
 (vvPair
 variable "d_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_Memory"
+value "/home/li151/ece411/mp3/hds/Stage_Memory"
 )
 (vvPair
 variable "date"
-value "10/26/13"
+value "10/28/13"
 )
 (vvPair
 variable "day"
-value "Sat"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Saturday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "26"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -724,7 +724,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a3.ews.illinois.edu"
+value "siebl-0220-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -756,11 +756,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/schen79/ece411/mp3/hds/@stage_@memory/symbol.sb"
+value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/schen79/ece411/mp3/hds/Stage_Memory/symbol.sb"
+value "/home/li151/ece411/mp3/hds/Stage_Memory/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -784,7 +784,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -792,7 +792,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -816,7 +816,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "22:23:59"
+value "15:30:54"
 )
 (vvPair
 variable "unit"
@@ -824,7 +824,7 @@ value "Stage_Memory"
 )
 (vvPair
 variable "user"
-value "schen79"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -883,8 +883,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,62000,12600"
-st "clk           : IN     std_logic  ;
-"
+st "clk           : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -928,8 +927,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,62000,2700"
-st "DATAIN        : IN     LC3b_word  ;
-"
+st "DATAIN        : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -976,8 +974,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,62000,3600"
-st "Load          : IN     std_logic  ;
-"
+st "Load          : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1021,8 +1018,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,64000,4500"
-st "MARMuxsel     : IN     LC3b_4mux_sel  ;
-"
+st "MARMuxsel     : IN     LC3b_4mux_sel  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1069,8 +1065,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,64000,5400"
-st "MDRMuxsel     : IN     LC3b_4mux_sel  ;
-"
+st "MDRMuxsel     : IN     LC3b_4mux_sel  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1117,8 +1112,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,62000,6300"
-st "MEM_ALUout    : IN     LC3b_word  ;
-"
+st "MEM_ALUout    : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1166,8 +1160,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,62000,13500"
-st "MEM_MARout    : OUT    LC3b_word  ;
-"
+st "MEM_MARout    : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1213,8 +1206,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,62000,14400"
-st "MEM_MDRout    : OUT    LC3b_word  ;
-"
+st "MEM_MDRout    : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1262,8 +1254,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,62000,7200"
-st "MEM_PCPlus2   : IN     LC3b_word  ;
-"
+st "MEM_PCPlus2   : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1310,8 +1301,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,62000,8100"
-st "MEM_TRAPVECT8 : IN     LC3b_word  ;
-"
+st "MEM_TRAPVECT8 : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1359,8 +1349,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,14400,62000,15300"
-st "MREAD_L       : OUT    std_logic  ;
-"
+st "MREAD_L       : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1405,8 +1394,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,62000,9000"
-st "MRESP_H       : IN     STD_LOGIC  ;
-"
+st "MRESP_H       : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1451,8 +1439,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,15300,61000,16200"
-st "MWRITE_L      : OUT    std_logic 
-"
+st "MWRITE_L      : OUT    std_logic "
 )
 thePort (LogicalPort
 m 1
@@ -1497,8 +1484,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,62000,10800"
-st "Read_H        : IN     STD_LOGIC  ;
-"
+st "Read_H        : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1542,8 +1528,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,62000,9900"
-st "RESET_L       : IN     std_logic  ;
-"
+st "RESET_L       : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1587,8 +1572,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,62000,11700"
-st "Write_H       : IN     STD_LOGIC  ;
-"
+st "Write_H       : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -2310,6 +2294,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 865,0
+lastUid 888,0
 activeModelName "Symbol:CDM"
 )
