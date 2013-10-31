@@ -69,7 +69,7 @@ BEGIN
 
           -- Write high byte
 					IF (D_MWRITEH_L = '0') THEN
-						MEM(INT_D_ADDRESS) := D_DATAOUT(15 DOWNTO 8);
+						MEM(INT_D_ADDRESS + 1) := D_DATAOUT(15 DOWNTO 8);
 					END IF;
 
 					PRE_D_MRESP_H <= '1' AFTER 0 NS, '0' AFTER CLOCK_PERIOD;
