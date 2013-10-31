@@ -644,23 +644,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/li151/ece411/mp3/hdl"
+value "/home/chng2/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb.info"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb.user"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -676,27 +676,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/li151/ece411/mp3/hds/@stage_@memory"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory"
 )
 (vvPair
 variable "d_logical"
-value "/home/li151/ece411/mp3/hds/Stage_Memory"
+value "/home/chng2/ece411/mp3/hds/Stage_Memory"
 )
 (vvPair
 variable "date"
-value "10/28/13"
+value "10/31/13"
 )
 (vvPair
 variable "day"
-value "Mon"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Monday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -724,7 +724,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0220-16.ews.illinois.edu"
+value "linux-a1.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -756,11 +756,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/symbol.sb"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/li151/ece411/mp3/hds/Stage_Memory/symbol.sb"
+value "/home/chng2/ece411/mp3/hds/Stage_Memory/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -784,7 +784,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -792,7 +792,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -816,7 +816,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:30:54"
+value "00:24:54"
 )
 (vvPair
 variable "unit"
@@ -824,7 +824,7 @@ value "Stage_Memory"
 )
 (vvPair
 variable "user"
-value "li151"
+value "chng2"
 )
 (vvPair
 variable "version"
@@ -1668,7 +1668,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45200,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -2294,6 +2294,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 888,0
+lastUid 911,0
 activeModelName "Symbol:CDM"
 )

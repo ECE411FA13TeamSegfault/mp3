@@ -17,7 +17,7 @@ USE ieee.std_logic_arith.all;
 
 ENTITY loadSig IS
    PORT( 
-      clk     : IN     std_logic;
+      clk  : IN     std_logic;
       preLoad : OUT    std_logic
    );
 
@@ -28,6 +28,18 @@ END loadSig ;
 --
 ARCHITECTURE untitled OF loadSig IS
 BEGIN
-  Load <= ((clk) AND NOT(clk'delayed(15ns)));
+  ---------------------------------
+  GenLoadSig : PROCESS (clk)
+  ---------------------------------
+  variable tempLoad: std_logic;
+  variable tempclk: std_logic;
+  BEGIN
+    tempclk := clk'delayed(45 ns);
+--    tempLoad := ((clk) AND NOT(clk'delayed(2ns)));
+    tempLoad := ((clk) AND (NOT (tempclk)));
+    
+    preLoad <= tempLoad after 20 ns;
+    
+  END PROCESS GenLoadSig;    
 END ARCHITECTURE untitled;
 

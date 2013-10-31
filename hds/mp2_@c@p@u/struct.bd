@@ -48,23 +48,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/li151/ece411/mp3/hdl"
+value "/home/chng2/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd.info"
+value "/home/chng2/ece411/mp3/hds/mp2_@c@p@u/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd.user"
+value "/home/chng2/ece411/mp3/hds/mp2_@c@p@u/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -80,27 +80,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u"
+value "/home/chng2/ece411/mp3/hds/mp2_@c@p@u"
 )
 (vvPair
 variable "d_logical"
-value "/home/li151/ece411/mp3/hds/mp2_CPU"
+value "/home/chng2/ece411/mp3/hds/mp2_CPU"
 )
 (vvPair
 variable "date"
-value "10/28/13"
+value "10/31/13"
 )
 (vvPair
 variable "day"
-value "Mon"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Monday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -128,7 +128,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0220-16.ews.illinois.edu"
+value "linux-a1.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -160,11 +160,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/struct.bd"
+value "/home/chng2/ece411/mp3/hds/mp2_@c@p@u/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/li151/ece411/mp3/hds/mp2_CPU/struct.bd"
+value "/home/chng2/ece411/mp3/hds/mp2_CPU/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -188,7 +188,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -196,7 +196,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -220,7 +220,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:31:04"
+value "00:30:41"
 )
 (vvPair
 variable "unit"
@@ -228,7 +228,7 @@ value "mp2_CPU"
 )
 (vvPair
 variable "user"
-value "li151"
+value "chng2"
 )
 (vvPair
 variable "version"
@@ -762,8 +762,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,26900,82500,27800"
-st "SIGNAL MWRITEL_L     : std_logic
-"
+st "SIGNAL MWRITEL_L     : std_logic"
 )
 )
 *21 (Net
@@ -780,8 +779,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,26000,82500,26900"
-st "SIGNAL MWRITEH_L     : std_logic
-"
+st "SIGNAL MWRITEH_L     : std_logic"
 )
 )
 *22 (Net
@@ -798,8 +796,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,25100,82500,26000"
-st "SIGNAL MRESP_H       : std_logic
-"
+st "SIGNAL MRESP_H       : std_logic"
 )
 )
 *23 (PortIoIn
@@ -906,8 +903,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,2400,79000,3300"
-st "RESET_L       : std_logic
-"
+st "RESET_L       : std_logic"
 )
 )
 *26 (Net
@@ -924,8 +920,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,3300,79000,4200"
-st "start_h       : std_logic
-"
+st "start_h       : std_logic"
 )
 )
 *27 (Net
@@ -942,8 +937,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,24200,82500,25100"
-st "SIGNAL MREAD_L       : std_logic
-"
+st "SIGNAL MREAD_L       : std_logic"
 )
 )
 *28 (Net
@@ -960,8 +954,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,14300,82500,15200"
-st "SIGNAL DATAOUT       : LC3b_word
-"
+st "SIGNAL DATAOUT       : LC3b_word"
 )
 )
 *29 (Net
@@ -978,8 +971,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,7100,82500,8000"
-st "SIGNAL ADDRESS       : LC3b_word
-"
+st "SIGNAL ADDRESS       : LC3b_word"
 )
 )
 *30 (Net
@@ -999,8 +991,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,13400,82500,14300"
-st "SIGNAL DATAIN        : LC3b_word
-"
+st "SIGNAL DATAIN        : LC3b_word"
 )
 )
 *31 (BundleNet
@@ -1059,8 +1050,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,10700,82500,11600"
-st "SIGNAL CheckN        : std_logic
-"
+st "SIGNAL CheckN        : std_logic"
 )
 )
 )
@@ -1116,8 +1106,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,11600,82500,12500"
-st "SIGNAL CheckP        : std_logic
-"
+st "SIGNAL CheckP        : std_logic"
 )
 )
 )
@@ -1173,8 +1162,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,12500,82500,13400"
-st "SIGNAL CheckZ        : std_logic
-"
+st "SIGNAL CheckZ        : std_logic"
 )
 )
 )
@@ -1230,8 +1218,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,27800,83500,28700"
-st "SIGNAL Opcode        : LC3b_opcode
-"
+st "SIGNAL Opcode        : LC3b_opcode"
 )
 )
 )
@@ -1287,8 +1274,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,35000,82500,35900"
-st "SIGNAL n             : std_logic
-"
+st "SIGNAL n             : std_logic"
 )
 )
 )
@@ -1344,8 +1330,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,36800,82500,37700"
-st "SIGNAL p             : std_logic
-"
+st "SIGNAL p             : std_logic"
 )
 )
 )
@@ -1402,8 +1387,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,37700,83500,38600"
-st "SIGNAL shftop        : LC3b_shftop
-"
+st "SIGNAL shftop        : LC3b_shftop"
 )
 )
 )
@@ -1459,8 +1443,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,38600,82500,39500"
-st "SIGNAL z             : std_logic
-"
+st "SIGNAL z             : std_logic"
 )
 )
 )
@@ -1517,8 +1500,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,8000,82500,8900"
-st "SIGNAL ADDRESS_0     : std_logic
-"
+st "SIGNAL ADDRESS_0     : std_logic"
 )
 )
 )
@@ -1574,8 +1556,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,34100,82500,35000"
-st "SIGNAL bit11         : std_logic
-"
+st "SIGNAL bit11         : std_logic"
 )
 )
 )
@@ -1595,8 +1576,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,8900,82500,9800"
-st "SIGNAL ALUMuxSel     : std_logic
-"
+st "SIGNAL ALUMuxSel     : std_logic"
 )
 )
 *53 (Net
@@ -1613,8 +1593,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,9800,83000,10700"
-st "SIGNAL ALUop         : LC3b_aluop
-"
+st "SIGNAL ALUop         : LC3b_aluop"
 )
 )
 *54 (Net
@@ -1631,8 +1610,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,17000,82500,17900"
-st "SIGNAL LoadIR        : std_logic
-"
+st "SIGNAL LoadIR        : std_logic"
 )
 )
 *55 (Net
@@ -1649,8 +1627,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,17900,82500,18800"
-st "SIGNAL LoadMAR       : std_logic
-"
+st "SIGNAL LoadMAR       : std_logic"
 )
 )
 *56 (Net
@@ -1667,8 +1644,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,18800,82500,19700"
-st "SIGNAL LoadMDR       : std_logic
-"
+st "SIGNAL LoadMDR       : std_logic"
 )
 )
 *57 (Net
@@ -1685,8 +1661,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,19700,82500,20600"
-st "SIGNAL LoadNZP       : std_logic
-"
+st "SIGNAL LoadNZP       : std_logic"
 )
 )
 *58 (Net
@@ -1703,8 +1678,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,20600,82500,21500"
-st "SIGNAL LoadPC        : std_logic
-"
+st "SIGNAL LoadPC        : std_logic"
 )
 )
 *59 (Net
@@ -1721,8 +1695,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,21500,84500,22400"
-st "SIGNAL MARMuxSel     : LC3b_4Mux_Sel
-"
+st "SIGNAL MARMuxSel     : LC3b_4Mux_Sel"
 )
 )
 *60 (Net
@@ -1739,8 +1712,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,23300,82500,24200"
-st "SIGNAL MDRMuxSel     : std_logic
-"
+st "SIGNAL MDRMuxSel     : std_logic"
 )
 )
 *61 (Net
@@ -1757,8 +1729,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,28700,84500,29600"
-st "SIGNAL PCMuxSel      : LC3b_4Mux_Sel
-"
+st "SIGNAL PCMuxSel      : LC3b_4Mux_Sel"
 )
 )
 *62 (Net
@@ -1775,8 +1746,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,30500,84500,31400"
-st "SIGNAL RFMuxSel      : LC3b_4Mux_Sel
-"
+st "SIGNAL RFMuxSel      : LC3b_4Mux_Sel"
 )
 )
 *63 (Net
@@ -1793,8 +1763,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,31400,82500,32300"
-st "SIGNAL RegWrite      : std_logic
-"
+st "SIGNAL RegWrite      : std_logic"
 )
 )
 *64 (Net
@@ -1811,8 +1780,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,33200,82500,34100"
-st "SIGNAL StoreSR       : std_logic
-"
+st "SIGNAL StoreSR       : std_logic"
 )
 )
 &41
@@ -1837,8 +1805,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,35900,82500,36800"
-st "SIGNAL offset6MuxSel : std_logic
-"
+st "SIGNAL offset6MuxSel : std_logic"
 )
 )
 *66 (Net
@@ -1855,8 +1822,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,6200,82500,7100"
-st "SIGNAL ADDR2MuxSel   : std_logic
-"
+st "SIGNAL ADDR2MuxSel   : std_logic"
 )
 )
 *67 (Net
@@ -1873,8 +1839,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,16100,82500,17000"
-st "SIGNAL GenCCMuxSel   : std_logic
-"
+st "SIGNAL GenCCMuxSel   : std_logic"
 )
 )
 *68 (Net
@@ -1894,8 +1859,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,29600,84500,30500"
-st "SIGNAL RFMux2Sel     : LC3b_4mux_sel
-"
+st "SIGNAL RFMux2Sel     : LC3b_4mux_sel"
 )
 )
 *69 (BundleNet
@@ -2637,8 +2601,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,22400,84500,23300"
-st "SIGNAL MDRMux2Sel    : LC3b_4mux_sel
-"
+st "SIGNAL MDRMux2Sel    : LC3b_4mux_sel"
 )
 )
 )
@@ -2695,8 +2658,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,15200,82500,16100"
-st "SIGNAL DRMuxSel      : std_logic
-"
+st "SIGNAL DRMuxSel      : std_logic"
 )
 )
 )
@@ -2720,8 +2682,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,5300,82500,6200"
-st "SIGNAL ADDR1Muxsel   : std_logic
-"
+st "SIGNAL ADDR1Muxsel   : std_logic"
 )
 )
 *92 (Net
@@ -2739,8 +2700,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "66000,32300,82500,33200"
-st "SIGNAL StoreMuxsel   : std_logic
-"
+st "SIGNAL StoreMuxsel   : std_logic"
 )
 )
 *93 (Wire
@@ -4128,9 +4088,8 @@ pts [
 "51000,34000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4173,9 +4132,8 @@ pts [
 "51000,36000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4218,9 +4176,8 @@ pts [
 "51000,38000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4263,9 +4220,8 @@ pts [
 "51000,40000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4308,8 +4264,7 @@ pts [
 "69000,34000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -4353,8 +4308,7 @@ pts [
 "69000,36000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -4398,8 +4352,7 @@ pts [
 "69000,38000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -4443,9 +4396,8 @@ pts [
 "51000,42000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4488,8 +4440,7 @@ pts [
 "69000,40000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -4533,9 +4484,8 @@ pts [
 "51000,44000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4578,9 +4528,8 @@ pts [
 "51000,46000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4623,9 +4572,8 @@ pts [
 "51000,48000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4668,9 +4616,8 @@ pts [
 "51000,50000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4713,9 +4660,8 @@ pts [
 "51000,52000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4758,9 +4704,8 @@ pts [
 "51000,54000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4803,9 +4748,8 @@ pts [
 "51000,56000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4848,9 +4792,8 @@ pts [
 "51000,58000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4893,9 +4836,8 @@ pts [
 "51000,60000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -4938,8 +4880,7 @@ pts [
 "69000,42000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -4983,8 +4924,7 @@ pts [
 "69000,44000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -5028,9 +4968,8 @@ pts [
 "51000,62000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -5073,9 +5012,8 @@ pts [
 "51000,64000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -5163,9 +5101,8 @@ pts [
 "51000,68000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -5208,9 +5145,8 @@ pts [
 "51000,70000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -5253,9 +5189,8 @@ pts [
 "51000,72000"
 ]
 )
-end &16
 sat 16
-eat 1
+eat 16
 sf 1
 si 0
 tg (WTG
@@ -5298,8 +5233,7 @@ pts [
 "69000,46000"
 ]
 )
-start &16
-sat 2
+sat 16
 eat 16
 sf 1
 si 0
@@ -5511,7 +5445,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 12475,0
+lastUid 12718,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

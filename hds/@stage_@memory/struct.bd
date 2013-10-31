@@ -190,11 +190,11 @@ uid 1651,0
 (Instance
 name "U_2"
 duLibraryName "ece411"
-duName "Delay_RegA"
+duName "DelayRegister"
 elements [
 ]
 mwi 0
-uid 2022,0
+uid 2163,0
 )
 ]
 libraryRefs [
@@ -210,23 +210,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/li151/ece411/mp3/hdl"
+value "/home/chng2/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/struct.bd.info"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/struct.bd.user"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -242,27 +242,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/li151/ece411/mp3/hds/@stage_@memory"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory"
 )
 (vvPair
 variable "d_logical"
-value "/home/li151/ece411/mp3/hds/Stage_Memory"
+value "/home/chng2/ece411/mp3/hds/Stage_Memory"
 )
 (vvPair
 variable "date"
-value "10/28/13"
+value "10/31/13"
 )
 (vvPair
 variable "day"
-value "Mon"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Monday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -290,7 +290,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0220-16.ews.illinois.edu"
+value "linux-a1.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -322,11 +322,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/li151/ece411/mp3/hds/@stage_@memory/struct.bd"
+value "/home/chng2/ece411/mp3/hds/@stage_@memory/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/li151/ece411/mp3/hds/Stage_Memory/struct.bd"
+value "/home/chng2/ece411/mp3/hds/Stage_Memory/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -350,7 +350,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -358,7 +358,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -382,7 +382,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "15:30:54"
+value "00:24:54"
 )
 (vvPair
 variable "unit"
@@ -390,7 +390,7 @@ value "Stage_Memory"
 )
 (vvPair
 variable "user"
-value "li151"
+value "chng2"
 )
 (vvPair
 variable "version"
@@ -435,7 +435,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45200,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -2307,7 +2307,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,36300,18500,37200"
-st "SIGNAL SelHByteout   : LC3b_word"
+st "SIGNAL SelHByteout   : LC3b_word
+"
 )
 )
 *67 (Net
@@ -2324,7 +2325,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,37200,18500,38100"
-st "SIGNAL SelLByteout   : LC3b_word"
+st "SIGNAL SelLByteout   : LC3b_word
+"
 )
 )
 *68 (PortIoIn
@@ -2620,7 +2622,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,11100,17000,12000"
-st "MDRMuxsel     : LC3b_4mux_sel"
+st "MDRMuxsel     : LC3b_4mux_sel
+"
 )
 )
 *75 (Net
@@ -2640,7 +2643,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,10200,17000,11100"
-st "MARMuxsel     : LC3b_4mux_sel"
+st "MARMuxsel     : LC3b_4mux_sel
+"
 )
 )
 *76 (Net
@@ -2657,7 +2661,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,32700,18500,33600"
-st "SIGNAL LoadMDR       : std_logic"
+st "SIGNAL LoadMDR       : std_logic
+"
 )
 )
 *77 (Net
@@ -2674,7 +2679,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,31800,18500,32700"
-st "SIGNAL LoadMAR       : std_logic"
+st "SIGNAL LoadMAR       : std_logic
+"
 )
 )
 *78 (Net
@@ -2694,7 +2700,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,12900,15000,13800"
-st "MEM_PCPlus2   : LC3b_word"
+st "MEM_PCPlus2   : LC3b_word
+"
 )
 )
 *79 (Net
@@ -2714,7 +2721,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,12000,15000,12900"
-st "MEM_ALUout    : LC3b_word"
+st "MEM_ALUout    : LC3b_word
+"
 )
 )
 *80 (Net
@@ -2734,7 +2742,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,20100,15000,21000"
-st "MEM_MDRout    : LC3b_word"
+st "MEM_MDRout    : LC3b_word
+"
 )
 )
 *81 (Net
@@ -2754,7 +2763,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,13800,15000,14700"
-st "MEM_TRAPVECT8 : LC3b_word"
+st "MEM_TRAPVECT8 : LC3b_word
+"
 )
 )
 *82 (Net
@@ -2774,7 +2784,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,8400,15000,9300"
-st "DATAIN        : LC3b_word"
+st "DATAIN        : LC3b_word
+"
 )
 )
 *83 (Net
@@ -2794,7 +2805,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,34500,18500,35400"
-st "SIGNAL MDRMuxout     : LC3b_word"
+st "SIGNAL MDRMuxout     : LC3b_word
+"
 )
 )
 *84 (Net
@@ -2814,7 +2826,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,33600,18500,34500"
-st "SIGNAL MARMuxout     : LC3b_word"
+st "SIGNAL MARMuxout     : LC3b_word
+"
 )
 )
 *85 (PortIoIn
@@ -2944,7 +2957,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,15600,15000,16500"
-st "RESET_L       : std_logic"
+st "RESET_L       : std_logic
+"
 )
 )
 *89 (Net
@@ -2961,7 +2975,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,18300,15000,19200"
-st "clk           : std_logic"
+st "clk           : std_logic
+"
 )
 )
 *90 (Net
@@ -2978,7 +2993,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,19200,15000,20100"
-st "MEM_MARout    : LC3b_word"
+st "MEM_MARout    : LC3b_word
+"
 )
 )
 *91 (PortIoOut
@@ -3567,7 +3583,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,23700,18500,24600"
-st "SIGNAL F             : STD_LOGIC"
+st "SIGNAL F             : STD_LOGIC
+"
 )
 )
 *109 (Net
@@ -3584,7 +3601,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,35400,18500,36300"
-st "SIGNAL OUTPUT        : std_logic"
+st "SIGNAL OUTPUT        : std_logic
+"
 )
 )
 *110 (Net
@@ -3601,7 +3619,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,9300,15000,10200"
-st "Load          : std_logic"
+st "Load          : std_logic
+"
 )
 )
 *111 (Net
@@ -3618,7 +3637,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,16500,15000,17400"
-st "Read_H        : STD_LOGIC"
+st "Read_H        : STD_LOGIC
+"
 )
 )
 *112 (Net
@@ -3635,7 +3655,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,17400,15000,18300"
-st "Write_H       : STD_LOGIC"
+st "Write_H       : STD_LOGIC
+"
 )
 )
 *113 (SaComponent
@@ -3843,7 +3864,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,24600,18500,25500"
-st "SIGNAL F1            : STD_LOGIC"
+st "SIGNAL F1            : STD_LOGIC
+"
 )
 )
 *121 (Net
@@ -3860,7 +3882,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,14700,15000,15600"
-st "MRESP_H       : STD_LOGIC"
+st "MRESP_H       : STD_LOGIC
+"
 )
 )
 *122 (PortIoIn
@@ -4416,7 +4439,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,25500,18500,26400"
-st "SIGNAL F2            : STD_LOGIC"
+st "SIGNAL F2            : STD_LOGIC
+"
 )
 )
 *139 (PortIoIn
@@ -4569,7 +4593,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,21000,15000,21900"
-st "MREAD_L       : std_logic"
+st "MREAD_L       : std_logic
+"
 )
 )
 *143 (Net
@@ -4586,7 +4611,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,21900,15000,22800"
-st "MWRITE_L      : std_logic"
+st "MWRITE_L      : std_logic
+"
 )
 )
 *144 (PortIoIn
@@ -5315,7 +5341,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,26400,18500,27300"
-st "SIGNAL F3            : STD_LOGIC"
+st "SIGNAL F3            : STD_LOGIC
+"
 )
 )
 *168 (Net
@@ -5332,7 +5359,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,27300,18500,28200"
-st "SIGNAL F4            : STD_LOGIC"
+st "SIGNAL F4            : STD_LOGIC
+"
 )
 )
 *169 (SaComponent
@@ -5540,7 +5568,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,28200,18500,29100"
-st "SIGNAL F5            : STD_LOGIC"
+st "SIGNAL F5            : STD_LOGIC
+"
 )
 )
 *177 (SaComponent
@@ -6214,7 +6243,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,29100,18500,30000"
-st "SIGNAL F6            : STD_LOGIC"
+st "SIGNAL F6            : STD_LOGIC
+"
 )
 )
 *200 (Net
@@ -6231,7 +6261,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,30000,18500,30900"
-st "SIGNAL F7            : STD_LOGIC"
+st "SIGNAL F7            : STD_LOGIC
+"
 )
 )
 *201 (SaComponent
@@ -6437,17 +6468,18 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,30900,18500,31800"
-st "SIGNAL F8            : STD_LOGIC"
+st "SIGNAL F8            : STD_LOGIC
+"
 )
 )
 *209 (SaComponent
-uid 2022,0
+uid 2163,0
 optionalChildren [
 *210 (CptPort
-uid 2014,0
+uid 2155,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 2015,0
+uid 2156,0
 ro 90
 va (VaSet
 vasetType 1
@@ -6456,58 +6488,58 @@ fg "0,65535,0"
 xt "80250,14625,81000,15375"
 )
 tg (CPTG
-uid 2016,0
+uid 2157,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 2017,0
+uid 2158,0
 va (VaSet
 font "courier,8,0"
 )
-xt "82000,14550,84500,15450"
-st "INPUT"
+xt "82000,14550,82500,15450"
+st "A"
 blo "82000,15250"
 )
 )
 thePort (LogicalPort
 decl (Decl
-n "INPUT"
+n "A"
 t "std_logic"
 o 1
 )
 )
 )
 *211 (CptPort
-uid 2018,0
+uid 2159,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 2019,0
+uid 2160,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "90000,14625,90750,15375"
+xt "89000,14625,89750,15375"
 )
 tg (CPTG
-uid 2020,0
+uid 2161,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 2021,0
+uid 2162,0
 va (VaSet
 font "courier,8,0"
 )
-xt "86000,14550,89000,15450"
-st "OUTPUT"
+xt "87500,14550,88000,15450"
+st "F"
 ju 2
-blo "89000,15250"
+blo "88000,15250"
 )
 )
 thePort (LogicalPort
 m 1
 decl (Decl
-n "OUTPUT"
+n "F"
 t "std_logic"
 o 2
 )
@@ -6515,64 +6547,64 @@ o 2
 )
 ]
 shape (Rectangle
-uid 2023,0
+uid 2164,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "81000,14000,90000,17000"
+xt "81000,14000,89000,17000"
 )
 oxt "0,0,8000,10000"
 ttg (MlTextGroup
-uid 2024,0
+uid 2165,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
 *212 (Text
-uid 2025,0
+uid 2166,0
 va (VaSet
 font "courier,8,1"
 )
-xt "82750,17000,85750,17900"
+xt "81500,17000,84500,17900"
 st "ece411"
-blo "82750,17700"
+blo "81500,17700"
 tm "BdLibraryNameMgr"
 )
 *213 (Text
-uid 2026,0
+uid 2167,0
 va (VaSet
 font "courier,8,1"
 )
-xt "82750,17900,88250,18800"
-st "Delay_RegA"
-blo "82750,18600"
+xt "81500,17900,88500,18800"
+st "DelayRegister"
+blo "81500,18600"
 tm "CptNameMgr"
 )
 *214 (Text
-uid 2027,0
+uid 2168,0
 va (VaSet
 font "courier,8,1"
 )
-xt "82750,18800,84250,19700"
+xt "81500,18800,83000,19700"
 st "U_2"
-blo "82750,19500"
+blo "81500,19500"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 2028,0
+uid 2169,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 2029,0
+uid 2170,0
 text (MLText
-uid 2030,0
+uid 2171,0
 va (VaSet
 font "courier,8,0"
 )
-xt "85500,14000,85500,14000"
+xt "85000,14000,85000,14000"
 )
 header ""
 )
@@ -6580,7 +6612,7 @@ elements [
 ]
 )
 viewicon (ZoomableIcon
-uid 2031,0
+uid 2172,0
 sl 0
 va (VaSet
 vasetType 1
@@ -7942,13 +7974,14 @@ uid 981,0
 va (VaSet
 vasetType 3
 )
-xt "74000,15000,80250,15000"
+xt "73000,15000,80250,15000"
 pts [
-"74000,15000"
+"73000,15000"
 "80250,15000"
 ]
 )
 end &210
+es 0
 sat 16
 eat 32
 st 0
@@ -7963,9 +7996,9 @@ uid 985,0
 va (VaSet
 font "courier,8,0"
 )
-xt "76000,14100,78000,15000"
+xt "75000,14100,77000,15000"
 st "Load"
-blo "76000,14800"
+blo "75000,14800"
 tm "WireNameMgr"
 )
 )
@@ -8028,9 +8061,9 @@ uid 1003,0
 va (VaSet
 vasetType 3
 )
-xt "90750,14000,95250,15000"
+xt "89750,14000,95250,15000"
 pts [
-"90750,15000"
+"89750,15000"
 "93000,15000"
 "93000,14000"
 "95250,14000"
@@ -9416,12 +9449,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-6,27,1914,1179"
-viewArea "31421,-28497,193829,68068"
+windowSize "-8,23,2568,1321"
+viewArea "68512,-1241,176939,51982"
 cachedDiagramExtent "0,0,164400,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 2031,0
+lastUid 2172,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

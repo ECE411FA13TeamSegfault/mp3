@@ -25,7 +25,7 @@ appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 1364,0
+suid 1366,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -70,10 +70,10 @@ decl (Decl
 n "RESET_L"
 t "std_logic"
 o 1
-suid 1363,0
+suid 1365,0
 )
 )
-uid 12849,0
+uid 13415,0
 )
 *15 (LogPort
 port (LogicalPort
@@ -81,10 +81,10 @@ decl (Decl
 n "start_h"
 t "std_logic"
 o 2
-suid 1364,0
+suid 1366,0
 )
 )
-uid 12851,0
+uid 13417,0
 )
 ]
 )
@@ -140,13 +140,13 @@ uid 246,0
 litem &14
 pos 0
 dimension 20
-uid 12850,0
+uid 13416,0
 )
 *22 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 12852,0
+uid 13418,0
 )
 ]
 )
@@ -377,23 +377,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/li151/ece411/mp3/hdl"
+value "/home/chng2/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/li151/ece411/mp3/hds/@datapath/interface.info"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/li151/ece411/mp3/hds/@datapath/interface.user"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -409,27 +409,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/li151/ece411/mp3/hds/@datapath"
+value "/home/chng2/ece411/mp3/hds/@datapath"
 )
 (vvPair
 variable "d_logical"
-value "/home/li151/ece411/mp3/hds/Datapath"
+value "/home/chng2/ece411/mp3/hds/Datapath"
 )
 (vvPair
 variable "date"
-value "10/28/13"
+value "10/31/13"
 )
 (vvPair
 variable "day"
-value "Mon"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Monday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -457,7 +457,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0220-16.ews.illinois.edu"
+value "linux-a1.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -489,11 +489,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/li151/ece411/mp3/hds/@datapath/interface"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/li151/ece411/mp3/hds/Datapath/interface"
+value "/home/chng2/ece411/mp3/hds/Datapath/interface"
 )
 (vvPair
 variable "package_name"
@@ -517,7 +517,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -525,7 +525,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -549,7 +549,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "17:53:48"
+value "01:21:55"
 )
 (vvPair
 variable "unit"
@@ -557,7 +557,7 @@ value "Datapath"
 )
 (vvPair
 variable "user"
-value "li151"
+value "chng2"
 )
 (vvPair
 variable "version"
@@ -584,10 +584,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *56 (CptPort
-uid 12839,0
+uid 13405,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 12840,0
+uid 13406,0
 ro 90
 va (VaSet
 vasetType 1
@@ -596,11 +596,11 @@ fg "0,65535,0"
 xt "14250,39625,15000,40375"
 )
 tg (CPTG
-uid 12841,0
+uid 13407,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 12842,0
+uid 13408,0
 va (VaSet
 font "courier,8,0"
 )
@@ -611,7 +611,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 12843,0
+uid 13409,0
 va (VaSet
 font "courier,8,0"
 )
@@ -621,15 +621,15 @@ decl (Decl
 n "RESET_L"
 t "std_logic"
 o 1
-suid 1363,0
+suid 1365,0
 )
 )
 )
 *57 (CptPort
-uid 12844,0
+uid 13410,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 12845,0
+uid 13411,0
 ro 90
 va (VaSet
 vasetType 1
@@ -638,11 +638,11 @@ fg "0,65535,0"
 xt "14250,47625,15000,48375"
 )
 tg (CPTG
-uid 12846,0
+uid 13412,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 12847,0
+uid 13413,0
 va (VaSet
 font "courier,8,0"
 )
@@ -653,7 +653,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 12848,0
+uid 13414,0
 va (VaSet
 font "courier,8,0"
 )
@@ -663,7 +663,7 @@ decl (Decl
 n "start_h"
 t "std_logic"
 o 2
-suid 1364,0
+suid 1366,0
 )
 )
 )
@@ -1378,7 +1378,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 13381,0
+lastUid 13648,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
