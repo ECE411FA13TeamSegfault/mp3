@@ -13,13 +13,17 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
+USE ieee.std_logic_arith.all;
 
-ENTITY Delay_Unit IS
-  PORT (
-    clk :   IN std_logic;
-    A2 :   OUT std_logic
-  );
-END ENTITY Delay_Unit;
+ENTITY delay_unit IS
+   PORT( 
+      clk : IN     STD_LOGIC;
+      A2  : OUT    STD_LOGIC
+   );
+
+-- Declarations
+
+END delay_unit ;
 
 --
 ARCHITECTURE untitled OF Delay_Unit IS

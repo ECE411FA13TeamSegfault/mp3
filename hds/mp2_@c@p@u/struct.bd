@@ -26,7 +26,7 @@ mwi 0
 uid 3371,0
 )
 (Instance
-name "I0"
+name "DRAM"
 duLibraryName "ece411"
 duName "Memory"
 elements [
@@ -146,7 +146,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0218-09.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -206,7 +206,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -214,7 +214,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -238,7 +238,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:07:00"
+value "17:01:07"
 )
 (vvPair
 variable "unit"
@@ -855,8 +855,8 @@ uid 12977,0
 va (VaSet
 font "courier,8,1"
 )
-xt "20250,16950,21250,17850"
-st "I0"
+xt "20250,16950,22250,17850"
+st "DRAM"
 blo "20250,17650"
 tm "InstanceNameMgr"
 )
@@ -2853,6 +2853,7 @@ blo "46750,2800"
 tm "WireNameMgr"
 )
 t (Text
+uid 15256,0
 va (VaSet
 font "courier,8,0"
 )
@@ -2981,8 +2982,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "190,27,1890,1059"
-viewArea "-14509,-13678,83342,45218"
+windowSize "184,29,1884,1061"
+viewArea "-14500,-13700,77074,41418"
 cachedDiagramExtent "-5000,0,144000,55700"
 pageSetupInfo (PageSetupInfo
 toPrinter 1
@@ -3000,7 +3001,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 15106,0
+lastUid 15256,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

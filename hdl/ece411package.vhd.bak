@@ -50,6 +50,7 @@ PACKAGE LC3B_TYPES IS
 	    name 					: OPNAME;
 	    
 	    -- Stage IF
+	    LoadPC       : std_logic; --
 	    PCMuxsel					: LC3B_4MUX_SEL;
 	    
 	    -- Stage ID

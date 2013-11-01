@@ -78,19 +78,19 @@ value "/home/chao16/ece411/mp2.2/hds/Cache_Controller"
 )
 (vvPair
 variable "date"
-value "10/03/13"
+value "10/04/13"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "03"
+value "04"
 )
 (vvPair
 variable "entity_name"
@@ -118,7 +118,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-20.ews.illinois.edu"
+value "evrt-252-11.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -210,7 +210,7 @@ value "fsm"
 )
 (vvPair
 variable "time"
-value "17:16:59"
+value "14:39:58"
 )
 (vvPair
 variable "unit"
@@ -624,7 +624,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "32000,48000,49000,49000"
+xt "19969,41481,36969,42481"
 )
 oxt "18000,70000,35000,71000"
 text (MLText
@@ -634,7 +634,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,48050,44700,48950"
+xt "20169,41531,32669,42431"
 st "
 by %user on %dd %month %year
 "
@@ -656,7 +656,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "49000,44000,53000,45000"
+xt "36969,37481,40969,38481"
 )
 oxt "35000,66000,39000,67000"
 text (MLText
@@ -666,7 +666,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "49200,44050,53200,44950"
+xt "37169,37531,41169,38431"
 st "
 Project:
 "
@@ -688,7 +688,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "32000,46000,49000,47000"
+xt "19969,39481,36969,40481"
 )
 oxt "18000,68000,35000,69000"
 text (MLText
@@ -698,7 +698,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,46050,47700,46950"
+xt "20169,39531,35669,40431"
 st "
 Cache Controller State Diagram
 "
@@ -720,7 +720,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "28000,46000,32000,47000"
+xt "15969,39481,19969,40481"
 )
 oxt "14000,68000,18000,69000"
 text (MLText
@@ -730,7 +730,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "28200,46050,31200,46950"
+xt "16169,39531,19169,40431"
 st "
 Title:
 "
@@ -752,7 +752,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "49000,45000,69000,49000"
+xt "36969,38481,56969,42481"
 )
 oxt "35000,67000,55000,71000"
 text (MLText
@@ -762,7 +762,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "49200,45200,60200,46100"
+xt "37169,38681,48169,39581"
 st "
 <enter comments here>
 "
@@ -783,7 +783,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "53000,44000,69000,45000"
+xt "40969,37481,56969,38481"
 )
 oxt "39000,66000,55000,67000"
 text (MLText
@@ -793,7 +793,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "53200,44050,56200,44950"
+xt "41169,37531,44169,38431"
 st "
 %project_name
 "
@@ -815,7 +815,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "28000,44000,49000,46000"
+xt "15969,37481,36969,39481"
 )
 oxt "14000,66000,35000,68000"
 text (MLText
@@ -823,7 +823,7 @@ uid 148,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "37300,44500,39700,45500"
+xt "25269,37981,27669,38981"
 st "
 UIUC
 "
@@ -846,7 +846,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "28000,47000,32000,48000"
+xt "15969,40481,19969,41481"
 )
 oxt "14000,69000,18000,70000"
 text (MLText
@@ -856,7 +856,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "28200,47050,30700,47950"
+xt "16169,40531,18669,41431"
 st "
 Path:
 "
@@ -878,7 +878,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "28000,48000,32000,49000"
+xt "15969,41481,19969,42481"
 )
 oxt "14000,70000,18000,71000"
 text (MLText
@@ -888,7 +888,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "28200,48050,31700,48950"
+xt "16169,41531,19669,42431"
 st "
 Edited:
 "
@@ -910,7 +910,7 @@ va (VaSet
 vasetType 1
 fg "65280,65280,46080"
 )
-xt "32000,47000,49000,48000"
+xt "19969,40481,36969,41481"
 )
 oxt "18000,69000,35000,70000"
 text (MLText
@@ -920,7 +920,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,47050,46200,47950"
+xt "20169,40531,34169,41431"
 st "
 %library/%unit/%view
 "
@@ -942,7 +942,7 @@ fg "65535,65535,65535"
 lineStyle 2
 lineWidth 2
 )
-xt "28000,44000,69000,49000"
+xt "15969,37481,56969,42481"
 )
 oxt "14000,66000,55000,71000"
 )
@@ -1338,7 +1338,7 @@ lineColor "39936,56832,65280"
 lineWidth -1
 fillStyle 1
 )
-xt "53095,28442,71495,30442"
+xt "46046,32311,64446,34311"
 )
 autoResize 1
 tline (Line
@@ -1349,10 +1349,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "53195,28342,71395,28342"
+xt "46146,32211,64346,32211"
 pts [
-"53195,28342"
-"71395,28342"
+"46146,32211"
+"64346,32211"
 ]
 )
 bline (Line
@@ -1363,10 +1363,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "53195,28392,71395,28392"
+xt "46146,32261,64346,32261"
 pts [
-"53195,28392"
-"71395,28392"
+"46146,32261"
+"64346,32261"
 ]
 )
 ttri (Triangle
@@ -1380,7 +1380,7 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "52745,27967,53095,28317"
+xt "45696,31836,46046,32186"
 )
 btri (Triangle
 uid 405,0
@@ -1393,14 +1393,14 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "52745,26267,53095,26617"
+xt "45696,30136,46046,30486"
 )
 entryActions (MLText
 uid 406,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53195,28142,53195,28142"
+xt "46146,32011,46146,32011"
 tm "Actions"
 )
 inActions (MLText
@@ -1408,7 +1408,7 @@ uid 407,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53195,28542,71395,30342"
+xt "46146,32411,64346,34211"
 st "InLoad <= '1' after DELAY_MP22_MEM;
 PMREAD_L <= '0' after 6ns;"
 tm "Actions"
@@ -1418,7 +1418,7 @@ uid 408,0
 va (VaSet
 font "courier,8,0"
 )
-xt "58295,26442,58295,26442"
+xt "51246,30311,51246,30311"
 tm "Actions"
 )
 )
@@ -2096,9 +2096,9 @@ tm "SmCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "158,27,1838,1031"
-viewArea "-1200,-3296,81849,45781"
-cachedDiagramExtent "-250,-1000,77000,49000"
+windowSize "152,30,1832,1034"
+viewArea "1185,1099,78406,45248"
+cachedDiagramExtent "-250,-1000,64446,42481"
 hasePageBreakOrigin 1
 pageBreakOrigin "-1000,-2000"
 isTopLevel 1
@@ -2257,25 +2257,25 @@ uid 13,0
 va (VaSet
 font "courier,8,1"
 )
-xt "66500,-1000,77000,-100"
+xt "18323,2392,28823,3292"
 st "Process Declarations"
-blo "66500,-300"
+blo "18323,3092"
 )
 *42 (Text
 uid 14,0
 va (VaSet
 font "courier,8,1"
 )
-xt "66500,-100,75000,800"
+xt "18323,3292,26823,4192"
 st "Clocked Process:"
-blo "66500,600"
+blo "18323,3992"
 )
 *43 (MLText
 uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "66500,-1000,66500,-1000"
+xt "18323,2392,18323,2392"
 tm "ProcessDeclTextMgr"
 )
 *44 (Text
@@ -2283,16 +2283,16 @@ uid 16,0
 va (VaSet
 font "courier,8,1"
 )
-xt "66500,800,74500,1700"
+xt "18323,4192,26323,5092"
 st "Output Process:"
-blo "66500,1500"
+blo "18323,4892"
 )
 *45 (MLText
 uid 17,0
 va (VaSet
 font "courier,8,0"
 )
-xt "66500,1700,66500,1700"
+xt "18323,5092,18323,5092"
 tm "ProcessDeclTextMgr"
 )
 ]
@@ -2493,7 +2493,7 @@ stateOrder [
 name "csm"
 )
 ]
-lastUid 628,0
+lastUid 657,0
 commonDM (CommonDM
 ldm (LogicalDM
 emptyRow *55 (LEmptyRow

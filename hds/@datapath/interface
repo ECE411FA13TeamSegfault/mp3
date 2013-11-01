@@ -70,7 +70,7 @@ lang 11
 decl (Decl
 n "clk"
 t "STD_LOGIC"
-o 41
+o 7
 suid 1408,0
 )
 )
@@ -82,7 +82,7 @@ m 1
 decl (Decl
 n "D_ADDRESS"
 t "LC3b_word"
-o 42
+o 8
 suid 1409,0
 )
 )
@@ -93,7 +93,7 @@ port (LogicalPort
 decl (Decl
 n "D_DATAIN"
 t "LC3B_WORD"
-o 43
+o 1
 suid 1410,0
 )
 )
@@ -105,7 +105,7 @@ m 1
 decl (Decl
 n "D_DATAOUT"
 t "LC3b_word"
-o 44
+o 9
 suid 1411,0
 )
 )
@@ -117,7 +117,7 @@ m 1
 decl (Decl
 n "D_MREAD_L"
 t "std_logic"
-o 45
+o 10
 suid 1412,0
 )
 )
@@ -128,7 +128,7 @@ port (LogicalPort
 decl (Decl
 n "D_MRESP_H"
 t "STD_LOGIC"
-o 46
+o 2
 suid 1413,0
 )
 )
@@ -140,7 +140,7 @@ m 1
 decl (Decl
 n "D_MWRITEH_L"
 t "std_logic"
-o 47
+o 11
 suid 1414,0
 )
 )
@@ -152,7 +152,7 @@ m 1
 decl (Decl
 n "D_MWRITEL_L"
 t "std_logic"
-o 48
+o 12
 suid 1415,0
 )
 )
@@ -164,7 +164,7 @@ m 1
 decl (Decl
 n "I_ADDRESS"
 t "LC3B_WORD"
-o 49
+o 13
 suid 1416,0
 )
 )
@@ -175,7 +175,7 @@ port (LogicalPort
 decl (Decl
 n "I_DATAIN"
 t "LC3B_WORD"
-o 50
+o 3
 suid 1417,0
 )
 )
@@ -188,7 +188,7 @@ m 1
 decl (Decl
 n "I_MREAD_L"
 t "STD_LOGIC"
-o 52
+o 14
 suid 1418,0
 )
 )
@@ -200,7 +200,7 @@ lang 11
 decl (Decl
 n "I_MRESP_H"
 t "STD_LOGIC"
-o 53
+o 4
 suid 1419,0
 )
 )
@@ -212,7 +212,7 @@ lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 1
+o 5
 suid 1420,0
 )
 )
@@ -223,7 +223,7 @@ port (LogicalPort
 decl (Decl
 n "Start_H"
 t "std_logic"
-o 2
+o 6
 suid 1421,0
 )
 )
@@ -672,7 +672,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0218-09.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -764,7 +764,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "16:05:47"
+value "16:46:10"
 )
 (vvPair
 variable "unit"
@@ -839,7 +839,7 @@ lang 11
 decl (Decl
 n "clk"
 t "STD_LOGIC"
-o 41
+o 7
 suid 1408,0
 )
 )
@@ -886,7 +886,7 @@ m 1
 decl (Decl
 n "D_ADDRESS"
 t "LC3b_word"
-o 42
+o 8
 suid 1409,0
 )
 )
@@ -931,7 +931,7 @@ thePort (LogicalPort
 decl (Decl
 n "D_DATAIN"
 t "LC3B_WORD"
-o 43
+o 1
 suid 1410,0
 )
 )
@@ -978,7 +978,7 @@ m 1
 decl (Decl
 n "D_DATAOUT"
 t "LC3b_word"
-o 44
+o 9
 suid 1411,0
 )
 )
@@ -1025,7 +1025,7 @@ m 1
 decl (Decl
 n "D_MREAD_L"
 t "std_logic"
-o 45
+o 10
 suid 1412,0
 )
 )
@@ -1070,7 +1070,7 @@ thePort (LogicalPort
 decl (Decl
 n "D_MRESP_H"
 t "STD_LOGIC"
-o 46
+o 2
 suid 1413,0
 )
 )
@@ -1117,7 +1117,7 @@ m 1
 decl (Decl
 n "D_MWRITEH_L"
 t "std_logic"
-o 47
+o 11
 suid 1414,0
 )
 )
@@ -1164,7 +1164,7 @@ m 1
 decl (Decl
 n "D_MWRITEL_L"
 t "std_logic"
-o 48
+o 12
 suid 1415,0
 )
 )
@@ -1211,7 +1211,7 @@ m 1
 decl (Decl
 n "I_ADDRESS"
 t "LC3B_WORD"
-o 49
+o 13
 suid 1416,0
 )
 )
@@ -1256,7 +1256,7 @@ thePort (LogicalPort
 decl (Decl
 n "I_DATAIN"
 t "LC3B_WORD"
-o 50
+o 3
 suid 1417,0
 )
 )
@@ -1304,7 +1304,7 @@ m 1
 decl (Decl
 n "I_MREAD_L"
 t "STD_LOGIC"
-o 52
+o 14
 suid 1418,0
 )
 )
@@ -1350,7 +1350,7 @@ lang 11
 decl (Decl
 n "I_MRESP_H"
 t "STD_LOGIC"
-o 53
+o 4
 suid 1419,0
 )
 )
@@ -1396,7 +1396,7 @@ lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 1
+o 5
 suid 1420,0
 )
 )
@@ -1441,7 +1441,7 @@ thePort (LogicalPort
 decl (Decl
 n "Start_H"
 t "std_logic"
-o 2
+o 6
 suid 1421,0
 )
 )
@@ -2157,7 +2157,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 14148,0
+lastUid 14171,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

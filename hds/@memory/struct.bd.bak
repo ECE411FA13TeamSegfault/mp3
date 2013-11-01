@@ -229,7 +229,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:12:20"
+value "16:12:27"
 )
 (vvPair
 variable "unit"
@@ -3897,9 +3897,9 @@ uid 4595,0
 va (VaSet
 font "courier,8,0"
 )
-xt "67000,24100,72500,25000"
+xt "66000,24100,71500,25000"
 st "I_PMRESP_H"
-blo "67000,24800"
+blo "66000,24800"
 tm "WireNameMgr"
 )
 s (Text
@@ -3908,9 +3908,9 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "67000,25000,71500,25900"
+xt "66000,25000,70500,25900"
 st "STD_LOGIC"
-blo "67000,25700"
+blo "66000,25700"
 tm "SignalTypeMgr"
 )
 )

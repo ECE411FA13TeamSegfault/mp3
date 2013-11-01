@@ -238,7 +238,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:06:34"
+value "16:07:00"
 )
 (vvPair
 variable "unit"
@@ -2015,9 +2015,9 @@ uid 14565,0
 va (VaSet
 vasetType 3
 )
-xt "5000,27000,18000,27000"
+xt "6000,27000,18000,27000"
 pts [
-"5000,27000"
+"6000,27000"
 "18000,27000"
 ]
 )
@@ -2035,9 +2035,9 @@ uid 14571,0
 va (VaSet
 font "courier,8,0"
 )
-xt "7000,26100,11500,27000"
+xt "8000,26100,12500,27000"
 st "I_DATAOUT"
-blo "7000,26800"
+blo "8000,26800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2045,9 +2045,9 @@ uid 14572,0
 va (VaSet
 font "courier,8,0"
 )
-xt "7000,27000,11500,27900"
+xt "8000,27000,12500,27900"
 st "LC3b_word"
-blo "7000,27700"
+blo "8000,27700"
 tm "SignalTypeMgr"
 )
 )
@@ -2982,7 +2982,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "190,27,1890,1059"
-viewArea "-16281,-15135,106033,58485"
+viewArea "-14509,-13678,83342,45218"
 cachedDiagramExtent "-5000,0,144000,55700"
 pageSetupInfo (PageSetupInfo
 toPrinter 1

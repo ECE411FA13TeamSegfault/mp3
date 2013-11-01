@@ -1,0 +1,29 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /mp2_cpu/theDatapath/aStage_IF/clk
+add wave -noupdate /mp2_cpu/theDatapath/aStage_IF/IF_PCout
+add wave -noupdate -expand /mp2_cpu/theDatapath/aStage_ID/U_0/RAM
+add wave -noupdate /mp2_cpu/theDatapath/CONTROL
+add wave -noupdate /mp2_cpu/theDatapath/aStage_IF/IF_IRout
+add wave -noupdate -expand /mp2_cpu/I0/DCache/Cache_DP/DataArray0/Data
+add wave -noupdate -expand /mp2_cpu/I0/DCache/Cache_DP/DataArray1/Data
+add wave -noupdate -expand /mp2_cpu/I0/ICache/Cache_DP/DataArray0/Data
+add wave -noupdate -expand /mp2_cpu/I0/ICache/Cache_DP/DataArray1/Data
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {4193 ns} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 334
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {4060 ns} {4946 ns}

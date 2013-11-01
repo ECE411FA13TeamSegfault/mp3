@@ -17,7 +17,7 @@ USE ieee.std_logic_arith.all;
 
 ENTITY loadSig IS
    PORT( 
-      clk  : IN     std_logic;
+      clk     : IN     STD_LOGIC;
       preLoad : OUT    std_logic
    );
 

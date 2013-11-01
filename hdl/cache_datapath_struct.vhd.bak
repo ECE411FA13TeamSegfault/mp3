@@ -358,12 +358,11 @@ ARCHITECTURE struct OF Cache_Datapath IS
    FOR ALL : DataArray USE ENTITY ece411.DataArray;
    FOR ALL : DataWordMux USE ENTITY ece411.DataWordMux;
    FOR ALL : DirtyArray USE ENTITY ece411.DirtyArray;
+   FOR ALL : Inverter USE ENTITY ece411.Inverter;
    FOR ALL : LRUArray USE ENTITY ece411.LRUArray;
-   FOR ALL : MUX2_1 USE ENTITY mp3lib.MUX2_1;
-   FOR ALL : NAND2 USE ENTITY mp3lib.NAND2;
-   FOR ALL : NAND3 USE ENTITY mp3lib.NAND3;
-   FOR ALL : NOT1 USE ENTITY mp3lib.NOT1;
-   FOR ALL : OR2 USE ENTITY mp3lib.OR2;
+   FOR ALL : NAND2 USE ENTITY ece411.NAND2;
+   FOR ALL : NAND3 USE ENTITY ece411.NAND3;
+   FOR ALL : OR2 USE ENTITY ece411.OR2;
    FOR ALL : OWordMux2 USE ENTITY ece411.OWordMux2;
    FOR ALL : TagArray USE ENTITY ece411.TagArray;
    FOR ALL : TagComparator USE ENTITY ece411.TagComparator;
