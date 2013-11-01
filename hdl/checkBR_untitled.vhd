@@ -34,7 +34,7 @@ END checkBR ;
 --
 ARCHITECTURE untitled OF checkBR IS
 BEGIN
-  takeBR <= (((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) AND BR_Opcode)
+  takeBR <= ((((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) OR (CheckN AND CheckP AND CheckZ)) AND BR_Opcode)
       after (DELAY_LOGIC2 + DELAY_LOGIC3);
 END ARCHITECTURE untitled;
 

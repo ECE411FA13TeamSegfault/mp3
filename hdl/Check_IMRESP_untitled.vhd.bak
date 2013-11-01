@@ -1,0 +1,38 @@
+--
+-- VHDL Architecture ece411.Check_IMRESP.untitled
+--
+-- Created:
+--          by - chng2.ews (linux-a1.ews.illinois.edu)
+--          at - 10:20:51 11/01/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY Check_IMRESP IS
+  PORT (
+    I_MRESP_H   : IN std_logic;
+    F           : OUT std_logic
+  );
+END ENTITY Check_IMRESP;
+
+--
+ARCHITECTURE untitled OF Check_IMRESP IS
+SIGNAL PRE_F  : std_logic;
+BEGIN
+  PROCESS (I_MRESP_H)
+  BEGIN
+    IF (I_MRESP_H'EVENT AND I_MRESP_H = '1') THEN
+      PRE_F <= '1';
+    ELSIF (I_MRESP_H'EVENT AND I_MRESP_H = '0') THEN
+      PRE_F <= '0';
+    END IF;
+  END PROCESS;
+  F <= PRE_F, '0' AFTER CLOCK_PERIOD;
+END ARCHITECTURE untitled;
+
