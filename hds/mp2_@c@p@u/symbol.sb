@@ -66,9 +66,10 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "RESET_L"
-t "std_logic"
+t "STD_LOGIC"
 o 1
 suid 3,0
 )
@@ -375,23 +376,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/li151/ece411/mp3/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/symbol.sb.info"
+value "/home/chao16/ece411/mp3/hds/mp2_@c@p@u/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/symbol.sb.user"
+value "/home/chao16/ece411/mp3/hds/mp2_@c@p@u/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/li151/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -407,27 +408,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u"
+value "/home/chao16/ece411/mp3/hds/mp2_@c@p@u"
 )
 (vvPair
 variable "d_logical"
-value "/home/li151/ece411/mp3/hds/mp2_CPU"
+value "/home/chao16/ece411/mp3/hds/mp2_CPU"
 )
 (vvPair
 variable "date"
-value "10/28/13"
+value "10/31/13"
 )
 (vvPair
 variable "day"
-value "Mon"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Monday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -455,7 +456,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0220-16.ews.illinois.edu"
+value "siebl-0218-24.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -487,11 +488,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/li151/ece411/mp3/hds/mp2_@c@p@u/symbol.sb"
+value "/home/chao16/ece411/mp3/hds/mp2_@c@p@u/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/li151/ece411/mp3/hds/mp2_CPU/symbol.sb"
+value "/home/chao16/ece411/mp3/hds/mp2_CPU/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -515,7 +516,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -523,7 +524,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -547,7 +548,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "16:22:59"
+value "20:11:23"
 )
 (vvPair
 variable "unit"
@@ -555,7 +556,7 @@ value "mp2_CPU"
 )
 (vvPair
 variable "user"
-value "li151"
+value "chao16"
 )
 (vvPair
 variable "version"
@@ -614,13 +615,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,59000,2700"
-st "RESET_L : IN     std_logic  ;
+st "RESET_L : IN     STD_LOGIC  ;
 "
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "RESET_L"
-t "std_logic"
+t "STD_LOGIC"
 o 1
 suid 3,0
 )
@@ -754,7 +756,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45200,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -913,7 +915,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "53200,46050,56200,46950"
+xt "53200,46050,58700,46950"
 st "
 %project_name
 "
@@ -1380,7 +1382,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 402,0
+lastUid 425,0
 okToSyncOnLoad 1
 activeModelName "Symbol"
 )
