@@ -17,8 +17,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY delay_unit2 IS
    PORT( 
-      test : IN     STD_LOGIC;
-      Load : OUT    std_logic
+      test     : IN     STD_LOGIC;
+      preLoad2 : OUT    std_logic
    );
 
 -- Declarations
@@ -33,9 +33,9 @@ BEGIN
   ----------------------
   variable temp : std_logic;
   BEGIN
-    temp := not test;
+    temp := not test'delayed(30 ns);
     
-    Load <= temp after 10 ns;
+    preLoad2 <= temp after 10 ns;
   END PROCESS delayreg;
 END ARCHITECTURE untitled;
 

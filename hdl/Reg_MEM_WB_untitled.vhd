@@ -23,6 +23,7 @@ ENTITY Reg_MEM_WB IS
 		EX_BRAdd				: IN LC3b_word;
 		EX_PCPlus2				: IN LC3b_word;
 		EX_dest				: IN LC3b_reg;
+		EX_Opcode : IN LC3b_opcode;
 		
 		MEM_MDRout				: IN LC3b_word;
 		
@@ -31,6 +32,7 @@ ENTITY Reg_MEM_WB IS
 		MEM_PCPlus2				: OUT LC3b_word;
 		MEM_MDR				: OUT LC3b_word;
 		MEM_dest				: OUT LC3b_reg;
+		MEM_Opcode  : OUT LC3b_opcode;
 		
 		MEM_CONTROL_IN		: IN CONTROL_WORD;
 		MEM_CONTROL_OUT	: OUT CONTROL_WORD
@@ -49,6 +51,7 @@ BEGIN
 	variable tempBRAdd						: LC3b_word;
 	variable tempPCPlus2				: LC3b_word;
 	variable tempdest						: LC3b_reg;
+	variable tempOpcode    : LC3b_opcode;
 	variable tempMDR						: LC3b_word;
 	variable tempCONTROL				: CONTROL_WORD;
 	
@@ -58,6 +61,7 @@ BEGIN
 			tempBRAdd			:= "0000000000000000";
 			tempPCPlus2	:= "0000000000000000";
 			tempdest			:= "000";
+			tempOpcode := "0000";
 			tempMDR			:= "0000000000000000";
 --			tempCONTROL	:= (others => '0');
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
@@ -66,6 +70,7 @@ BEGIN
 				tempBRAdd			:= EX_BRAdd;
 				tempPCPlus2	:= EX_PCPlus2;
 				tempdest			:= EX_dest;
+				tempOpcode  := EX_Opcode;
 				tempMDR			:= MEM_MDRout;
 				tempCONTROL	:= MEM_CONTROL_IN;
 			end if;
@@ -75,6 +80,7 @@ BEGIN
 		MEM_BRAdd				<= tempBRAdd after delay_reg;
 		MEM_PCPlus2				<= tempPCPlus2 after delay_reg;
 		MEM_dest				<= tempdest after delay_reg;
+		MEM_Opcode  <= tempOpcode after delay_reg;
 		MEM_MDR				<= tempMDR after delay_reg;
 		MEM_CONTROL_OUT	<= tempCONTROL after delay_reg;
 						   

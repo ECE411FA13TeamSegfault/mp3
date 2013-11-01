@@ -36,467 +36,424 @@ END Control_ROM ;
 --
 ARCHITECTURE untitled OF Control_ROM IS
   --local signals
-  signal cWord  : CONTROL_WORD;
   signal ALUop  : LC3B_ALUOP;
 BEGIN
-  ctrl_sigs : process(opcode)
+  ctrl_sigs : process(opcode, start_h, takeBR, IR4, IR5, IR11)
+  variable cWord  : CONTROL_WORD;
   BEGIN
-  IF(start_h = '0') THEN -- other team checks a fetch, loadUse, and ZextSel_EX signal
-      -- somemuxSel <= '1';
-  ELSE
+--  IF(start_h = '0') THEN -- other team checks a fetch, loadUse, and ZextSel_EX signal
+--      -- somemuxSel := '1';
+--  ELSE
     CASE opcode is
       when OP_ADD => --cp1
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "11";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "00";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
           -- set ADD signals
         IF IR5 = '1' THEN --choose imm or not.
-          cWord.ALUMuxSel <= "01";
+          cWord.ALUMuxSel := "01";
         ELSE
-          cWord.ALUMuxSel <= "00";
+          cWord.ALUMuxSel := "00";
         END IF;
       when OP_AND => --imm cp1
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUop <= ALU_AND;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "11";
+        cWord.ALUop := ALU_AND;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "00";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
           -- set ADD signals
         IF IR5 = '1' THEN --choose imm or not.
-          cWord.ALUMuxSel <= "01";
+          cWord.ALUMuxSel := "01";
         ELSE
-          cWord.ALUMuxSel <= "00";
+          cWord.ALUMuxSel := "00";
         END IF;
       when OP_BR => --where to check nzp condition? cp1
-        cWord.LoadPC <= '1';
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '1';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '1';
         
-        cWord.ADDR1MuxSel <= '0';
-        cWord.ADDR2MuxSel <= "01";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_PASS;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "01";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_PASS;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "00";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "00";
+        cWord.Read_H := '0';
+        cWord.Write_H := '0';
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '0';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "00";
-        cWord.RegWrite <= '0'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '0';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "00";
+        cWord.RegWrite := '0';
         IF takeBR = '1' THEN --take branch
-          cWord.PCMuxSel <= "01";
+          cWord.PCMuxSel := "01";
         ELSE
-          cWord.PCMuxSel <= "00";
+          cWord.PCMuxSel := "00";
         END IF;
       when OP_JMP => --also RET --not done
         
-        cWord.PCMuxSel <= "01";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "01";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
       when OP_JSR => --IR11 for JSRR, check me
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_PASS;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_PASS;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "11";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "11";
+        cWord.RegWrite := '1'; --unsure
         IF IR11 = '1' THEN
-          cWord.ADDR2MuxSel <= "01";
-          cWord.PCMuxSel <= "01";
+          cWord.ADDR2MuxSel := "01";
+          cWord.PCMuxSel := "01";
         ELSE
-          cWord.PCMuxSel <= "10";
+          cWord.PCMuxSel := "10";
         END IF;
       when OP_LDI => --check me
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '0';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '0';
         
-        cWord.DRMuxSel <= '0';
-        cWord.StoreMuxSel <= '1';
+        cWord.DRMuxSel := '0';
+        cWord.StoreMuxSel := '1';
         
-        cWord.ADDR1MuxSel <= '0';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "10";
-        cWord.ALUop <= ALU_PASS;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "10";
+        cWord.ALUop := ALU_PASS;
         
-        cWord.MARMuxSel <= "01";
-        cWord.MDRMuxSel <= "00";
-        cWord.Read_H <= '1'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "01";
+        cWord.MDRMuxSel := "00";
+        cWord.Read_H := '1'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '0';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "00";
-        cWord.RegWrite <= '0'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '0';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "00";
+        cWord.RegWrite := '0'; --unsure
       when OP_LDB => --not done
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
-      when OP_LDR => --not done cp1
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
+      when OP_LDR => -- cp1
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "11";
+        cWord.ALUMuxSel := "10";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '1'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "01";
+        cWord.MDRMuxSel := "00";
+        cWord.Read_H := '1'; 
+        cWord.Write_H := '0';
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "00";
+        cWord.RegWrite := '1';
       when OP_LEA => --not done
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
       when OP_NOT => --cp1
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUop <= ALU_NOT;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "11";
+        cWord.ALUop := ALU_NOT;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "00";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
-        cWord.ALUMuxSel <= "00";
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
+        IF IR5 = '1' THEN --choose imm or not.
+          cWord.ALUMuxSel := "01";
+        ELSE
+          cWord.ALUMuxSel := "00";
+        END IF;
       when OP_RTI => --not done
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
       when OP_SHF => --IR5, IR4
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1';
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1';
         if (IR4 = '0') then
-          cWord.ALUop    <= ALU_SLL;
+          cWord.ALUop    := ALU_SLL;
         elsif (IR5 = '0') then
-          cWord.ALUop    <= ALU_SRL;
+          cWord.ALUop    := ALU_SRL;
         else
-          cWord.ALUop    <= ALU_SRA;
+          cWord.ALUop    := ALU_SRA;
         end if;
       when OP_STB => --not done
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
       when OP_STI => --not done
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
-      when OP_STR => --not done cp1
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '1';
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "01";
+        cWord.RegWrite := '1'; --unsure
+      when OP_STR => --cp1
+        cWord.PCMuxSel := "00";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_ADD;
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "11";
+        cWord.ALUMuxSel := "10";
+        cWord.ALUop := ALU_ADD;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '1'; --unsure
+        cWord.MARMuxSel := "01";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '0';
+        cWord.Write_H := '1';
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '0';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "01";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '0';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "00";
+        cWord.RegWrite := '0';
       when OP_TRAP =>
-        cWord.PCMuxSel <= "11";
-        cWord.LoadPC <= '1';
+        cWord.PCMuxSel := "11";
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '0';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '0';
         
-        cWord.ADDR1MuxSel <= '1';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= ALU_PASS;
+        cWord.ADDR1MuxSel := '1';
+        cWord.ADDR2MuxSel := "00";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_PASS;
         
-        cWord.MARMuxSel <= "10";
-        cWord.MDRMuxSel <= "11";
-        cWord.Read_H <= '1'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "11";
+        cWord.Read_H := '1'; --unsure
+        cWord.Write_H := '0'; --unsure
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '1';
-        cWord.RFMuxSel <= "01";
-        cWord.RFMux2Sel <= "11";
-        cWord.RegWrite <= '1'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '1';
+        cWord.RFMuxSel := "01";
+        cWord.RFMux2Sel := "11";
+        cWord.RegWrite := '1'; --unsure
       when others =>
-        cWord.PCMuxSel <= "00";
-        cWord.LoadPC <= '0';
+        cWord.LoadPC := '1';
         
-        cWord.DRMuxSel <= '1';
-        cWord.StoreMuxSel <= '1';
+        cWord.DRMuxSel := '1';
+        cWord.StoreMuxSel := '1';
         
-        cWord.ADDR1MuxSel <= '0';
-        cWord.ADDR2MuxSel <= "00";
-        cWord.ALUMuxSel <= "00";
-        cWord.ALUop <= "000";
+        cWord.ADDR1MuxSel := '0';
+        cWord.ADDR2MuxSel := "01";
+        cWord.ALUMuxSel := "00";
+        cWord.ALUop := ALU_PASS;
         
-        cWord.MARMuxSel <= "00";
-        cWord.MDRMuxSel <= "00";
-        cWord.Read_H <= '0'; --unsure
-        cWord.Write_H <= '0'; --unsure
+        cWord.MARMuxSel := "10";
+        cWord.MDRMuxSel := "00";
+        cWord.Read_H := '0';
+        cWord.Write_H := '0';
         
-        cWord.GenCCMuxSel <= '0';
-        cWord.LoadNZP <= '0';
-        cWord.RFMuxSel <= "00";
-        cWord.RFMux2Sel <= "00";
-        cWord.RegWrite <= '0'; --unsure
+        cWord.GenCCMuxSel := '0';
+        cWord.LoadNZP := '0';
+        cWord.RFMuxSel := "00";
+        cWord.RFMux2Sel := "00";
+        cWord.RegWrite := '0';
+        cWord.PCMuxSel := "00";
     END CASE;
-  END IF;
-  END PROCESS;
+--  END IF;
   CONTROL <= cWord after delay_rom;
-  --and create single control word? control_word <= sig1 & sig2 & sig3...
+  END PROCESS;
+
+  --and create single control word? control_word := sig1 & sig2 & sig3...
         
 END ARCHITECTURE untitled;
-
---Control Signals... Not including pipeline register control
---LoadIR
---LoadPC
---PCMuxSel
---IF_BRAddout
---IF_MDRout
---RESET_L
---
---ID_dest
---ID_RegFileIn
---ID_SrcA
---ID_SrcB
---DRMuxsel
---StoreMuxSel
---WB_WriteRegisters
---
---ADDR1MuxSel
---ADDR2Muxsel
---ALUMuxsel
---ALUop
---EX_ADJ11
---EX_ADJ6
---EX_ADJ9
---EX_IMM5
---EX_PCPlus2
---EX_RFAout
---EX_RFBout
---EX_SEXT6
---
---LoadMAR --now READ_H and WRITE_H
---LoadMDR 
---MARMuxsel
---MDRMuxsel
---MEM_ALUout
---MEM_PCPlus2
---MEM_TRAPVECT8
---
---GENCCMuxSel
---LOADNZP
---RFMux2sel
---RFMuxsel
---WB_ALUout
---WB_BRAddout
---WB_dest
---WB_MDRout
---WB_PCPlus2out
---Regwrite

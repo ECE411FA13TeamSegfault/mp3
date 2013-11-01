@@ -23,6 +23,7 @@ ENTITY checkBR IS
       n      : IN     std_logic;
       p      : IN     std_logic;
       z      : IN     std_logic;
+      BR_Opcode  : IN std_logic;
       takeBr : OUT    std_logic
    );
 
@@ -33,7 +34,7 @@ END checkBR ;
 --
 ARCHITECTURE untitled OF checkBR IS
 BEGIN
-  takeBR <= ((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) 
+  takeBR <= (((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) AND BR_Opcode)
       after (DELAY_LOGIC2 + DELAY_LOGIC3);
 END ARCHITECTURE untitled;
 

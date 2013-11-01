@@ -1,0 +1,24 @@
+--
+-- VHDL Architecture ece411.COMP4.untitled
+--
+-- Created:
+--          by - chng2.ews (linux-a2.ews.illinois.edu)
+--          at - 04:04:19 11/01/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY COMP4 IS
+END ENTITY COMP4;
+
+--
+ARCHITECTURE untitled OF COMP4 IS
+BEGIN
+END ARCHITECTURE untitled;
+
