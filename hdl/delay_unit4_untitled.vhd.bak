@@ -1,0 +1,32 @@
+--
+-- VHDL Architecture ece411.delay_unit4.untitled
+--
+-- Created:
+--          by - chng2.ews (linux-a1.ews.illinois.edu)
+--          at - 20:33:34 11/02/13
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY delay_unit4 IS
+   PORT( 
+      I_MREAD_L : OUT    std_logic
+   );
+
+-- Declarations
+
+END delay_unit4 ;
+
+--
+ARCHITECTURE untitled OF delay_unit4 IS
+BEGIN
+    I_MREAD_L <= '0' after 5 ns;
+END ARCHITECTURE untitled;
+

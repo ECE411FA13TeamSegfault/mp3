@@ -701,19 +701,19 @@ value "/home/chng2/ece411/mp3/hds/Stage_Memory"
 )
 (vvPair
 variable "date"
-value "11/01/13"
+value "11/02/13"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "01"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -833,7 +833,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "05:28:54"
+value "21:16:13"
 )
 (vvPair
 variable "unit"
@@ -900,8 +900,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,62000,13500"
-st "clk           : IN     std_logic  ;
-"
+st "clk           : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -945,8 +944,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,62000,2700"
-st "DATAIN        : IN     LC3b_word  ;
-"
+st "DATAIN        : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -993,8 +991,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,62000,4500"
-st "Load          : IN     std_logic  ;
-"
+st "Load          : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1038,8 +1035,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,64000,5400"
-st "MARMuxsel     : IN     LC3b_4mux_sel  ;
-"
+st "MARMuxsel     : IN     LC3b_4mux_sel  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1086,8 +1082,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,64000,6300"
-st "MDRMuxsel     : IN     LC3b_4mux_sel  ;
-"
+st "MDRMuxsel     : IN     LC3b_4mux_sel  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1134,8 +1129,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,62000,7200"
-st "MEM_ALUout    : IN     LC3b_word  ;
-"
+st "MEM_ALUout    : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1183,8 +1177,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,62000,14400"
-st "MEM_MARout    : OUT    LC3b_word  ;
-"
+st "MEM_MARout    : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1230,8 +1223,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,14400,62000,15300"
-st "MEM_MDRout    : OUT    LC3b_word  ;
-"
+st "MEM_MDRout    : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1279,8 +1271,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,62000,8100"
-st "MEM_PCPlus2   : IN     LC3b_word  ;
-"
+st "MEM_PCPlus2   : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1327,8 +1318,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,62000,9000"
-st "MEM_TRAPVECT8 : IN     LC3b_word  ;
-"
+st "MEM_TRAPVECT8 : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1376,8 +1366,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,15300,62000,16200"
-st "MREAD_L       : OUT    std_logic  ;
-"
+st "MREAD_L       : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1422,8 +1411,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,62000,9900"
-st "MRESP_H       : IN     STD_LOGIC  ;
-"
+st "MRESP_H       : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1468,8 +1456,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,16200,61000,17100"
-st "MWRITE_L      : OUT    std_logic 
-"
+st "MWRITE_L      : OUT    std_logic "
 )
 thePort (LogicalPort
 m 1
@@ -1514,8 +1501,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,62000,11700"
-st "Read_H        : IN     STD_LOGIC  ;
-"
+st "Read_H        : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1559,8 +1545,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,62000,10800"
-st "RESET_L       : IN     std_logic  ;
-"
+st "RESET_L       : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1604,8 +1589,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,62000,12600"
-st "Write_H       : IN     STD_LOGIC  ;
-"
+st "Write_H       : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1649,8 +1633,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,62000,3600"
-st "EX_RFB        : IN     LC3b_word  ;
-"
+st "EX_RFB        : IN     LC3b_word  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -2372,6 +2355,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 1224,0
+lastUid 1247,0
 activeModelName "Symbol:CDM"
 )

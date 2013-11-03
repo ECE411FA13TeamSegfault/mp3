@@ -183,11 +183,10 @@ uid 14139,0
 )
 *24 (LogPort
 port (LogicalPort
-lang 11
 m 1
 decl (Decl
 n "I_MREAD_L"
-t "STD_LOGIC"
+t "std_logic"
 o 14
 suid 1418,0
 )
@@ -341,25 +340,25 @@ uid 14140,0
 )
 *43 (MRCItem
 litem &24
-pos 10
+pos 13
 dimension 20
 uid 14142,0
 )
 *44 (MRCItem
 litem &25
-pos 11
+pos 10
 dimension 20
 uid 14144,0
 )
 *45 (MRCItem
 litem &26
-pos 12
+pos 11
 dimension 20
 uid 14146,0
 )
 *46 (MRCItem
 litem &27
-pos 13
+pos 12
 dimension 20
 uid 14148,0
 )
@@ -592,23 +591,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp3/hdl"
+value "/home/chng2/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp3/hds/@datapath/interface.info"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp3/hds/@datapath/interface.user"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp3/hds"
+value "/home/chng2/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -624,27 +623,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp3/hds/@datapath"
+value "/home/chng2/ece411/mp3/hds/@datapath"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp3/hds/Datapath"
+value "/home/chng2/ece411/mp3/hds/Datapath"
 )
 (vvPair
 variable "date"
-value "11/01/13"
+value "11/02/13"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "01"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -672,7 +671,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-27.ews.illinois.edu"
+value "linux-a2.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -704,11 +703,11 @@ value "November"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp3/hds/@datapath/interface"
+value "/home/chng2/ece411/mp3/hds/@datapath/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp3/hds/Datapath/interface"
+value "/home/chng2/ece411/mp3/hds/Datapath/interface"
 )
 (vvPair
 variable "package_name"
@@ -764,7 +763,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "16:46:10"
+value "21:41:37"
 )
 (vvPair
 variable "unit"
@@ -772,7 +771,7 @@ value "Datapath"
 )
 (vvPair
 variable "user"
-value "chao16"
+value "chng2"
 )
 (vvPair
 variable "version"
@@ -831,8 +830,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,61000,8100"
-st "clk         : IN     STD_LOGIC  ;
-"
+st "clk         : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -878,8 +876,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,61000,9000"
-st "D_ADDRESS   : OUT    LC3b_word  ;
-"
+st "D_ADDRESS   : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 m 1
@@ -924,8 +921,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,61000,2700"
-st "D_DATAIN    : IN     LC3B_WORD  ;
-"
+st "D_DATAIN    : IN     LC3B_WORD  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -970,8 +966,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,61000,9900"
-st "D_DATAOUT   : OUT    LC3b_word  ;
-"
+st "D_DATAOUT   : OUT    LC3b_word  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1017,8 +1012,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,61000,10800"
-st "D_MREAD_L   : OUT    std_logic  ;
-"
+st "D_MREAD_L   : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1063,8 +1057,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,61000,3600"
-st "D_MRESP_H   : IN     STD_LOGIC  ;
-"
+st "D_MRESP_H   : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1109,8 +1102,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,61000,11700"
-st "D_MWRITEH_L : OUT    std_logic  ;
-"
+st "D_MWRITEH_L : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1156,8 +1148,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,61000,12600"
-st "D_MWRITEL_L : OUT    std_logic  ;
-"
+st "D_MWRITEL_L : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1203,8 +1194,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,61000,13500"
-st "I_ADDRESS   : OUT    LC3B_WORD  ;
-"
+st "I_ADDRESS   : OUT    LC3B_WORD  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1249,8 +1239,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,61000,4500"
-st "I_DATAIN    : IN     LC3B_WORD  ;
-"
+st "I_DATAIN    : IN     LC3B_WORD  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1295,15 +1284,13 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,60000,14400"
-st "I_MREAD_L   : OUT    STD_LOGIC 
-"
+st "I_MREAD_L   : OUT    std_logic "
 )
 thePort (LogicalPort
-lang 11
 m 1
 decl (Decl
 n "I_MREAD_L"
-t "STD_LOGIC"
+t "std_logic"
 o 14
 suid 1418,0
 )
@@ -1342,8 +1329,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,61000,5400"
-st "I_MRESP_H   : IN     STD_LOGIC  ;
-"
+st "I_MRESP_H   : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1388,8 +1374,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,61000,6300"
-st "RESET_L     : IN     STD_LOGIC  ;
-"
+st "RESET_L     : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1434,8 +1419,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,61000,7200"
-st "Start_H     : IN     std_logic  ;
-"
+st "Start_H     : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1532,7 +1516,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,44700,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -2157,7 +2141,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 14171,0
+lastUid 14332,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

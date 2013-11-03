@@ -44,6 +44,8 @@ BEGIN
 --  IF(start_h = '0') THEN -- other team checks a fetch, loadUse, and ZextSel_EX signal
 --      -- somemuxSel := '1';
 --  ELSE
+
+    cWord.opcode := opcode;
     CASE opcode is
       when OP_ADD => --cp1
         cWord.PCMuxSel := "00";

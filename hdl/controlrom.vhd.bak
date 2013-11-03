@@ -388,7 +388,7 @@ BEGIN
         cWord.LoadPC := '1';
         
         cWord.DRMuxSel := '1';
-        cWord.StoreMuxSel := '0';
+        cWord.StoreMuxSel := '1';
         
         cWord.ADDR1MuxSel := '0';
         cWord.ADDR2MuxSel := "11";
