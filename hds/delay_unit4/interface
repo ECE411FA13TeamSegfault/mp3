@@ -30,7 +30,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 3,0
+suid 4,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -71,15 +71,16 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "I_MREAD_L"
+n "preI_MREAD_L"
 t "std_logic"
 o 1
-suid 3,0
+suid 4,0
 )
 )
-uid 150,0
+uid 180,0
 )
 ]
 )
@@ -135,7 +136,7 @@ uid 85,0
 litem &14
 pos 0
 dimension 20
-uid 151,0
+uid 181,0
 )
 ]
 )
@@ -446,7 +447,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "linux-a2.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -538,7 +539,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "20:44:18"
+value "22:47:02"
 )
 (vvPair
 variable "unit"
@@ -573,46 +574,47 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *54 (CptPort
-uid 145,0
+uid 175,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 146,0
+uid 176,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "23000,7625,23750,8375"
+xt "23000,6625,23750,7375"
 )
 tg (CPTG
-uid 147,0
+uid 177,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 148,0
+uid 178,0
 va (VaSet
 font "courier,8,0"
 )
-xt "17500,7550,22000,8450"
-st "I_MREAD_L"
+xt "15500,6550,22000,7450"
+st "preI_MREAD_L"
 ju 2
-blo "22000,8250"
+blo "22000,7250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 149,0
+uid 179,0
 va (VaSet
 font "courier,8,0"
 )
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "I_MREAD_L"
+n "preI_MREAD_L"
 t "std_logic"
 o 1
-suid 3,0
+suid 4,0
 )
 )
 )
@@ -1327,6 +1329,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 151,0
+lastUid 181,0
 activeModelName "Symbol:CDM"
 )

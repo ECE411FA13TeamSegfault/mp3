@@ -49,6 +49,8 @@ PACKAGE LC3B_TYPES IS
 	    mem, wb 					: LC3B_WORD;
 	    name 					: OPNAME;
 	    
+	    opcode     : LC3B_opcode;
+	    
 	    -- Stage IF
 	    LoadPC       : std_logic; --
 	    PCMuxsel					: LC3B_4MUX_SEL;

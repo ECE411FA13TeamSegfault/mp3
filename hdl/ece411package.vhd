@@ -50,6 +50,7 @@ PACKAGE LC3B_TYPES IS
 	    name 					: OPNAME;
 	    
 	    opcode     : LC3B_opcode;
+	    IR         : LC3B_word;
 	    
 	    -- Stage IF
 	    LoadPC       : std_logic; --

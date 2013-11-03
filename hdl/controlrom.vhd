@@ -25,6 +25,7 @@ ENTITY Control_ROM IS
       IR4 : IN std_logic;
       IR5 : IN std_logic;
       IR11  : IN std_logic;
+      IR    : IN LC3b_word;
       -- control signals out. Should we join all the signals into a control word?      
       CONTROL : OUT CONTROL_WORD
    );
@@ -46,6 +47,7 @@ BEGIN
 --  ELSE
 
     cWord.opcode := opcode;
+    cWord.IR      := IR;
     CASE opcode is
       when OP_ADD => --cp1
         cWord.PCMuxSel := "00";
@@ -223,6 +225,7 @@ BEGIN
         cWord.RFMux2Sel := "01";
         cWord.RegWrite := '1'; --unsure
       when OP_LDR => -- cp1
+        cWord.IR      := IR;
         cWord.PCMuxSel := "00";
         cWord.LoadPC := '1';
         
