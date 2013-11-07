@@ -16,7 +16,7 @@ USE ece411.LC3b_types.all;
 
 ENTITY CLKgen IS
    PORT( 
-      clk : INOUT  std_logic  := '0'
+      clk     : INOUT    std_logic := '0'
    );
 
 -- Declarations
@@ -26,5 +26,9 @@ END CLKgen ;
 --
 ARCHITECTURE untitled OF CLKgen IS
 BEGIN
+  PROCESS (clk)
+  BEGIN
+    clk <= NOT clk AFTER 23ns;
+  END PROCESS;
 END ARCHITECTURE untitled;
 

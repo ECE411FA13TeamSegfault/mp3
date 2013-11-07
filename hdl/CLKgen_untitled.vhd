@@ -28,7 +28,7 @@ ARCHITECTURE untitled OF CLKgen IS
 BEGIN
   PROCESS (clk)
   BEGIN
-    clk <= NOT clk AFTER HALF_CLOCK_PERIOD;
+    clk <= NOT clk AFTER 24ns;
   END PROCESS;
 END ARCHITECTURE untitled;
 
