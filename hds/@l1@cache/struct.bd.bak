@@ -48,23 +48,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp2.2test2/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp2.2test2/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp2.2test2/hds/@l1@cache/struct.bd.info"
+value "/home/chao16/ece411/mp3/hds/@l1@cache/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp2.2test2/hds/@l1@cache/struct.bd.user"
+value "/home/chao16/ece411/mp3/hds/@l1@cache/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp2.2test2/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -80,11 +80,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp2.2test2/hds/@l1@cache"
+value "/home/chao16/ece411/mp3/hds/@l1@cache"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp2.2test2/hds/L1Cache"
+value "/home/chao16/ece411/mp3/hds/L1Cache"
 )
 (vvPair
 variable "date"
@@ -160,11 +160,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp2.2test2/hds/@l1@cache/struct.bd"
+value "/home/chao16/ece411/mp3/hds/@l1@cache/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp2.2test2/hds/L1Cache/struct.bd"
+value "/home/chao16/ece411/mp3/hds/L1Cache/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -172,7 +172,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "ece411"
+value "ece411_mp3"
 )
 (vvPair
 variable "series"
@@ -220,7 +220,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "18:06:15"
+value "21:01:13"
 )
 (vvPair
 variable "unit"
@@ -311,8 +311,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,12800,6000,13700"
-st "ADDRESS     : LC3B_WORD
-"
+st "ADDRESS     : LC3B_WORD"
 )
 )
 *3 (PortIoIn
@@ -375,8 +374,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,20000,6000,20900"
-st "clk         : std_logic
-"
+st "clk         : std_logic"
 )
 )
 *5 (PortIoOut
@@ -438,8 +436,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,20900,6000,21800"
-st "DATAIN      : LC3B_WORD
-"
+st "DATAIN      : LC3B_WORD"
 )
 )
 *7 (PortIoIn
@@ -502,8 +499,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,13700,6000,14600"
-st "DATAOUT     : LC3B_WORD
-"
+st "DATAOUT     : LC3B_WORD"
 )
 )
 *9 (PortIoIn
@@ -566,8 +562,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,14600,6000,15500"
-st "MREAD_L     : std_logic
-"
+st "MREAD_L     : std_logic"
 )
 )
 *11 (PortIoOut
@@ -629,8 +624,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,21800,6000,22700"
-st "MRESP_H     : std_logic
-"
+st "MRESP_H     : std_logic"
 )
 )
 *13 (PortIoIn
@@ -693,8 +687,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,15500,6000,16400"
-st "MWRITEH_L   : std_logic
-"
+st "MWRITEH_L   : std_logic"
 )
 )
 *15 (PortIoIn
@@ -757,8 +750,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,16400,6000,17300"
-st "MWRITEL_L   : std_logic
-"
+st "MWRITEL_L   : std_logic"
 )
 )
 *17 (PortIoOut
@@ -820,8 +812,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,22700,6000,23600"
-st "PMADDRESS   : LC3B_WORD
-"
+st "PMADDRESS   : LC3B_WORD"
 )
 )
 *19 (PortIoIn
@@ -884,8 +875,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,17300,6500,18200"
-st "PMDATAIN    : LC3B_OWORD
-"
+st "PMDATAIN    : LC3B_OWORD"
 )
 )
 *21 (PortIoOut
@@ -947,8 +937,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,23600,6500,24500"
-st "PMDATAOUT   : LC3B_OWORD
-"
+st "PMDATAOUT   : LC3B_OWORD"
 )
 )
 *23 (PortIoOut
@@ -1010,8 +999,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,24500,6000,25400"
-st "PMREAD_L    : std_logic
-"
+st "PMREAD_L    : std_logic"
 )
 )
 *25 (PortIoIn
@@ -1074,8 +1062,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,18200,6000,19100"
-st "PMRESP_H    : std_logic
-"
+st "PMRESP_H    : std_logic"
 )
 )
 *27 (PortIoOut
@@ -1137,8 +1124,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,25400,6000,26300"
-st "PMWRITE_L   : std_logic
-"
+st "PMWRITE_L   : std_logic"
 )
 )
 *29 (PortIoIn
@@ -1201,8 +1187,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,19100,6000,20000"
-st "RESET_L     : std_logic
-"
+st "RESET_L     : std_logic"
 )
 )
 *31 (Grouping
@@ -2673,8 +2658,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,29900,9500,30800"
-st "SIGNAL InWriteBack : std_logic
-"
+st "SIGNAL InWriteBack : std_logic"
 )
 )
 *78 (Net
@@ -2691,8 +2675,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,28100,9500,29000"
-st "SIGNAL InLoad      : std_logic
-"
+st "SIGNAL InLoad      : std_logic"
 )
 )
 *79 (Net
@@ -2709,8 +2692,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,29000,9500,29900"
-st "SIGNAL InWaitHit   : std_logic
-"
+st "SIGNAL InWaitHit   : std_logic"
 )
 )
 *80 (Net
@@ -2727,8 +2709,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,27200,9500,28100"
-st "SIGNAL Dirty       : std_logic
-"
+st "SIGNAL Dirty       : std_logic"
 )
 )
 *81 (Net
@@ -2745,8 +2726,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-6000,30800,9500,31700"
-st "SIGNAL Miss        : std_logic
-"
+st "SIGNAL Miss        : std_logic"
 )
 )
 *82 (Wire
@@ -4077,12 +4057,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "1199,47,1974,1041"
-viewArea "12900,-7000,53748,51978"
+windowSize "936,50,1711,1044"
+viewArea "12900,-7000,48780,44935"
 cachedDiagramExtent "-8000,0,61000,50000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,0"
-lastUid 753,0
+lastUid 796,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -5821,5 +5801,5 @@ vaOverrides [
 uid 337,0
 type 1
 )
-activeModelName "BlockDiag:CDM"
+activeModelName "BlockDiag"
 )

@@ -137,7 +137,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0218-09.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -197,7 +197,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -205,7 +205,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -229,7 +229,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:12:27"
+value "17:01:03"
 )
 (vvPair
 variable "unit"
@@ -4684,12 +4684,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "201,53,1764,1035"
-viewArea "5775,-1600,79475,44545"
+windowSize "195,55,1758,1037"
+viewArea "5800,-1600,74140,41189"
 cachedDiagramExtent "-24000,-8300,74000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-77000,-51000"
-lastUid 5541,0
+lastUid 5596,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

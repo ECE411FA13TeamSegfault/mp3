@@ -88,7 +88,7 @@ value "/home/chao16/ece411/mp3/hds/L1Cache"
 )
 (vvPair
 variable "date"
-value "10/31/13"
+value "11/14/13"
 )
 (vvPair
 variable "day"
@@ -100,7 +100,7 @@ value "Thursday"
 )
 (vvPair
 variable "dd"
-value "31"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -128,7 +128,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0218-24.ews.illinois.edu"
+value "dcl-l520-09.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -144,7 +144,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "10"
+value "11"
 )
 (vvPair
 variable "module_name"
@@ -152,11 +152,11 @@ value "L1Cache"
 )
 (vvPair
 variable "month"
-value "Oct"
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "October"
+value "November"
 )
 (vvPair
 variable "p"
@@ -188,7 +188,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -196,7 +196,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -220,7 +220,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:01:13"
+value "16:40:56"
 )
 (vvPair
 variable "unit"
@@ -1371,7 +1371,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "45200,45050,48200,45950"
+xt "45200,45050,50700,45950"
 st "
 %project_name
 "
@@ -4057,12 +4057,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "936,50,1711,1044"
-viewArea "12900,-7000,48780,44935"
+windowSize "409,49,1783,1051"
+viewArea "-16469,-4877,65539,54474"
 cachedDiagramExtent "-8000,0,61000,50000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,0"
-lastUid 796,0
+lastUid 839,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
