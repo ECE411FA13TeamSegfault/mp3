@@ -106,19 +106,19 @@ value "/home/chao16/ece411/mp3/hds/mp2_CPU"
 )
 (vvPair
 variable "date"
-value "11/01/13"
+value "11/14/13"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "01"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -146,7 +146,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-27.ews.illinois.edu"
+value "dcl-l520-09.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -238,7 +238,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "17:01:07"
+value "16:08:29"
 )
 (vvPair
 variable "unit"
@@ -614,7 +614,7 @@ fg "39936,56832,65280"
 lineColor "0,0,32768"
 lineWidth 2
 )
-xt "40000,22000,48000,36000"
+xt "40000,22000,49000,36000"
 )
 oxt "0,0,8000,10000"
 ttg (MlTextGroup
@@ -698,16 +698,16 @@ optionalChildren [
 uid 3468,0
 sl 0
 ro 270
-xt "27000,2625,28500,3375"
+xt "16000,3625,17500,4375"
 )
 (Line
 uid 3469,0
 sl 0
 ro 270
-xt "28500,3000,29000,3000"
+xt "17500,4000,18000,4000"
 pts [
-"28500,3000"
-"29000,3000"
+"17500,4000"
+"18000,4000"
 ]
 )
 ]
@@ -723,10 +723,10 @@ uid 3471,0
 va (VaSet
 font "courier,8,0"
 )
-xt "22500,2550,26000,3450"
+xt "11500,3550,15000,4450"
 st "RESET_L"
 ju 2
-blo "26000,3250"
+blo "15000,4250"
 tm "WireNameMgr"
 )
 )
@@ -744,16 +744,16 @@ optionalChildren [
 uid 3474,0
 sl 0
 ro 270
-xt "27000,4625,28500,5375"
+xt "16000,5625,17500,6375"
 )
 (Line
 uid 3475,0
 sl 0
 ro 270
-xt "28500,5000,29000,5000"
+xt "17500,6000,18000,6000"
 pts [
-"28500,5000"
-"29000,5000"
+"17500,6000"
+"18000,6000"
 ]
 )
 ]
@@ -769,10 +769,10 @@ uid 3477,0
 va (VaSet
 font "courier,8,0"
 )
-xt "22500,4550,26000,5450"
+xt "11500,5550,15000,6450"
 st "Start_H"
 ju 2
-blo "26000,5250"
+blo "15000,6250"
 tm "WireNameMgr"
 )
 )
@@ -791,8 +791,9 @@ uid 3497,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,2400,65000,3300"
-st "RESET_L     : STD_LOGIC"
+xt "40000,2400,52000,3300"
+st "RESET_L     : STD_LOGIC
+"
 )
 )
 *19 (Net
@@ -808,8 +809,9 @@ uid 3499,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,3300,65000,4200"
-st "Start_H     : std_logic"
+xt "40000,3300,52000,4200"
+st "Start_H     : std_logic
+"
 )
 )
 *20 (Blk
@@ -835,9 +837,9 @@ uid 12975,0
 va (VaSet
 font "courier,8,1"
 )
-xt "20250,15150,23250,16050"
+xt "20250,22150,23250,23050"
 st "ece411"
-blo "20250,15850"
+blo "20250,22850"
 tm "BdLibraryNameMgr"
 )
 *22 (Text
@@ -845,9 +847,9 @@ uid 12976,0
 va (VaSet
 font "courier,8,1"
 )
-xt "20250,16050,23250,16950"
+xt "20250,23050,23250,23950"
 st "Memory"
-blo "20250,16750"
+blo "20250,23750"
 tm "BlkNameMgr"
 )
 *23 (Text
@@ -855,9 +857,9 @@ uid 12977,0
 va (VaSet
 font "courier,8,1"
 )
-xt "20250,16950,22250,17850"
+xt "20250,23950,22250,24850"
 st "DRAM"
-blo "20250,17650"
+blo "20250,24650"
 tm "InstanceNameMgr"
 )
 ]
@@ -908,8 +910,9 @@ uid 14464,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,17900,72200,18800"
-st "SIGNAL clk         : STD_LOGIC := '0'"
+xt "40000,17900,59200,18800"
+st "SIGNAL clk         : STD_LOGIC := '0'
+"
 )
 )
 *25 (Net
@@ -925,8 +928,9 @@ uid 14475,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,5300,68500,6200"
-st "SIGNAL D_ADDRESS   : LC3b_word"
+xt "40000,5300,55500,6200"
+st "SIGNAL D_ADDRESS   : LC3b_word
+"
 )
 )
 *26 (Net
@@ -942,8 +946,9 @@ uid 14486,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,6200,68500,7100"
-st "SIGNAL D_DATAIN    : LC3B_WORD"
+xt "40000,6200,55500,7100"
+st "SIGNAL D_DATAIN    : LC3B_WORD
+"
 )
 )
 *27 (Net
@@ -959,8 +964,9 @@ uid 14497,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,7100,68500,8000"
-st "SIGNAL D_DATAOUT   : LC3b_word"
+xt "40000,7100,55500,8000"
+st "SIGNAL D_DATAOUT   : LC3b_word
+"
 )
 )
 *28 (Net
@@ -976,8 +982,9 @@ uid 14508,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,8000,68500,8900"
-st "SIGNAL D_MREAD_L   : std_logic"
+xt "40000,8000,55500,8900"
+st "SIGNAL D_MREAD_L   : std_logic
+"
 )
 )
 *29 (Net
@@ -993,8 +1000,9 @@ uid 14519,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,8900,68500,9800"
-st "SIGNAL D_MRESP_H   : STD_LOGIC"
+xt "40000,8900,55500,9800"
+st "SIGNAL D_MRESP_H   : STD_LOGIC
+"
 )
 )
 *30 (Net
@@ -1010,8 +1018,9 @@ uid 14530,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,9800,68500,10700"
-st "SIGNAL D_MWRITEH_L : std_logic"
+xt "40000,9800,55500,10700"
+st "SIGNAL D_MWRITEH_L : std_logic
+"
 )
 )
 *31 (Net
@@ -1027,8 +1036,9 @@ uid 14541,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,10700,68500,11600"
-st "SIGNAL D_MWRITEL_L : std_logic"
+xt "40000,10700,55500,11600"
+st "SIGNAL D_MWRITEL_L : std_logic
+"
 )
 )
 *32 (Net
@@ -1044,8 +1054,9 @@ uid 14552,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,11600,68500,12500"
-st "SIGNAL I_ADDRESS   : LC3B_WORD"
+xt "40000,11600,55500,12500"
+st "SIGNAL I_ADDRESS   : LC3B_WORD
+"
 )
 )
 *33 (Net
@@ -1061,8 +1072,9 @@ uid 14563,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,12500,68500,13400"
-st "SIGNAL I_DATAIN    : LC3B_WORD"
+xt "40000,12500,55500,13400"
+st "SIGNAL I_DATAIN    : LC3B_WORD
+"
 )
 )
 *34 (Net
@@ -1078,8 +1090,9 @@ uid 14574,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,13400,68500,14300"
-st "SIGNAL I_DATAOUT   : LC3b_word"
+xt "40000,13400,55500,14300"
+st "SIGNAL I_DATAOUT   : LC3b_word
+"
 )
 )
 *35 (Net
@@ -1096,8 +1109,9 @@ uid 14585,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,14300,68500,15200"
-st "SIGNAL I_MREAD_L   : STD_LOGIC"
+xt "40000,14300,55500,15200"
+st "SIGNAL I_MREAD_L   : STD_LOGIC
+"
 )
 )
 *36 (Net
@@ -1114,8 +1128,9 @@ uid 14596,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,15200,68500,16100"
-st "SIGNAL I_MRESP_H   : STD_LOGIC"
+xt "40000,15200,55500,16100"
+st "SIGNAL I_MRESP_H   : STD_LOGIC
+"
 )
 )
 *37 (Net
@@ -1131,8 +1146,9 @@ uid 14607,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,16100,68500,17000"
-st "SIGNAL I_MWRITEH_L : std_logic"
+xt "40000,16100,55500,17000"
+st "SIGNAL I_MWRITEH_L : std_logic
+"
 )
 )
 *38 (Net
@@ -1148,8 +1164,9 @@ uid 14618,0
 va (VaSet
 font "courier,8,0"
 )
-xt "53000,17000,68500,17900"
-st "SIGNAL I_MWRITEL_L : std_logic"
+xt "40000,17000,55500,17900"
+st "SIGNAL I_MWRITEL_L : std_logic
+"
 )
 )
 *39 (SaComponent
@@ -1165,7 +1182,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "44000,2625,44750,3375"
+xt "31000,4625,31750,5375"
 )
 tg (CPTG
 uid 15085,0
@@ -1176,20 +1193,20 @@ uid 15086,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41500,2550,43000,3450"
+xt "32500,2550,34000,3450"
 st "clk"
 ju 2
-blo "43000,3250"
+blo "34000,3250"
 )
 t (Text
 uid 15087,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41300,3450,43000,4350"
+xt "32300,3450,34000,4350"
 st "'0'"
 ju 2
-blo "43000,4150"
+blo "34000,4150"
 )
 )
 thePort (LogicalPort
@@ -1212,7 +1229,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "38000,2000,44000,6000"
+xt "23000,3000,31000,7000"
 )
 oxt "24000,14000,30000,18000"
 ttg (MlTextGroup
@@ -1225,9 +1242,9 @@ uid 15076,0
 va (VaSet
 font "courier,8,1"
 )
-xt "38750,3100,41750,4000"
+xt "25750,4100,28750,5000"
 st "ece411"
-blo "38750,3800"
+blo "25750,4800"
 tm "BdLibraryNameMgr"
 )
 *42 (Text
@@ -1235,9 +1252,9 @@ uid 15077,0
 va (VaSet
 font "courier,8,1"
 )
-xt "38750,4000,41750,4900"
+xt "25750,5000,28750,5900"
 st "CLKgen"
-blo "38750,4700"
+blo "25750,5700"
 tm "CptNameMgr"
 )
 *43 (Text
@@ -1245,9 +1262,9 @@ uid 15078,0
 va (VaSet
 font "courier,8,1"
 )
-xt "38750,4900,40750,5800"
+xt "25750,5900,27750,6800"
 st "U_11"
-blo "38750,5600"
+blo "25750,6600"
 tm "InstanceNameMgr"
 )
 ]
@@ -1262,7 +1279,7 @@ uid 15081,0
 va (VaSet
 font "courier,8,0"
 )
-xt "23000,8000,23000,8000"
+xt "10000,9000,10000,9000"
 )
 header ""
 )
@@ -1276,7 +1293,7 @@ va (VaSet
 vasetType 1
 fg "49152,49152,49152"
 )
-xt "38250,4250,39750,5750"
+xt "23250,5250,24750,6750"
 iconName "VhdlFileViewIcon.png"
 iconMaskName "VhdlFileViewIcon.msk"
 ftype 10
@@ -1298,7 +1315,7 @@ fg "39936,56832,65280"
 lineColor "0,0,32768"
 lineWidth 2
 )
-xt "-5000,30000,3000,34000"
+xt "-6000,30000,3000,34000"
 )
 oxt "0,0,8000,10000"
 ttg (MlTextGroup
@@ -1311,9 +1328,9 @@ uid 15100,0
 va (VaSet
 font "courier,8,1"
 )
-xt "-2750,30650,250,31550"
+xt "-3750,30650,-750,31550"
 st "ece411"
-blo "-2750,31350"
+blo "-3750,31350"
 tm "BdLibraryNameMgr"
 )
 *46 (Text
@@ -1321,9 +1338,9 @@ uid 15101,0
 va (VaSet
 font "courier,8,1"
 )
-xt "-2750,31550,2750,32450"
+xt "-3750,31550,1750,32450"
 st "NeverWrite"
-blo "-2750,32250"
+blo "-3750,32250"
 tm "BlkNameMgr"
 )
 *47 (Text
@@ -1331,9 +1348,9 @@ uid 15102,0
 va (VaSet
 font "courier,8,1"
 )
-xt "-2750,32450,3250,33350"
+xt "-3750,32450,2250,33350"
 st "aNeverWrite"
-blo "-2750,33150"
+blo "-3750,33150"
 tm "InstanceNameMgr"
 )
 ]
@@ -1362,7 +1379,7 @@ va (VaSet
 vasetType 1
 fg "49152,49152,49152"
 )
-xt "-4750,32250,-3250,33750"
+xt "-5750,32250,-4250,33750"
 iconName "VhdlFileViewIcon.png"
 iconMaskName "VhdlFileViewIcon.msk"
 ftype 10
@@ -1376,14 +1393,13 @@ uid 3481,0
 va (VaSet
 vasetType 3
 )
-xt "29000,3000,34000,3000"
+xt "18000,4000,20000,4000"
 pts [
-"29000,3000"
-"34000,3000"
+"18000,4000"
+"20000,4000"
 ]
 )
 start &16
-ss 0
 sat 32
 eat 16
 stc 0
@@ -1400,9 +1416,9 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "33100,1000,34000,4500"
+xt "19100,2000,20000,5500"
 st "RESET_L"
-blo "33800,4500"
+blo "19800,5500"
 tm "WireNameMgr"
 )
 s (Text
@@ -1412,8 +1428,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,0,34900,4500"
-blo "34700,4500"
+xt "20000,1000,20900,5500"
+blo "20700,5500"
 tm "SignalTypeMgr"
 )
 )
@@ -1426,10 +1442,10 @@ uid 3490,0
 va (VaSet
 vasetType 3
 )
-xt "29000,5000,34000,5000"
+xt "18000,6000,20000,6000"
 pts [
-"29000,5000"
-"34000,5000"
+"18000,6000"
+"20000,6000"
 ]
 )
 start &17
@@ -1449,9 +1465,9 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "33100,3000,34000,6500"
+xt "19100,4000,20000,7500"
 st "Start_H"
-blo "33800,6500"
+blo "19800,7500"
 tm "WireNameMgr"
 )
 s (Text
@@ -1461,8 +1477,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,2000,34900,6500"
-blo "34700,6500"
+xt "20000,3000,20900,7500"
+blo "20700,7500"
 tm "SignalTypeMgr"
 )
 )
@@ -2287,10 +2303,10 @@ uid 14966,0
 va (VaSet
 vasetType 3
 )
-xt "48000,23000,58000,23000"
+xt "49000,23000,59000,23000"
 pts [
-"48000,23000"
-"58000,23000"
+"49000,23000"
+"59000,23000"
 ]
 )
 start &12
@@ -2307,9 +2323,9 @@ uid 14972,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,22100,54500,23000"
+xt "51000,22100,55500,23000"
 st "D_ADDRESS"
-blo "50000,22800"
+blo "51000,22800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2317,9 +2333,9 @@ uid 14973,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,23000,54500,23900"
+xt "51000,23000,55500,23900"
 st "LC3b_word"
-blo "50000,23700"
+blo "51000,23700"
 tm "SignalTypeMgr"
 )
 )
@@ -2377,10 +2393,10 @@ uid 14984,0
 va (VaSet
 vasetType 3
 )
-xt "48000,25000,58000,25000"
+xt "49000,25000,59000,25000"
 pts [
-"48000,25000"
-"58000,25000"
+"49000,25000"
+"59000,25000"
 ]
 )
 start &12
@@ -2397,9 +2413,9 @@ uid 14990,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,24100,54500,25000"
+xt "51000,24100,55500,25000"
 st "D_DATAOUT"
-blo "50000,24800"
+blo "51000,24800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2407,9 +2423,9 @@ uid 14991,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,25000,54500,25900"
+xt "51000,25000,55500,25900"
 st "LC3b_word"
-blo "50000,25700"
+blo "51000,25700"
 tm "SignalTypeMgr"
 )
 )
@@ -2422,10 +2438,10 @@ uid 14993,0
 va (VaSet
 vasetType 3
 )
-xt "48000,27000,58000,27000"
+xt "49000,27000,59000,27000"
 pts [
-"48000,27000"
-"58000,27000"
+"49000,27000"
+"59000,27000"
 ]
 )
 start &12
@@ -2442,9 +2458,9 @@ uid 14999,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,26100,54500,27000"
+xt "51000,26100,55500,27000"
 st "D_MREAD_L"
-blo "50000,26800"
+blo "51000,26800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2452,9 +2468,9 @@ uid 15000,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,27000,54500,27900"
+xt "51000,27000,55500,27900"
 st "std_logic"
-blo "50000,27700"
+blo "51000,27700"
 tm "SignalTypeMgr"
 )
 )
@@ -2512,10 +2528,10 @@ uid 15011,0
 va (VaSet
 vasetType 3
 )
-xt "48000,29000,58000,29000"
+xt "49000,29000,59000,29000"
 pts [
-"48000,29000"
-"58000,29000"
+"49000,29000"
+"59000,29000"
 ]
 )
 start &12
@@ -2532,9 +2548,9 @@ uid 15017,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,28100,56000,29000"
+xt "51000,28100,57000,29000"
 st "D_MWRITEH_L"
-blo "50000,28800"
+blo "51000,28800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2542,9 +2558,9 @@ uid 15018,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,29000,54500,29900"
+xt "51000,29000,55500,29900"
 st "std_logic"
-blo "50000,29700"
+blo "51000,29700"
 tm "SignalTypeMgr"
 )
 )
@@ -2557,10 +2573,10 @@ uid 15020,0
 va (VaSet
 vasetType 3
 )
-xt "48000,31000,58000,31000"
+xt "49000,31000,59000,31000"
 pts [
-"48000,31000"
-"58000,31000"
+"49000,31000"
+"59000,31000"
 ]
 )
 start &12
@@ -2577,9 +2593,9 @@ uid 15026,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,30100,56000,31000"
+xt "51000,30100,57000,31000"
 st "D_MWRITEL_L"
-blo "50000,30800"
+blo "51000,30800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2587,9 +2603,9 @@ uid 15027,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,31000,54500,31900"
+xt "51000,31000,55500,31900"
 st "std_logic"
-blo "50000,31700"
+blo "51000,31700"
 tm "SignalTypeMgr"
 )
 )
@@ -2602,10 +2618,10 @@ uid 15029,0
 va (VaSet
 vasetType 3
 )
-xt "48000,33000,58000,33000"
+xt "49000,33000,59000,33000"
 pts [
-"48000,33000"
-"58000,33000"
+"49000,33000"
+"59000,33000"
 ]
 )
 start &12
@@ -2622,9 +2638,9 @@ uid 15035,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,32100,54500,33000"
+xt "51000,32100,55500,33000"
 st "I_ADDRESS"
-blo "50000,32800"
+blo "51000,32800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2632,9 +2648,9 @@ uid 15036,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,33000,54500,33900"
+xt "51000,33000,55500,33900"
 st "LC3B_WORD"
-blo "50000,33700"
+blo "51000,33700"
 tm "SignalTypeMgr"
 )
 )
@@ -2692,10 +2708,10 @@ uid 15047,0
 va (VaSet
 vasetType 3
 )
-xt "48000,35000,58000,35000"
+xt "49000,35000,59000,35000"
 pts [
-"48000,35000"
-"58000,35000"
+"49000,35000"
+"59000,35000"
 ]
 )
 start &12
@@ -2712,9 +2728,9 @@ uid 15053,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,34100,54500,35000"
+xt "51000,34100,55500,35000"
 st "I_MREAD_L"
-blo "50000,34800"
+blo "51000,34800"
 tm "WireNameMgr"
 )
 s (Text
@@ -2722,9 +2738,9 @@ uid 15054,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50000,35000,54500,35900"
+xt "51000,35000,55500,35900"
 st "STD_LOGIC"
-blo "50000,35700"
+blo "51000,35700"
 tm "SignalTypeMgr"
 )
 )
@@ -2827,10 +2843,10 @@ uid 15091,0
 va (VaSet
 vasetType 3
 )
-xt "44750,3000,48000,3000"
+xt "31750,5000,35000,5000"
 pts [
-"44750,3000"
-"48000,3000"
+"31750,5000"
+"35000,5000"
 ]
 )
 start &40
@@ -2845,21 +2861,23 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 15095,0
 va (VaSet
+isHidden 1
 font "courier,8,0"
 )
-xt "46750,2100,48250,3000"
+xt "33750,4100,35250,5000"
 st "clk"
-blo "46750,2800"
+blo "33750,4800"
 tm "WireNameMgr"
 )
 t (Text
 uid 15256,0
 va (VaSet
+isHidden 1
 font "courier,8,0"
 )
-xt "46750,3000,48450,3900"
+xt "33750,5000,35450,5900"
 st "'0'"
-blo "46750,3700"
+blo "33750,5700"
 tm "InitValueDelayMgr"
 )
 )
@@ -2886,16 +2904,16 @@ uid 43,0
 va (VaSet
 font "lucida,10,0"
 )
-xt "7000,300,13800,1400"
+xt "-5000,300,1800,1400"
 st "Package List"
-blo "7000,1200"
+blo "-5000,1200"
 )
 *83 (MLText
 uid 44,0
 va (VaSet
 font "lucida,10,0"
 )
-xt "7000,1400,21400,8000"
+xt "-5000,1400,9400,8000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
@@ -2982,9 +3000,9 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "184,29,1884,1061"
-viewArea "-14500,-13700,77074,41418"
-cachedDiagramExtent "-5000,0,144000,55700"
+windowSize "178,28,1878,1059"
+viewArea "-14500,-3492,71166,48012"
+cachedDiagramExtent "-6000,0,144000,55700"
 pageSetupInfo (PageSetupInfo
 toPrinter 1
 xMargin 49
@@ -3001,7 +3019,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 15256,0
+lastUid 15405,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -4013,18 +4031,18 @@ uid 2,0
 va (VaSet
 font "lucida,10,0"
 )
-xt "51000,200,58000,1300"
+xt "38000,200,45000,1300"
 st "Declarations"
-blo "51000,1100"
+blo "38000,1100"
 )
 portLabel (Text
 uid 3,0
 va (VaSet
 font "lucida,10,0"
 )
-xt "51000,1300,53800,2400"
+xt "38000,1300,40800,2400"
 st "Ports:"
-blo "51000,2200"
+blo "38000,2200"
 )
 preUserLabel (Text
 uid 4,0
@@ -4032,9 +4050,9 @@ va (VaSet
 isHidden 1
 font "courier,8,1"
 )
-xt "51000,200,55500,1100"
+xt "38000,200,42500,1100"
 st "Pre User:"
-blo "51000,900"
+blo "38000,900"
 )
 preUserText (MLText
 uid 5,0
@@ -4042,7 +4060,7 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "51000,200,51000,200"
+xt "38000,200,38000,200"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text
@@ -4050,9 +4068,9 @@ uid 6,0
 va (VaSet
 font "lucida,10,0"
 )
-xt "51000,4200,59900,5300"
+xt "38000,4200,46900,5300"
 st "Diagram Signals:"
-blo "51000,5100"
+blo "38000,5100"
 )
 postUserLabel (Text
 uid 7,0
@@ -4060,9 +4078,9 @@ va (VaSet
 isHidden 1
 font "courier,8,1"
 )
-xt "51000,200,56500,1100"
+xt "38000,200,43500,1100"
 st "Post User:"
-blo "51000,900"
+blo "38000,900"
 )
 postUserText (MLText
 uid 8,0
@@ -4070,7 +4088,7 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "51000,200,51000,200"
+xt "38000,200,38000,200"
 tm "BdDeclarativeTextMgr"
 )
 )

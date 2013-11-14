@@ -35,6 +35,7 @@ PACKAGE LC3B_TYPES IS
   SUBTYPE LC3B_C_OFFSET  IS STD_LOGIC_VECTOR(3 DOWNTO 0);
   SUBTYPE LC3B_C_INDEX   IS STD_LOGIC_VECTOR(2 DOWNTO 0);
   SUBTYPE LC3B_C_TAG     IS STD_LOGIC_VECTOR(8 DOWNTO 0);
+  SUBTYPE LC3B_C_SET	 IS STD_LOGIC_VECTOR(2 DOWNTO 0);
 
 	TYPE MEMORY_ARRAY_64K IS ARRAY (0 TO 65535) OF LC3B_BYTE;
 	
@@ -44,9 +45,42 @@ PACKAGE LC3B_TYPES IS
 	END RECORD;
 	
 	TYPE CONTROL_WORD IS RECORD
-	    ex : EX_CONTROL;
-	    mem, wb : LC3B_WORD;
-	    name : OPNAME;
+	    ex 					: EX_CONTROL;
+	    mem, wb 					: LC3B_WORD;
+	    name 					: OPNAME;
+	    
+	    opcode     : LC3B_opcode;
+	    IR         : LC3B_word;
+	    
+	    -- Stage IF
+	    LoadPC       : std_logic; --
+	    PCMuxsel					: LC3B_4MUX_SEL;
+	    
+	    -- Stage ID
+	    DRMuxsel					: std_logic;
+	    StoreMuxsel					: std_logic;
+	    
+	    -- Stage EX
+	    ADDR1Muxsel					: std_logic;
+	    ADDR2Muxsel					: LC3B_4MUX_SEL;
+	    ALUMuxsel					: LC3B_4MUX_SEL;
+	    ALUop					: LC3B_ALUOP;
+	    
+	    -- Stage MEM
+	    MARMuxsel					: LC3B_4MUX_SEL;
+	    MDRMuxsel					: LC3B_4MUX_SEL;
+	    Read_H					: std_logic;
+	    Write_H					: std_logic;
+	    
+	    -- Stage WB
+	    GenCCMuxsel					: std_logic;
+	    LoadNZP					: std_logic;
+	    RFMux2sel					: LC3B_4MUX_SEL;
+	    RFMuxsel					: LC3B_4MUX_SEL;
+	    RegWrite					: std_logic;
+	    
+	    
+	    
 	END RECORD;
 	
 	-- ALU OP DEFINITIONS
