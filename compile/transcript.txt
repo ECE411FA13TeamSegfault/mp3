@@ -26,7 +26,6 @@
 # vsim -L ece411 -L mp3lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} ece411.mp2_CPU(struct) 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Cache_Controller(fsm)".
 # Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
@@ -410,9 +409,9 @@ do mp32.do
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 5 ns  Iteration: 0  Instance: /mp2_cpu/DRAM/ICache/Cache_DP/ValidArray1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5 ns  Iteration: 0  Instance: /mp2_cpu/theDatapath/aStage_ID/U_0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 5 ns  Iteration: 0  Instance: /mp2_cpu/theDatapath/aStage_Execute/U_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 0  Instance: /mp2_cpu/theDatapath/aStage_ID/U_0
 # 0
 # 
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
