@@ -18,8 +18,8 @@ unitName "LC3b_types"
 instances [
 (Instance
 name "Cache_DP"
-duLibraryName "ece411"
-duName "Cache_Datapath"
+duLibraryName "ECE411"
+duName "L1_Cache_Datapath"
 elements [
 ]
 mwi 0
@@ -27,8 +27,8 @@ uid 406,0
 )
 (Instance
 name "Cache_Control"
-duLibraryName "ece411"
-duName "Cache_Controller"
+duLibraryName "ECE411"
+duName "L1_Cache_Controller"
 elements [
 ]
 mwi 0
@@ -88,19 +88,19 @@ value "/home/chao16/ece411/mp3/hds/L1Cache"
 )
 (vvPair
 variable "date"
-value "11/14/13"
+value "11/20/13"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "14"
+value "20"
 )
 (vvPair
 variable "entity_name"
@@ -128,7 +128,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "dcl-l520-09.ews.illinois.edu"
+value "evrt-252-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -220,7 +220,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:40:56"
+value "13:09:19"
 )
 (vvPair
 variable "unit"
@@ -2142,7 +2142,7 @@ va (VaSet
 font "courier,8,1"
 )
 xt "34250,27100,37250,28000"
-st "ece411"
+st "ECE411"
 blo "34250,27800"
 tm "BdLibraryNameMgr"
 )
@@ -2151,8 +2151,8 @@ uid 410,0
 va (VaSet
 font "courier,8,1"
 )
-xt "34250,28000,41750,28900"
-st "Cache_Datapath"
+xt "34250,28000,43250,28900"
+st "L1_Cache_Datapath"
 blo "34250,28700"
 tm "CptNameMgr"
 )
@@ -2582,7 +2582,7 @@ va (VaSet
 font "courier,8,1"
 )
 xt "33250,8600,36250,9500"
-st "ece411"
+st "ECE411"
 blo "33250,9300"
 tm "BdLibraryNameMgr"
 )
@@ -2591,8 +2591,8 @@ uid 488,0
 va (VaSet
 font "courier,8,1"
 )
-xt "33250,9500,41750,10400"
-st "Cache_Controller"
+xt "33250,9500,43250,10400"
+st "L1_Cache_Controller"
 blo "33250,10200"
 tm "CptNameMgr"
 )
@@ -4062,7 +4062,7 @@ viewArea "-16469,-4877,65539,54474"
 cachedDiagramExtent "-8000,0,61000,50000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,0"
-lastUid 839,0
+lastUid 925,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

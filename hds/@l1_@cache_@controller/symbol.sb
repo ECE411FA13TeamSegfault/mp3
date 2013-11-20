@@ -520,23 +520,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp2.2/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp2.2/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp2.2/hds/@cache_@controller/interface.info"
+value "/home/chao16/ece411/mp3/hds/@l1_@cache_@controller/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp2.2/hds/@cache_@controller/interface.user"
+value "/home/chao16/ece411/mp3/hds/@l1_@cache_@controller/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp2.2/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -544,7 +544,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "config"
@@ -552,15 +552,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp2.2/hds/@cache_@controller"
+value "/home/chao16/ece411/mp3/hds/@l1_@cache_@controller"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp2.2/hds/Cache_Controller"
+value "/home/chao16/ece411/mp3/hds/L1_Cache_Controller"
 )
 (vvPair
 variable "date"
-value "10/02/13"
+value "11/20/13"
 )
 (vvPair
 variable "day"
@@ -572,11 +572,11 @@ value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "20"
 )
 (vvPair
 variable "entity_name"
-value "Cache_Controller"
+value "L1_Cache_Controller"
 )
 (vvPair
 variable "ext"
@@ -584,15 +584,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_logical"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_noext"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "group"
@@ -600,7 +600,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "siebl-0403-13.ews.illinois.edu"
+value "evrt-252-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -616,27 +616,27 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "10"
+value "11"
 )
 (vvPair
 variable "module_name"
-value "Cache_Controller"
+value "L1_Cache_Controller"
 )
 (vvPair
 variable "month"
-value "Oct"
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "October"
+value "November"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp2.2/hds/@cache_@controller/interface"
+value "/home/chao16/ece411/mp3/hds/@l1_@cache_@controller/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp2.2/hds/Cache_Controller/interface"
+value "/home/chao16/ece411/mp3/hds/L1_Cache_Controller/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -644,7 +644,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "ece411"
+value "ece411_mp3"
 )
 (vvPair
 variable "series"
@@ -660,7 +660,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -668,7 +668,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -680,23 +680,23 @@ value "<TBD>"
 )
 (vvPair
 variable "this_ext"
-value "<TBD>"
+value "sb"
 )
 (vvPair
 variable "this_file"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "this_file_logical"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "time"
-value "21:41:30"
+value "13:09:05"
 )
 (vvPair
 variable "unit"
-value "Cache_Controller"
+value "L1_Cache_Controller"
 )
 (vvPair
 variable "user"
@@ -708,7 +708,7 @@ value "2012.1 (Build 6)"
 )
 (vvPair
 variable "view"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "year"
@@ -759,8 +759,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,61000,6300"
-st "clk         : IN     std_logic  ;
-"
+st "clk         : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -806,8 +805,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,61000,9900"
-st "PMREAD_L    : OUT    std_logic  ;
-"
+st "PMREAD_L    : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -853,8 +851,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,61000,4500"
-st "PMRESP_H    : IN     std_logic  ;
-"
+st "PMRESP_H    : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -899,8 +896,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,60000,10800"
-st "PMWRITE_L   : OUT    std_logic 
-"
+st "PMWRITE_L   : OUT    std_logic "
 )
 thePort (LogicalPort
 m 1
@@ -945,8 +941,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,61000,5400"
-st "RESET_L     : IN     std_logic  ;
-"
+st "RESET_L     : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -990,8 +985,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,61000,2700"
-st "Dirty       : IN     std_logic  ;
-"
+st "Dirty       : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1037,8 +1031,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,61000,7200"
-st "InLoad      : OUT    std_logic  ;
-"
+st "InLoad      : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1084,8 +1077,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,61000,8100"
-st "InWaitHit   : OUT    std_logic  ;
-"
+st "InWaitHit   : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1131,8 +1123,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,61000,9000"
-st "InWriteBack : OUT    std_logic  ;
-"
+st "InWriteBack : OUT    std_logic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1177,8 +1168,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,61000,3600"
-st "Miss        : IN     std_logic  ;
-"
+st "Miss        : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1219,8 +1209,8 @@ uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "17250,10500,25750,11400"
-st "Cache_Controller"
+xt "17250,10500,27250,11400"
+st "L1_Cache_Controller"
 blo "17250,11200"
 )
 )
@@ -1709,9 +1699,9 @@ tm "PanelText"
 )
 )
 parentGraphicsRef (HdmGraphicsRef
-libraryName "ece411"
-entityName "Memory"
-viewName "struct.bd"
+libraryName ""
+entityName ""
+viewName ""
 )
 defaultSymbolBody (SymbolBody
 shape (Rectangle
@@ -1900,6 +1890,8 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 1342,0
+lastUid 1365,0
+okToSyncOnLoad 1
+OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
 )
