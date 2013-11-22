@@ -19,8 +19,8 @@ add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/I_DATAIN
 add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/I_MRESP_H
 add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/I_MREAD_L
 add wave -noupdate /mp2_cpu/DRAM/ICache/PMREAD_L
-add wave -noupdate /mp2_cpu/DRAM/PDRAM/I_PMREAD_L
-add wave -noupdate /mp2_cpu/DRAM/PDRAM/I_PMRESP_H
+add wave -noupdate /mp2_cpu/DRAM/PDRAM/L2_READ_L
+add wave -noupdate /mp2_cpu/DRAM/PDRAM/L2_RESP_H
 add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/Start_H
 add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/Load
 add wave -noupdate -radix hexadecimal /mp2_cpu/theDatapath/LoadPC

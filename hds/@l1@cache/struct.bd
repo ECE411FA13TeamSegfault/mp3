@@ -28,7 +28,7 @@ uid 406,0
 (Instance
 name "Cache_Control"
 duLibraryName "ECE411"
-duName "L1_Cache_Controller"
+duName "Cache_Controller"
 elements [
 ]
 mwi 0
@@ -88,19 +88,19 @@ value "/home/chao16/ece411/mp3/hds/L1Cache"
 )
 (vvPair
 variable "date"
-value "11/20/13"
+value "11/21/13"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "20"
+value "21"
 )
 (vvPair
 variable "entity_name"
@@ -128,7 +128,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "evrt-252-27.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -220,7 +220,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:09:19"
+value "23:59:34"
 )
 (vvPair
 variable "unit"
@@ -2591,8 +2591,8 @@ uid 488,0
 va (VaSet
 font "courier,8,1"
 )
-xt "33250,9500,43250,10400"
-st "L1_Cache_Controller"
+xt "33250,9500,41750,10400"
+st "Cache_Controller"
 blo "33250,10200"
 tm "CptNameMgr"
 )
@@ -4062,7 +4062,7 @@ viewArea "-16469,-4877,65539,54474"
 cachedDiagramExtent "-8000,0,61000,50000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,0"
-lastUid 925,0
+lastUid 968,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
