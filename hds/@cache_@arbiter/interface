@@ -70,7 +70,7 @@ lang 11
 decl (Decl
 n "clk"
 t "STD_LOGIC"
-o 12
+o 11
 suid 144,0
 )
 )
@@ -82,7 +82,7 @@ lang 11
 decl (Decl
 n "D_PMADDRESS"
 t "LC3B_WORD"
-o 17
+o 1
 suid 145,0
 )
 )
@@ -95,7 +95,7 @@ m 1
 decl (Decl
 n "D_PMDATAIN"
 t "LC3B_OWORD"
-o 18
+o 12
 suid 146,0
 )
 )
@@ -107,7 +107,7 @@ lang 11
 decl (Decl
 n "D_PMDATAOUT"
 t "LC3B_OWORD"
-o 19
+o 2
 suid 147,0
 )
 )
@@ -119,7 +119,7 @@ lang 11
 decl (Decl
 n "D_PMREAD_L"
 t "STD_LOGIC"
-o 20
+o 3
 suid 148,0
 )
 )
@@ -132,7 +132,7 @@ m 1
 decl (Decl
 n "D_PMRESP_H"
 t "STD_LOGIC"
-o 21
+o 13
 suid 149,0
 )
 )
@@ -144,7 +144,7 @@ lang 11
 decl (Decl
 n "D_PMWRITE_L"
 t "STD_LOGIC"
-o 22
+o 4
 suid 150,0
 )
 )
@@ -156,7 +156,7 @@ lang 11
 decl (Decl
 n "I_PMADDRESS"
 t "LC3B_WORD"
-o 23
+o 5
 suid 151,0
 )
 )
@@ -169,7 +169,7 @@ m 1
 decl (Decl
 n "I_PMDATAIN"
 t "LC3B_OWORD"
-o 24
+o 14
 suid 152,0
 )
 )
@@ -180,7 +180,7 @@ port (LogicalPort
 decl (Decl
 n "I_PMDATAOUT"
 t "LC3B_OWORD"
-o 25
+o 6
 suid 153,0
 )
 )
@@ -192,7 +192,7 @@ lang 11
 decl (Decl
 n "I_PMREAD_L"
 t "STD_LOGIC"
-o 26
+o 7
 suid 154,0
 )
 )
@@ -205,7 +205,7 @@ m 1
 decl (Decl
 n "I_PMRESP_H"
 t "STD_LOGIC"
-o 27
+o 15
 suid 155,0
 )
 )
@@ -217,7 +217,7 @@ m 1
 decl (Decl
 n "L2_ADDRESS"
 t "LC3b_word"
-o 29
+o 16
 suid 156,0
 )
 )
@@ -228,7 +228,7 @@ port (LogicalPort
 decl (Decl
 n "L2_DATAIN"
 t "LC3B_OWORD"
-o 30
+o 8
 suid 157,0
 )
 )
@@ -240,7 +240,7 @@ m 1
 decl (Decl
 n "L2_DATAOUT"
 t "LC3B_OWORD"
-o 31
+o 17
 suid 158,0
 )
 )
@@ -252,7 +252,7 @@ m 1
 decl (Decl
 n "L2_READ_L"
 t "std_logic"
-o 32
+o 18
 suid 159,0
 )
 )
@@ -263,7 +263,7 @@ port (LogicalPort
 decl (Decl
 n "L2_RESP_H"
 t "std_logic"
-o 33
+o 9
 suid 160,0
 )
 )
@@ -275,7 +275,7 @@ m 1
 decl (Decl
 n "L2_WRITE_L"
 t "std_logic"
-o 34
+o 19
 suid 161,0
 )
 )
@@ -287,7 +287,7 @@ lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 11
+o 10
 suid 162,0
 )
 )
@@ -766,7 +766,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-27.ews.illinois.edu"
+value "gelib-057-31.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -858,7 +858,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "00:07:09"
+value "14:59:20"
 )
 (vvPair
 variable "unit"
@@ -924,13 +924,16 @@ uid 1435,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,10800,61000,11700"
+st "clk         : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "clk"
 t "STD_LOGIC"
-o 12
+o 11
 suid 144,0
 )
 )
@@ -967,13 +970,16 @@ uid 1440,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,1800,61000,2700"
+st "D_PMADDRESS : IN     LC3B_WORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "D_PMADDRESS"
 t "LC3B_WORD"
-o 17
+o 1
 suid 145,0
 )
 )
@@ -1011,6 +1017,9 @@ uid 1445,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,11700,61500,12600"
+st "D_PMDATAIN  : OUT    LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1018,7 +1027,7 @@ m 1
 decl (Decl
 n "D_PMDATAIN"
 t "LC3B_OWORD"
-o 18
+o 12
 suid 146,0
 )
 )
@@ -1055,13 +1064,16 @@ uid 1450,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,2700,61500,3600"
+st "D_PMDATAOUT : IN     LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "D_PMDATAOUT"
 t "LC3B_OWORD"
-o 19
+o 2
 suid 147,0
 )
 )
@@ -1098,13 +1110,16 @@ uid 1455,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,3600,61000,4500"
+st "D_PMREAD_L  : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "D_PMREAD_L"
 t "STD_LOGIC"
-o 20
+o 3
 suid 148,0
 )
 )
@@ -1142,6 +1157,9 @@ uid 1460,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,12600,61000,13500"
+st "D_PMRESP_H  : OUT    STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1149,7 +1167,7 @@ m 1
 decl (Decl
 n "D_PMRESP_H"
 t "STD_LOGIC"
-o 21
+o 13
 suid 149,0
 )
 )
@@ -1186,13 +1204,16 @@ uid 1465,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,4500,61000,5400"
+st "D_PMWRITE_L : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "D_PMWRITE_L"
 t "STD_LOGIC"
-o 22
+o 4
 suid 150,0
 )
 )
@@ -1229,13 +1250,16 @@ uid 1470,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,5400,61000,6300"
+st "I_PMADDRESS : IN     LC3B_WORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "I_PMADDRESS"
 t "LC3B_WORD"
-o 23
+o 5
 suid 151,0
 )
 )
@@ -1273,6 +1297,9 @@ uid 1475,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,13500,61500,14400"
+st "I_PMDATAIN  : OUT    LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1280,7 +1307,7 @@ m 1
 decl (Decl
 n "I_PMDATAIN"
 t "LC3B_OWORD"
-o 24
+o 14
 suid 152,0
 )
 )
@@ -1317,12 +1344,15 @@ uid 1480,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,6300,61500,7200"
+st "I_PMDATAOUT : IN     LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "I_PMDATAOUT"
 t "LC3B_OWORD"
-o 25
+o 6
 suid 153,0
 )
 )
@@ -1359,13 +1389,16 @@ uid 1485,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,7200,61000,8100"
+st "I_PMREAD_L  : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "I_PMREAD_L"
 t "STD_LOGIC"
-o 26
+o 7
 suid 154,0
 )
 )
@@ -1403,6 +1436,9 @@ uid 1490,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,14400,61000,15300"
+st "I_PMRESP_H  : OUT    STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1410,7 +1446,7 @@ m 1
 decl (Decl
 n "I_PMRESP_H"
 t "STD_LOGIC"
-o 27
+o 15
 suid 155,0
 )
 )
@@ -1448,13 +1484,16 @@ uid 1495,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,15300,61000,16200"
+st "L2_ADDRESS  : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "L2_ADDRESS"
 t "LC3b_word"
-o 29
+o 16
 suid 156,0
 )
 )
@@ -1491,12 +1530,15 @@ uid 1500,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,8100,61500,9000"
+st "L2_DATAIN   : IN     LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "L2_DATAIN"
 t "LC3B_OWORD"
-o 30
+o 8
 suid 157,0
 )
 )
@@ -1534,13 +1576,16 @@ uid 1505,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,16200,61500,17100"
+st "L2_DATAOUT  : OUT    LC3B_OWORD  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "L2_DATAOUT"
 t "LC3B_OWORD"
-o 31
+o 17
 suid 158,0
 )
 )
@@ -1578,13 +1623,16 @@ uid 1510,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,17100,61000,18000"
+st "L2_READ_L   : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "L2_READ_L"
 t "std_logic"
-o 32
+o 18
 suid 159,0
 )
 )
@@ -1621,12 +1669,15 @@ uid 1515,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9000,61000,9900"
+st "L2_RESP_H   : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "L2_RESP_H"
 t "std_logic"
-o 33
+o 9
 suid 160,0
 )
 )
@@ -1664,13 +1715,16 @@ uid 1520,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,18000,60000,18900"
+st "L2_WRITE_L  : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "L2_WRITE_L"
 t "std_logic"
-o 34
+o 19
 suid 161,0
 )
 )
@@ -1707,13 +1761,16 @@ uid 1525,0
 va (VaSet
 font "courier,8,0"
 )
+xt "44000,9900,61000,10800"
+st "RESET_L     : IN     STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 11
+o 10
 suid 162,0
 )
 )
@@ -2429,7 +2486,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 1563,0
+lastUid 1586,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

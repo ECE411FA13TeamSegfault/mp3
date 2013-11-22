@@ -210,23 +210,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp3test/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp3test/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter/struct.bd.info"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter/struct.bd.user"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp3test/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -242,27 +242,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp3test/hds/Cache_Arbiter"
+value "/home/chao16/ece411/mp3/hds/Cache_Arbiter"
 )
 (vvPair
 variable "date"
-value "11/21/13"
+value "11/22/13"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "21"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -322,11 +322,11 @@ value "November"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter/struct.bd"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp3test/hds/Cache_Arbiter/struct.bd"
+value "/home/chao16/ece411/mp3/hds/Cache_Arbiter/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -382,7 +382,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "21:35:16"
+value "00:01:07"
 )
 (vvPair
 variable "unit"
@@ -461,10 +461,9 @@ tm "WireNameMgr"
 )
 *2 (Net
 uid 21,0
-lang 11
 decl (Decl
 n "clk"
-t "STD_LOGIC"
+t "std_logic"
 o 11
 suid 1,0
 )
@@ -474,7 +473,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-13000,14500,-1000,15400"
-st "clk         : STD_LOGIC
+st "clk         : std_logic
 "
 )
 )
@@ -1167,10 +1166,9 @@ tm "WireNameMgr"
 )
 *24 (Net
 uid 175,0
-lang 11
 decl (Decl
 n "RESET_L"
-t "STD_LOGIC"
+t "std_logic"
 o 10
 suid 12,0
 )
@@ -1180,7 +1178,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-13000,13600,-1000,14500"
-st "RESET_L     : STD_LOGIC
+st "RESET_L     : std_logic
 "
 )
 )
@@ -3048,7 +3046,7 @@ uid 1995,0
 decl (Decl
 n "F14"
 t "std_logic"
-o 34
+o 25
 suid 59,0
 )
 declText (MLText
@@ -3400,7 +3398,7 @@ uid 2409,0
 decl (Decl
 n "Sel"
 t "std_logic"
-o 26
+o 33
 suid 62,0
 )
 declText (MLText
@@ -3418,7 +3416,7 @@ uid 2625,0
 decl (Decl
 n "C"
 t "STD_LOGIC"
-o 27
+o 20
 suid 78,0
 )
 declText (MLText
@@ -4324,7 +4322,7 @@ uid 2957,0
 decl (Decl
 n "F6"
 t "STD_LOGIC"
-o 29
+o 28
 suid 90,0
 )
 declText (MLText
@@ -4342,7 +4340,7 @@ uid 2963,0
 decl (Decl
 n "F7"
 t "STD_LOGIC"
-o 30
+o 29
 suid 91,0
 )
 declText (MLText
@@ -4551,7 +4549,7 @@ uid 3030,0
 decl (Decl
 n "F8"
 t "STD_LOGIC"
-o 31
+o 30
 suid 93,0
 )
 declText (MLText
@@ -4569,7 +4567,7 @@ uid 3099,0
 decl (Decl
 n "F9"
 t "STD_LOGIC"
-o 33
+o 31
 suid 98,0
 )
 declText (MLText
@@ -4965,7 +4963,7 @@ uid 3157,0
 decl (Decl
 n "F10"
 t "STD_LOGIC"
-o 34
+o 23
 suid 100,0
 )
 declText (MLText
@@ -5204,7 +5202,7 @@ uid 3210,0
 decl (Decl
 n "F11"
 t "STD_LOGIC"
-o 35
+o 24
 suid 103,0
 )
 declText (MLText
@@ -5868,7 +5866,7 @@ uid 3808,0
 decl (Decl
 n "F"
 t "STD_LOGIC"
-o 30
+o 21
 suid 108,0
 )
 declText (MLText
@@ -5886,7 +5884,7 @@ uid 3814,0
 decl (Decl
 n "F1"
 t "STD_LOGIC"
-o 31
+o 22
 suid 109,0
 )
 declText (MLText
@@ -5904,7 +5902,7 @@ uid 3983,0
 decl (Decl
 n "MuxSel"
 t "STD_LOGIC"
-o 34
+o 32
 suid 115,0
 )
 declText (MLText
@@ -6340,7 +6338,7 @@ uid 5282,0
 decl (Decl
 n "F2"
 t "STD_LOGIC"
-o 33
+o 26
 suid 136,0
 )
 declText (MLText
@@ -8885,12 +8883,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "315,37,1902,1027"
-viewArea "31700,-2600,105356,43138"
+windowSize "309,39,1896,1029"
+viewArea "-18800,-3650,66450,49287"
 cachedDiagramExtent "-15000,-5300,416625,99225"
 hasePageBreakOrigin 1
 pageBreakOrigin "-79000,-51000"
-lastUid 5393,0
+lastUid 5454,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -9989,6 +9987,7 @@ tm "BlockDiagramEolColHdrMgr"
 )
 *318 (LeafLogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "D_PMADDRESS"
 t "LC3B_WORD"
@@ -10000,6 +9999,7 @@ uid 177,0
 )
 *319 (LeafLogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "D_PMDATAOUT"
 t "LC3B_OWORD"
@@ -10011,6 +10011,7 @@ uid 179,0
 )
 *320 (LeafLogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "D_PMREAD_L"
 t "STD_LOGIC"
@@ -10022,6 +10023,7 @@ uid 181,0
 )
 *321 (LeafLogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "D_PMWRITE_L"
 t "STD_LOGIC"
@@ -10033,6 +10035,7 @@ uid 183,0
 )
 *322 (LeafLogPort
 port (LogicalPort
+lang 11
 decl (Decl
 n "I_PMADDRESS"
 t "LC3B_WORD"
@@ -10056,10 +10059,9 @@ uid 187,0
 )
 *324 (LeafLogPort
 port (LogicalPort
-lang 11
 decl (Decl
 n "RESET_L"
-t "STD_LOGIC"
+t "std_logic"
 o 10
 suid 12,0
 )
@@ -10068,10 +10070,9 @@ uid 189,0
 )
 *325 (LeafLogPort
 port (LogicalPort
-lang 11
 decl (Decl
 n "clk"
-t "STD_LOGIC"
+t "std_logic"
 o 11
 suid 1,0
 )
@@ -10217,7 +10218,7 @@ m 4
 decl (Decl
 n "F14"
 t "std_logic"
-o 34
+o 25
 suid 59,0
 )
 )
@@ -10229,7 +10230,7 @@ m 4
 decl (Decl
 n "Sel"
 t "std_logic"
-o 26
+o 33
 suid 62,0
 )
 )
@@ -10241,7 +10242,7 @@ m 4
 decl (Decl
 n "C"
 t "STD_LOGIC"
-o 27
+o 20
 suid 78,0
 )
 )
@@ -10265,7 +10266,7 @@ m 4
 decl (Decl
 n "F6"
 t "STD_LOGIC"
-o 29
+o 28
 suid 90,0
 )
 )
@@ -10277,7 +10278,7 @@ m 4
 decl (Decl
 n "F7"
 t "STD_LOGIC"
-o 30
+o 29
 suid 91,0
 )
 )
@@ -10289,7 +10290,7 @@ m 4
 decl (Decl
 n "F8"
 t "STD_LOGIC"
-o 31
+o 30
 suid 93,0
 )
 )
@@ -10301,7 +10302,7 @@ m 4
 decl (Decl
 n "F9"
 t "STD_LOGIC"
-o 33
+o 31
 suid 98,0
 )
 )
@@ -10313,7 +10314,7 @@ m 4
 decl (Decl
 n "F10"
 t "STD_LOGIC"
-o 34
+o 23
 suid 100,0
 )
 )
@@ -10325,7 +10326,7 @@ m 4
 decl (Decl
 n "F11"
 t "STD_LOGIC"
-o 35
+o 24
 suid 103,0
 )
 )
@@ -10337,7 +10338,7 @@ m 4
 decl (Decl
 n "F"
 t "STD_LOGIC"
-o 30
+o 21
 suid 108,0
 )
 )
@@ -10349,7 +10350,7 @@ m 4
 decl (Decl
 n "F1"
 t "STD_LOGIC"
-o 31
+o 22
 suid 109,0
 )
 )
@@ -10361,7 +10362,7 @@ m 4
 decl (Decl
 n "MuxSel"
 t "STD_LOGIC"
-o 34
+o 32
 suid 115,0
 )
 )
@@ -10373,7 +10374,7 @@ m 4
 decl (Decl
 n "F2"
 t "STD_LOGIC"
-o 33
+o 26
 suid 136,0
 )
 )
