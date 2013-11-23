@@ -38,23 +38,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp3test/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp3test/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter_@control/fsm.sm.info"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter_@control/fsm.sm.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter_@control/fsm.sm.user"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter_@control/fsm.sm.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp3test/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -70,27 +70,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter_@control"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter_@control"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp3test/hds/Cache_Arbiter_Control"
+value "/home/chao16/ece411/mp3/hds/Cache_Arbiter_Control"
 )
 (vvPair
 variable "date"
-value "11/21/13"
+value "11/22/13"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "21"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -118,7 +118,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-27.ews.illinois.edu"
+value "siebl-0403-36.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -150,11 +150,11 @@ value "November"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp3test/hds/@cache_@arbiter_@control/fsm.sm"
+value "/home/chao16/ece411/mp3/hds/@cache_@arbiter_@control/fsm.sm"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp3test/hds/Cache_Arbiter_Control/fsm.sm"
+value "/home/chao16/ece411/mp3/hds/Cache_Arbiter_Control/fsm.sm"
 )
 (vvPair
 variable "package_name"
@@ -210,7 +210,7 @@ value "fsm"
 )
 (vvPair
 variable "time"
-value "20:56:54"
+value "22:45:29"
 )
 (vvPair
 variable "unit"
@@ -1332,7 +1332,7 @@ lineColor "39936,56832,65280"
 lineWidth -1
 fillStyle 1
 )
-xt "74970,9866,81370,10966"
+xt "76719,9813,83119,10913"
 )
 autoResize 1
 tline (Line
@@ -1343,10 +1343,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "75070,9766,81270,9766"
+xt "76819,9713,83019,9713"
 pts [
-"75070,9766"
-"81270,9766"
+"76819,9713"
+"83019,9713"
 ]
 )
 bline (Line
@@ -1357,10 +1357,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "75070,9141,81270,9141"
+xt "76819,9088,83019,9088"
 pts [
-"75070,9141"
-"81270,9141"
+"76819,9088"
+"83019,9088"
 ]
 )
 ttri (Triangle
@@ -1374,7 +1374,7 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "74620,9391,74970,9741"
+xt "76369,9338,76719,9688"
 )
 btri (Triangle
 uid 188,0
@@ -1387,14 +1387,14 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "74620,7241,74970,7591"
+xt "76369,7188,76719,7538"
 )
 entryActions (MLText
 uid 189,0
 va (VaSet
 font "courier,8,0"
 )
-xt "75070,9566,75070,9566"
+xt "76819,9513,76819,9513"
 tm "Actions"
 )
 inActions (MLText
@@ -1402,7 +1402,7 @@ uid 190,0
 va (VaSet
 font "courier,8,0"
 )
-xt "75070,9966,81270,10866"
+xt "76819,9913,83019,10813"
 st "Sel <= '1';"
 tm "Actions"
 )
@@ -1411,7 +1411,7 @@ uid 191,0
 va (VaSet
 font "courier,8,0"
 )
-xt "74170,7416,74170,7416"
+xt "75919,7363,75919,7363"
 tm "Actions"
 )
 )
@@ -1906,7 +1906,7 @@ fg "65535,65535,65535"
 bg "0,0,0"
 lineColor "0,32768,49152"
 )
-xt "60773,15107,70473,17007"
+xt "61541,15107,71241,17007"
 )
 autoResize 1
 lineShape (Line
@@ -1915,10 +1915,10 @@ va (VaSet
 vasetType 3
 isHidden 1
 )
-xt "63523,16907,63523,16907"
+xt "64291,16907,64291,16907"
 pts [
-"63523,16907"
-"63523,16907"
+"64291,16907"
+"64291,16907"
 ]
 )
 condition (MLText
@@ -1926,7 +1926,7 @@ uid 312,0
 va (VaSet
 font "courier,8,0"
 )
-xt "61273,15607,69973,16507"
+xt "62041,15607,70741,16507"
 st "D_PMRESP_H = '1'"
 tm "Condition"
 )
@@ -1935,7 +1935,7 @@ uid 313,0
 va (VaSet
 font "courier,8,0"
 )
-xt "65623,16907,65623,16907"
+xt "66391,16907,66391,16907"
 tm "Actions"
 )
 )
@@ -2085,8 +2085,8 @@ tm "SmCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "343,186,1656,968"
-viewArea "21390,-5537,84406,31405"
+windowSize "337,332,1650,1114"
+viewArea "34600,-5500,86920,25172"
 cachedDiagramExtent "0,-1000,83348,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,-2000"
@@ -2478,7 +2478,7 @@ stateOrder [
 name "csm"
 )
 ]
-lastUid 556,0
+lastUid 614,0
 commonDM (CommonDM
 ldm (LogicalDM
 emptyRow *55 (LEmptyRow
@@ -2541,12 +2541,11 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 1
+o 5
 )
 )
 uid 192,0
 cat 1
-scheme 0
 expr "clk'EVENT AND clk = '1'"
 )
 *75 (LeafLogPort
@@ -2554,12 +2553,11 @@ port (LogicalPort
 decl (Decl
 n "rst"
 t "std_logic"
-o 2
+o 6
 )
 )
 uid 194,0
 cat 8
-scheme 0
 expr "rst = '0'"
 )
 *76 (LeafLogPort
@@ -2567,44 +2565,40 @@ port (LogicalPort
 decl (Decl
 n "I_PMRESP_H"
 t "std_logic"
-o 3
+o 4
 )
 )
 uid 363,0
-scheme 0
 )
 *77 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "D_PMRESP_H"
 t "std_logic"
-o 4
+o 3
 )
 )
 uid 365,0
-scheme 0
 )
 *78 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "AccessI"
 t "std_logic"
-o 5
+o 2
 )
 )
 uid 367,0
-scheme 0
 )
 *79 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "AccessD"
 t "std_logic"
-o 6
+o 1
 )
 )
 uid 369,0
-scheme 0
 )
 *80 (LeafLogPort
 port (LogicalPort

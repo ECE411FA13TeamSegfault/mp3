@@ -80,7 +80,6 @@ DEx4 work 4 and3 0 22 c0gg9gng^FzoeF0Ig>1Wd2
 l29
 L28
 VRW]jYM45n^0a<ie=[5;B]1
-!s100 ?TH9CG2hmMLIQDadO4DSO3
 R12
 32
 R20
@@ -88,6 +87,7 @@ R21
 R22
 R16
 R17
+!s100 ?TH9CG2hmMLIQDadO4DSO3
 !i10b 1
 Ecomp16
 Z23 w1382405298
@@ -157,22 +157,61 @@ Z39 M2 ieee numeric_std
 Z40 M1 ece411 lc3b_types
 R37
 R17
+Edecode3_8
+Z41 w1384973425
+R5
+R6
+R7
+R8
+R9
+Z42 8/home/chao16/ece411/mp3/mp3lib/hdl/decode3_8_untitled.vhd
+Z43 F/home/chao16/ece411/mp3/mp3lib/hdl/decode3_8_untitled.vhd
+l0
+L17
+V9ZUZ4JPz?nIG3;baI;DM>3
+!s100 A2iR?_7BUoBY2gN7H_KK<3
+R12
+32
+!i10b 1
+Z44 !s108 1385180244.776049
+Z45 !s90 -work|mp3lib|-nologo|-f|/tmp/Files3|
+Z46 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/decode3_8_untitled.vhd|
+R16
+R17
+Auntitled
+R5
+R6
+R7
+R8
+DEx4 work 9 decode3_8 0 22 9ZUZ4JPz?nIG3;baI;DM>3
+l27
+L26
+V3Te4@gX@GUINjERaR@Q1@2
+!s100 hf;A=PSF;j_fEH1g]?_;:1
+R12
+32
+!i10b 1
+R44
+R45
+R46
+R16
+R17
 Edram128
-Z41 w1304370359
-Z42 DP ece411 lc3b_types jaoCRKocI^UgTaoDLC:1]1
+Z47 w1304370359
+Z48 DP ece411 lc3b_types jaoCRKocI^UgTaoDLC:1]1
 R33
 R34
-Z43 d/home/engr/anbrown2/ece411/ece411_given/mp3lib/compile
-Z44 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram128_untitled.vhd
+Z49 d/home/engr/anbrown2/ece411/ece411_given/mp3lib/compile
+Z50 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram128_untitled.vhd
 l0
 L17
 VOLnS9Tb;cnSD@SNab;Lm<1
 R36
 32
-Z45 o-work /home/engr/anbrown2/ece411/ece411_given/mp3lib/compile -nologo
+Z51 o-work /home/engr/anbrown2/ece411/ece411_given/mp3lib/compile -nologo
 R17
 Auntitled
-R42
+R48
 R33
 R34
 DE work dram128 OLnS9Tb;cnSD@SNab;Lm<1
@@ -184,24 +223,24 @@ R36
 R38
 R39
 R40
-R45
+R51
 R17
 Edram16
-Z46 w1304370365
-R42
+Z52 w1304370365
+R48
 R33
 R34
-R43
-Z47 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram16_untitled.vhd
+R49
+Z53 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram16_untitled.vhd
 l0
 L17
 V@Y:?<>cE22ieYcMG25E0V0
 R36
 32
-R45
+R51
 R17
 Auntitled
-R42
+R48
 R33
 R34
 DE work dram16 @Y:?<>cE22ieYcMG25E0V0
@@ -213,24 +252,24 @@ R36
 R38
 R39
 R40
-R45
+R51
 R17
 Edram256
-Z48 w1304369850
-R42
+Z54 w1304369850
+R48
 R33
 R34
-R43
-Z49 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram256_untitled.vhd
+R49
+Z55 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram256_untitled.vhd
 l0
 L17
 VBh3dWMhVo;=DVb>mZnPH63
 R36
 32
-R45
+R51
 R17
 Auntitled
-R42
+R48
 R33
 R34
 DE work dram256 Bh3dWMhVo;=DVb>mZnPH63
@@ -242,24 +281,24 @@ R36
 R38
 R39
 R40
-R45
+R51
 R17
 Edram32
-Z50 w1304370401
-R42
+Z56 w1304370401
+R48
 R33
 R34
-R43
-Z51 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram32_untitled.vhd
+R49
+Z57 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram32_untitled.vhd
 l0
 L17
 VZ0]dO8Vc`hX90oemM:D9D2
 R36
 32
-R45
+R51
 R17
 Auntitled
-R42
+R48
 R33
 R34
 DE work dram32 Z0]dO8Vc`hX90oemM:D9D2
@@ -271,24 +310,24 @@ R36
 R38
 R39
 R40
-R45
+R51
 R17
 Edram64
-Z52 w1304369857
-R42
+Z58 w1304369857
+R48
 R33
 R34
-R43
-Z53 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram64_untitled.vhd
+R49
+Z59 F/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl/dram64_untitled.vhd
 l0
 L17
 V2AG[zM8[2GjKlVCS8nJn41
 R36
 32
-R45
+R51
 R17
 Auntitled
-R42
+R48
 R33
 R34
 DE work dram64 2AG[zM8[2GjKlVCS8nJn41
@@ -300,25 +339,25 @@ R36
 R38
 R39
 R40
-R45
+R51
 R17
 Emux2_1
-Z54 w1384973425
+R41
 R5
 R6
 R7
 R8
 R9
-Z55 8/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd
-Z56 F/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd
+Z60 8/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd
+Z61 F/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd
 l0
 L17
 V4;c@15@B5CSPQi6]eV]BJ2
 R12
 32
-Z57 !s108 1384973509.204380
-Z58 !s90 -work|mp3lib|-nologo|-f|/tmp/Files7|
-Z59 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd|/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd|
+Z62 !s108 1384973509.204380
+Z63 !s90 -work|mp3lib|-nologo|-f|/tmp/Files7|
+Z64 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd|/home/chao16/ece411/mp3/mp3lib/hdl/mux2_1_untitled.vhd|
 R16
 R17
 !s100 DUMRkl?4iXAdS80LE4__V0
@@ -334,34 +373,34 @@ L28
 V??R9E>cL97T5Ro3Ghi66c2
 R12
 32
-R57
-R58
-R59
+R62
+R63
+R64
 R16
 R17
 !s100 jY;ndS[OWW>WQl`Fb^Y[A3
 !i10b 1
 Emux2_16
-R54
+R41
 R5
 R6
 R7
 R8
 R9
-Z60 8/home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd
-Z61 F/home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd
+Z65 8/home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd
+Z66 F/home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd
 l0
 L17
 VoK2P9>Ni[fm820Nk1SL2P3
-!s100 C;C@O`64Eo3NHez5<MS=^2
 R12
 32
-!i10b 1
-Z62 !s108 1385101306.171081
-Z63 !s90 -work|mp3lib|-nologo|-f|/tmp/Files1|
-Z64 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd|/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd|
+Z67 !s108 1385101306.171081
+Z68 !s90 -work|mp3lib|-nologo|-f|/tmp/Files1|
+Z69 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/mux2_16_untitled.vhd|/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd|
 R16
 R17
+!s100 C;C@O`64Eo3NHez5<MS=^2
+!i10b 1
 Auntitled
 R5
 R6
@@ -371,32 +410,32 @@ DEx4 work 7 mux2_16 0 22 oK2P9>Ni[fm820Nk1SL2P3
 l29
 L28
 VbcoPWO1@33`AJO2>@Q1Z32
-!s100 E`MDZCKnQ4k1SSLL`9`nm3
 R12
 32
-!i10b 1
-R62
-R63
-R64
+R67
+R68
+R69
 R16
 R17
+!s100 E`MDZCKnQ4k1SSLL`9`nm3
+!i10b 1
 Enand2
-R54
+R41
 R5
 R6
 R7
 R8
 R9
-Z65 8/home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd
-Z66 F/home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd
+Z70 8/home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd
+Z71 F/home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd
 l0
 L17
 VW3bXHGfh]d[M5XQf^hL[73
 R12
 32
-Z67 !s108 1384973511.167002
-Z68 !s90 -work|mp3lib|-nologo|-f|/tmp/Files10|
-Z69 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd|
+Z72 !s108 1384973511.167002
+Z73 !s90 -work|mp3lib|-nologo|-f|/tmp/Files10|
+Z74 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/nand2_untitled.vhd|
 R16
 R17
 !s100 hd0JWGM;bU@Qf?=8f0Nd;0
@@ -412,30 +451,30 @@ L27
 Vd@>@k1NRAb[3<k2`?]W7F1
 R12
 32
-R67
-R68
-R69
+R72
+R73
+R74
 R16
 R17
 !s100 kJW4CS8Y;8LiXib;dIR`L0
 !i10b 1
 Enand3
-Z70 w1384973426
+Z75 w1384973426
 R5
 R6
 R7
 R8
 R9
-Z71 8/home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd
-Z72 F/home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd
+Z76 8/home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd
+Z77 F/home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd
 l0
 L17
 Voz<Raik]>Hl]gndIZn@>T2
 R12
 32
-Z73 !s108 1384973504.058474
-R63
-Z74 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd|
+Z78 !s108 1384973504.058474
+R68
+Z79 !s107 /home/chao16/ece411/mp3/mp3lib/hdl/nand3_untitled.vhd|
 R16
 R17
 !s100 3i:GgR:j9fSl;kEAD:7SM1
@@ -451,34 +490,34 @@ L28
 VfAY`DHTJWY0IU9oZn?;R12
 R12
 32
-R73
-R63
-R74
+R78
+R68
+R79
 R16
 R17
 !s100 [Col]@f3K<bfRMR_zL2CM0
 !i10b 1
 Enor2
-R70
+R75
 R5
 R6
 R7
 R8
 R9
-Z75 8/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd
-Z76 F/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd
+Z80 8/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd
+Z81 F/home/chao16/ece411/mp3/mp3lib/hdl/nor2_untitled.vhd
 l0
 L17
 VU2b;366?jjX^6TJhOA>XL2
-!s100 GjWXM[la:>DVfll6ihXWI3
 R12
 32
-!i10b 1
-R62
-R63
-R64
+R67
+R68
+R69
 R16
 R17
+!s100 GjWXM[la:>DVfll6ihXWI3
+!i10b 1
 Auntitled
 R5
 R6
@@ -488,24 +527,24 @@ DEx4 work 4 nor2 0 22 U2b;366?jjX^6TJhOA>XL2
 l28
 L27
 V>X5k^O@z@Q6_:M`^`gXdk0
-!s100 F@0dSmRbGbdYGg@mab;KL3
 R12
 32
-!i10b 1
-R62
-R63
-R64
+R67
+R68
+R69
 R16
 R17
+!s100 F@0dSmRbGbdYGg@mab;KL3
+!i10b 1
 Enot1
-R70
+R75
 R5
 R6
 R7
 R8
 R9
-Z77 8/home/chao16/ece411/mp3/mp3lib/hdl/not1_untitled.vhd
-Z78 F/home/chao16/ece411/mp3/mp3lib/hdl/not1_untitled.vhd
+Z82 8/home/chao16/ece411/mp3/mp3lib/hdl/not1_untitled.vhd
+Z83 F/home/chao16/ece411/mp3/mp3lib/hdl/not1_untitled.vhd
 l0
 L17
 VI]CoP]JP94gOnicG?LBLa3
@@ -537,22 +576,22 @@ R17
 !s100 jgFXjmo=TO6R0?3f[2eIb3
 !i10b 1
 Eor2
-R70
+R75
 R5
 R6
 R7
 R8
 R9
-Z79 8/home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd
-Z80 F/home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd
+Z84 8/home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd
+Z85 F/home/chao16/ece411/mp3/mp3lib/hdl/or2_untitled.vhd
 l0
 L17
 V89zggZ=GYSNbceLM[G]_K0
 R12
 32
-R57
-R58
-R59
+R62
+R63
+R64
 R16
 R17
 !s100 ZSXM5RA[7@S5`0X<cZO473
@@ -568,9 +607,9 @@ L27
 VlBZPM50<=8kSoBI]eGbU22
 R12
 32
-R57
-R58
-R59
+R62
+R63
+R64
 R16
 R17
 !s100 BDde^R21lfMj:J>5RW`_X2
