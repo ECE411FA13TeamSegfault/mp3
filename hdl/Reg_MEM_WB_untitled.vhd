@@ -26,16 +26,24 @@ ENTITY Reg_MEM_WB IS
 		EX_Opcode : IN LC3b_opcode;
 		
 		MEM_MDRout				: IN LC3b_word;
+		MEM_ByteMuxselout  : IN std_logic;
+		
+		EX_RFA      : IN LC3b_word;
 		
 		MEM_ALU				: OUT LC3b_word;
 		MEM_BRAdd				: OUT LC3b_word;
 		MEM_PCPlus2				: OUT LC3b_word;
 		MEM_MDR				: OUT LC3b_word;
+		MEM_ByteMuxsel : OUT std_logic;
 		MEM_dest				: OUT LC3b_reg;
 		MEM_Opcode  : OUT LC3b_opcode;
 		
+		MEM_RFA     : OUT LC3b_word;
+		MEM_DRMUXSEL : OUT std_logic;
+		
 		MEM_CONTROL_IN		: IN CONTROL_WORD;
-		MEM_CONTROL_OUT	: OUT CONTROL_WORD
+		MEM_CONTROL_OUT	: OUT CONTROL_WORD;
+		MEM_PCMuxSEL    : OUT LC3b_4MUX_SEL
 	);
 END ENTITY Reg_MEM_WB;
 
@@ -53,7 +61,11 @@ BEGIN
 	variable tempdest						: LC3b_reg;
 	variable tempOpcode    : LC3b_opcode;
 	variable tempMDR						: LC3b_word;
+	variable tempByteMuxsel  : std_logic;
 	variable tempCONTROL				: CONTROL_WORD;
+	variable tempPCMUXSEL   : LC3b_4MUX_SEL;
+	variable tempRFA        : LC3B_word;
+	variable tempDRMuxSEL   : std_logic;
 	
 	BEGIN
 		if (Reset_L = '0') then
@@ -63,6 +75,7 @@ BEGIN
 			tempdest			:= "000";
 			tempOpcode := "0000";
 			tempMDR			:= "0000000000000000";
+			tempByteMuxsel := '0';
 --			tempCONTROL	:= (others => '0');
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
@@ -72,7 +85,11 @@ BEGIN
 				tempdest			:= EX_dest;
 				tempOpcode  := EX_Opcode;
 				tempMDR			:= MEM_MDRout;
+				tempByteMuxsel  := MEM_ByteMuxselout;
 				tempCONTROL	:= MEM_CONTROL_IN;
+				tempPCMuxSEL := MEM_CONTROL_IN.PCMUXSEL;
+				tempRFA := EX_RFA;
+				tempDRMuxSEL := MEM_CONTROL_IN.DRMuxSEL;
 			end if;
 		end if;
 		
@@ -82,8 +99,11 @@ BEGIN
 		MEM_dest				<= tempdest after delay_reg;
 		MEM_Opcode  <= tempOpcode after delay_reg;
 		MEM_MDR				<= tempMDR after delay_reg;
+		MEM_ByteMuxsel <= tempByteMuxsel after delay_reg; --?
 		MEM_CONTROL_OUT	<= tempCONTROL after delay_reg;
-						   
+		MEM_PCMUXSEL <= tempPCMUXSEL after delay_reg;
+		MEM_RFA <= tempRFA after delay_reg;
+		MEM_DRMuxSEL <= tempDRMuxSEL after delay_reg;
    END PROCESS VHDL_REG_MEM;
 END ARCHITECTURE untitled;
 

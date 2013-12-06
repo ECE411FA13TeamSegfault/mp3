@@ -14,23 +14,31 @@ USE ieee.NUMERIC_STD.all;
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
 ENTITY Splitter_MEM IS
-	PORT (
-		CONTROL			: IN CONTROL_WORD;
-		MARMuxsel			: OUT LC3B_4MUX_SEL;
-		MDRMuxsel			: OUT LC3B_4MUX_SEL;
-		Read_H			: OUT std_logic;
-		Write_H			: OUT std_logic;
-		PCMuxsel			: OUT LC3B_4MUX_SEL
-	);
+  PORT (
+    CONTROL			  : IN CONTROL_WORD;
+    MARMuxsel	  : OUT LC3B_4MUX_SEL;
+    MDRMuxsel	  : OUT LC3B_4MUX_SEL;
+    Read_H			   : OUT std_logic;
+    Write_H			  : OUT std_logic;
+    LDI         : OUT std_logic;
+    STI         : OUT std_logic;
+    STB         : OUT std_logic;
+    EX_regWrite : OUT std_logic;
+    FUMuxsel    : OUT LC3B_4Mux_sel
+  );
 END ENTITY Splitter_MEM;
 
 --
 ARCHITECTURE untitled OF Splitter_MEM IS
 BEGIN
-	MARMuxsel	<= CONTROL.MARMuxsel;
-	MDRMuxsel <= CONTROL.MDRMuxsel;
-	Read_H		  <= CONTROL.Read_H;
-	Write_H		 <= CONTROL.Write_H;
-	PCMuxsel		<= CONTROL.PCMuxsel;
+  MARMuxsel	  <= CONTROL.MARMuxsel;
+  MDRMuxsel   <= CONTROL.MDRMuxsel;
+  Read_H		    <= CONTROL.Read_H;
+  Write_H		   <= CONTROL.Write_H;
+  LDI         <= CONTROL.LDI;
+  STI         <= CONTROL.STI;
+  STB         <= CONTROL.STB;
+  EX_regWrite <= CONTROL.RegWrite;
+  FUMuxsel    <= CONTROL.RFMux2Sel;
 END ARCHITECTURE untitled;
 

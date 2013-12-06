@@ -71,12 +71,16 @@ PACKAGE LC3B_TYPES IS
 	    MDRMuxsel					: LC3B_4MUX_SEL;
 	    Read_H					: std_logic;
 	    Write_H					: std_logic;
+	    LDI           : std_logic;
+	    STI           : std_logic;
+	    STB           : std_logic;
+	    FUMuxsel      : std_logic;
 	    
 	    -- Stage WB
 	    GenCCMuxsel					: std_logic;
 	    LoadNZP					: std_logic;
 	    RFMux2sel					: LC3B_4MUX_SEL;
-	    RFMuxsel					: LC3B_4MUX_SEL;
+	    RFMuxsel					: std_logic;
 	    RegWrite					: std_logic;
 	    
 	    
@@ -118,7 +122,7 @@ PACKAGE LC3B_TYPES IS
 
 	-- TIME DELAYS **********
 	-- CHANGED FOR FALL 2009: ALU, ADDER, SHIFTER DELAYS
-	CONSTANT HALF_CLOCK_PERIOD  : TIME := 24 NS;
+	CONSTANT HALF_CLOCK_PERIOD  : TIME := 25 NS;
 	CONSTANT CLOCK_PERIOD       : TIME := (HALF_CLOCK_PERIOD + HALF_CLOCK_PERIOD);
 	CONSTANT DELAY_LOGIC2       : TIME := 1 NS;
 	CONSTANT DELAY_LOGIC3       : TIME := 2 NS;

@@ -16,7 +16,7 @@ USE ece411.LC3b_types.all;
 ENTITY Splitter_ID IS
 	PORT (
 		CONTROL			: IN CONTROL_WORD;
-		DRMuxsel			: OUT std_logic;
+		--DRMuxsel			: OUT std_logic;
 		StoreMuxsel	: OUT std_logic
 	);
 		
@@ -25,7 +25,7 @@ END ENTITY Splitter_ID;
 --
 ARCHITECTURE untitled OF Splitter_ID IS
 BEGIN
-	DRMuxsel 			<= CONTROL.DRMuxsel;
+	--DRMuxsel 			<= CONTROL.DRMuxsel;
 	StoreMuxsel <= CONTROL.StoreMuxsel;
 END ARCHITECTURE untitled;
 

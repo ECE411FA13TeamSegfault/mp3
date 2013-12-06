@@ -13,18 +13,21 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;
 
 ENTITY checkBR IS
    PORT( 
-      CheckN : IN     std_logic;
-      CheckP : IN     std_logic;
-      CheckZ : IN     std_logic;
-      n      : IN     std_logic;
-      p      : IN     std_logic;
-      z      : IN     std_logic;
-      BR_Opcode  : IN std_logic;
-      takeBr : OUT    std_logic
+      CheckN        : IN     std_logic;
+      CheckP        : IN     std_logic;
+      CheckZ        : IN     std_logic;
+      n             : IN     std_logic;
+      p             : IN     std_logic;
+      z             : IN     std_logic;
+      MEM_BR_Opcode : IN     std_logic;
+      IF_BR_Opcode  : IN     std_logic;
+      TakeBR        : OUT    std_logic;
+      IF_N          : IN     std_logic;
+      IF_P          : IN     std_logic;
+      IF_Z          : IN     std_logic
    );
 
 -- Declarations
@@ -34,7 +37,7 @@ END checkBR ;
 --
 ARCHITECTURE untitled OF checkBR IS
 BEGIN
-  takeBR <= ((((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) OR (CheckN AND CheckP AND CheckZ)) AND BR_Opcode)
+  takeBR <= (((n AND CheckN) OR (p AND CheckP) OR (z AND CheckZ)) AND MEM_BR_Opcode) OR ((IF_N AND IF_Z AND IF_P) AND IF_BR_Opcode)
       after (DELAY_LOGIC2 + DELAY_LOGIC3);
 END ARCHITECTURE untitled;
 

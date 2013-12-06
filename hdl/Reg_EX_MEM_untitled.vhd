@@ -27,6 +27,7 @@ ENTITY Reg_EX_MEM IS
 		ID_ADJ8out				: IN LC3b_word;
 		ID_PCPlus2				: IN LC3b_word;
 		ID_RFB        : IN LC3b_word;
+		ID_RFA        : IN LC3b_word;
 		
 		EX_ALU				: OUT LC3b_word;
 		EX_BRAdd				: OUT LC3b_word;
@@ -36,6 +37,8 @@ ENTITY Reg_EX_MEM IS
 		EX_ADJ8out				: OUT LC3b_word;
 		EX_PCPlus2				: OUT LC3b_word;
 		EX_RFB        : OUT LC3b_word;
+		EX_RFA        : OUT LC3b_word;
+		EX_PCMUXSEL   : OUT LC3b_4MUX_SEL;
 		
 		EX_CONTROL_IN			: IN CONTROL_WORD;
 		EX_CONTROL_OUT		: OUT CONTROL_WORD
@@ -57,7 +60,9 @@ BEGIN
 	variable tempADJ8						: LC3b_word;
 	variable tempPCPlus2				: LC3b_word;
 	variable tempRFB       : LC3b_word;
+	variable tempRFA       : LC3b_word;
 	variable tempCONTROL				: CONTROL_WORD;
+	variable tempPCMUXSEL   : LC3B_4MUX_SEL;
 	
 	BEGIN
 --	  tempCONTROL.PCMuxsel := "00";
@@ -69,10 +74,13 @@ BEGIN
 			tempADJ8				:= "0000000000000000";
 			tempPCPlus2				:= "0000000000000000";
 			tempRFB      := "0000000000000000";
+			tempRFA      := "0000000000000000";
 --			tempCONTROL				:= (others => '0');
       tempCONTROL.PCMuxsel := "00";
       tempCONTROL.Read_H   := '0';
       tempCONTROL.Write_H  := '0';
+      tempCONTROL.LDI      := '0';
+      tempCONTROL.STI      := '0';
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
 				tempALU			:= EX_ALUout;
@@ -82,7 +90,9 @@ BEGIN
 				tempADJ8			:= ID_ADJ8out;
 				tempPCPlus2	:= ID_PCPlus2;
 				tempRFB     := ID_RFB;
+				tempRFA     := ID_RFA;
 				tempCONTROL	:= EX_CONTROL_IN;
+				tempPCMUXSEL := EX_CONTROL_IN.PCMUXSEL;
 			end if;
 		end if;
 		
@@ -93,7 +103,9 @@ BEGIN
 		EX_ADJ8out			  <= tempADJ8 after delay_reg;
 		EX_PCPlus2			  <= tempPCPlus2 after delay_reg;
 		EX_RFB          <= tempRFB after delay_reg;
+		EX_RFA        <= tempRFA after delay_reg;
 		EX_CONTROL_OUT	<= tempCONTROL after delay_reg;
+		EX_PCMUXSEL <= tempPCMUXSEL after delay_reg;
 
 	END PROCESS VHDL_REG_EX;				
 END ARCHITECTURE untitled;

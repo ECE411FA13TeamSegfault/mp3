@@ -23,8 +23,10 @@ ENTITY Reg_ID_EX IS
     ID_RFAout     : IN LC3b_word;
     ID_RFBout     : IN LC3b_word;
     
+    IF_SrcA       : IN LC3b_reg;
+    IF_SrcB       : IN LC3b_reg;
     IF_Opcode     : IN LC3b_opcode;
-    IF_dest				  : IN LC3b_reg;
+    IF_dest				   : IN LC3b_reg;
     IF_IR5        : IN std_logic;
     IF_IR11       : IN std_logic;    
     
@@ -40,8 +42,10 @@ ENTITY Reg_ID_EX IS
     ID_RFA        : OUT LC3b_word;
     ID_RFB        : OUT LC3b_word;
     
+    ID_SrcA       : OUT LC3B_reg;
+    ID_SrcB       : OUT LC3B_reg;
     ID_Opcode     : OUT LC3b_opcode;
-    ID_dest				  : OUT LC3b_reg;
+    ID_dest				   : OUT LC3b_reg;
     ID_IR5        : OUT std_logic;
     ID_IR11       : OUT std_logic;
     
@@ -67,12 +71,15 @@ BEGIN
     -----------------------------------
   VHDL_REG_ID : PROCESS(clk, Load, Reset_L, 
                         ID_RFAout, ID_RFBout,
+                        IF_SrcA, IF_SrcB, 
                         IF_Opcode, IF_dest, IF_IR5, IF_IR11, IF_ADJ6out, IF_ADJ8out, IF_ADJ9out, IF_ADJ11out,
                         IF_IMM5out, IF_SEXT6out,
                         IF_PCPlus2)
   -----------------------------------
   variable tempRFAout   : LC3b_word;
   variable tempRFBout   : LC3b_word;
+  variable tempSrcA     : LC3b_reg;
+  variable tempSrcB     : LC3b_reg;
   variable tempOpcode   : LC3b_opcode;
   variable tempdest				 : LC3b_reg;
   variable tempIR5      : std_logic;
@@ -90,8 +97,10 @@ BEGIN
     if (Reset_L = '0') then
       tempRFAout    := "0000000000000000";
       tempRFBout    := "0000000000000000";
+      tempSrcA      := "000";
+      tempSrcB      := "000";
       tempOpcode    := "0000";
-      tempdest					:= "000";
+      tempdest					 := "000";
       tempIR5       := '0';
       tempIR11      := '0';
       tempADJ6      := "0000000000000000";
@@ -109,6 +118,8 @@ BEGIN
       if (Load = '1') then
         tempRFAout    := ID_RFAout;
         tempRFBout    := ID_RFBout;
+        tempSrcA      := IF_SrcA;
+        tempSrcB      := IF_SrcB;
         tempOpcode    := IF_Opcode;
         tempdest					 := IF_dest;
         tempIR5       := IF_IR5;
@@ -127,8 +138,10 @@ BEGIN
     ID_RFA        <= tempRFAout after delay_reg;
     ID_RFB        <= tempRFBout after delay_reg;
     
+    ID_SrcA       <= tempSrcA after delay_reg;
+    ID_SrcB       <= tempSrcB after delay_reg;
     ID_Opcode     <= tempOpcode after delay_reg;
-    ID_dest				  <= tempdest after delay_reg;
+    ID_dest				   <= tempdest after delay_reg;
     ID_IR5        <= tempIR5 after delay_reg;
     ID_IR11       <= tempIR11 after delay_reg;
     

@@ -19,8 +19,10 @@ ENTITY Splitter_WB IS
 		GenCCMuxsel	: OUT std_logic;
 		LoadNZP			: OUT std_logic;
 		RFMux2sel			: OUT LC3B_4MUX_SEL;
-		RFMuxsel			: OUT LC3B_4MUX_SEL;
-		RegWrite			: OUT std_logic
+		RFMuxsel			: OUT std_logic;
+		DRMUXSEL   : OUT STD_LOGIC;
+		RegWrite			: OUT std_logic;
+		STOREMUXSEL : OUT std_LOGIC
 	);
 END ENTITY Splitter_WB;
 
@@ -32,5 +34,7 @@ BEGIN
 	RFMux2sel			<= CONTROL.RFMux2sel;
 	RFMuxsel			<= CONTROL.RFMuxsel;
 	RegWrite			<= CONTROL.RegWrite;
+	DRMuxSEL <= CONTROL.DRMUXSEL;
+	STOREMUXSEL <= CONTROL.STOREMUXSEL;
 END ARCHITECTURE untitled;
 

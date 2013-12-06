@@ -15,11 +15,12 @@ LIBRARY ece411;
 USE ece411.LC3b_types.all;
 ENTITY Splitter_EX IS
 	PORT (
-		CONTROL			: IN CONTROL_WORD;
+		CONTROL		   : IN CONTROL_WORD;
 		ADDR1Muxsel	: OUT std_logic;
 		ADDR2Muxsel	: OUT LC3B_4MUX_SEL;
 		ALUMuxsel			: OUT LC3B_4MUX_SEL;
-		ALUop			: OUT LC3B_ALUOP
+		ALUop			    : OUT LC3B_ALUOP;
+		EX_regWrite : OUT std_logic
 	);
 		
 END ENTITY Splitter_EX;
@@ -27,9 +28,10 @@ END ENTITY Splitter_EX;
 --
 ARCHITECTURE untitled OF Splitter_EX IS
 BEGIN
-	ADDR1Muxsel	<= CONTROL.ADDR1Muxsel;
-	ADDR2Muxsel <= CONTROL.ADDR2Muxsel;
-	ALUMuxsel			<= CONTROL.ALUMuxsel;
-	ALUop			<= CONTROL.ALUop;
+	ADDR1Muxsel	 <= CONTROL.ADDR1Muxsel;
+	ADDR2Muxsel  <= CONTROL.ADDR2Muxsel;
+	ALUMuxsel			 <= CONTROL.ALUMuxsel;
+	ALUop			     <= CONTROL.ALUop;
+	EX_regWrite  <= CONTROL.RegWrite;
 END ARCHITECTURE untitled;
 

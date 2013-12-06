@@ -35,6 +35,9 @@ ENTITY Reg_IF_ID IS
     IF_IR5        : OUT   std_logic;
     IF_IR11       : OUT   std_logic;
     IF_PCPlus2    : OUT   LC3b_word;
+    IF_N          : OUT   std_logic;
+    IF_Z          : OUT   std_logic;
+    IF_P          : OUT   std_logic;
     
     -- Add control word here
     IF_CONTROL_IN 	: IN				CONTROL_WORD;
@@ -80,6 +83,9 @@ BEGIN
     IF_shftop     <= tempIR(5 downto 4) after delay_reg;
     IF_IR5        <= tempIR(5) after delay_reg;
     IF_IR11       <= tempIR(11) after delay_reg;
+    IF_N          <= tempIR(11) after delay_reg;
+    IF_Z          <= tempIR(10) after delay_reg;
+    IF_P          <= tempIR(9) after delay_reg;
     
     IF_PCPlus2    <= tempPCPlus2 after delay_reg;
     
