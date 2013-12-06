@@ -76,6 +76,7 @@ BEGIN
 			tempOpcode := "0000";
 			tempMDR			:= "0000000000000000";
 			tempByteMuxsel := '0';
+      tempCONTROL.regWrite := '0';
 --			tempCONTROL	:= (others => '0');
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then

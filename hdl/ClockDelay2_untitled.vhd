@@ -27,5 +27,5 @@ END ClockDelay2 ;
 --
 ARCHITECTURE untitled OF ClockDelay2 IS
 BEGIN
-  F <= clk'delayed(35ns);
+  F <= clk'delayed(42ns);
 END ARCHITECTURE untitled;

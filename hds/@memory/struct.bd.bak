@@ -14,10 +14,6 @@ unitName "NUMERIC_STD"
 library "ece411"
 unitName "LC3b_types"
 )
-(DmPackageRef
-library "ieee"
-unitName "std_logic_arith"
-)
 ]
 instances [
 (Instance
@@ -251,7 +247,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "17:30:00"
+value "17:31:39"
 )
 (vvPair
 variable "unit"
@@ -6662,14 +6658,13 @@ uid 196,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-16000,6600,-1000,12900"
+xt "-16000,6600,-1500,12000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
-USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;"
+USE ece411.LC3b_types.all;"
 tm "PackageList"
 )
 ]
@@ -6750,12 +6745,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "339,33,1902,1015"
-viewArea "-34916,400,30744,41511"
+windowSize "333,35,1896,1017"
+viewArea "-34900,400,26740,38994"
 cachedDiagramExtent "-19000,0,110500,52100"
 hasePageBreakOrigin 1
 pageBreakOrigin "-77000,0"
-lastUid 7052,0
+lastUid 7259,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

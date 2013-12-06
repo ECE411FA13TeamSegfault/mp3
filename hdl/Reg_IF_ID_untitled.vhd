@@ -61,6 +61,7 @@ BEGIN
       tempCONTROL.PCMuxsel := "00";
       tempCONTROL.Read_H   := '0';
       tempCONTROL.Write_H  := '0';
+      tempCONTROL.regWrite := '0';
 --      tempCONTROL := (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then

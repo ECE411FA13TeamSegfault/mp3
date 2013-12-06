@@ -75,23 +75,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chng2/ece411/mp3/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chng2/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chng2/ece411/mp3/hds/@stage_@i@d/struct.bd.info"
+value "/home/chao16/ece411/mp3/hds/@stage_@i@d/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chng2/ece411/mp3/hds/@stage_@i@d/struct.bd.user"
+value "/home/chao16/ece411/mp3/hds/@stage_@i@d/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chng2/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -107,27 +107,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chng2/ece411/mp3/hds/@stage_@i@d"
+value "/home/chao16/ece411/mp3/hds/@stage_@i@d"
 )
 (vvPair
 variable "d_logical"
-value "/home/chng2/ece411/mp3/hds/Stage_ID"
+value "/home/chao16/ece411/mp3/hds/Stage_ID"
 )
 (vvPair
 variable "date"
-value "11/20/13"
+value "12/06/13"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "20"
+value "06"
 )
 (vvPair
 variable "entity_name"
@@ -155,7 +155,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a3.ews.illinois.edu"
+value "gelib-057-18.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -171,7 +171,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "11"
+value "12"
 )
 (vvPair
 variable "module_name"
@@ -179,19 +179,19 @@ value "Stage_ID"
 )
 (vvPair
 variable "month"
-value "Nov"
+value "Dec"
 )
 (vvPair
 variable "month_long"
-value "November"
+value "December"
 )
 (vvPair
 variable "p"
-value "/home/chng2/ece411/mp3/hds/@stage_@i@d/struct.bd"
+value "/home/chao16/ece411/mp3/hds/@stage_@i@d/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/chng2/ece411/mp3/hds/Stage_ID/struct.bd"
+value "/home/chao16/ece411/mp3/hds/Stage_ID/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -215,7 +215,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -223,7 +223,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -247,7 +247,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:48:48"
+value "06:31:31"
 )
 (vvPair
 variable "unit"
@@ -255,7 +255,7 @@ value "Stage_ID"
 )
 (vvPair
 variable "user"
-value "chng2"
+value "chao16"
 )
 (vvPair
 variable "version"
@@ -1615,8 +1615,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,14400,17000,15300"
-st "RESET_L           : std_logic
-"
+st "RESET_L           : std_logic"
 )
 )
 *47 (Net
@@ -1633,8 +1632,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,19800,17000,20700"
-st "clk               : std_logic
-"
+st "clk               : std_logic"
 )
 )
 *48 (Net
@@ -1651,8 +1649,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,25200,20000,26100"
-st "SIGNAL R7_sig            : LC3b_reg
-"
+st "SIGNAL R7_sig            : LC3b_reg"
 )
 )
 *49 (PortIoIn
@@ -1967,8 +1964,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,23400,20000,24300"
-st "SIGNAL DRMuxout          : LC3b_reg
-"
+st "SIGNAL DRMuxout          : LC3b_reg"
 )
 )
 *57 (PortIoOut
@@ -2075,8 +2071,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,20700,17000,21600"
-st "ID_RFAout         : LC3b_word
-"
+st "ID_RFAout         : LC3b_word"
 )
 )
 *60 (Net
@@ -2093,8 +2088,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,21600,17000,22500"
-st "ID_RFBout         : LC3b_word
-"
+st "ID_RFBout         : LC3b_word"
 )
 )
 *61 (PortIoIn
@@ -2157,8 +2151,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,9900,17000,10800"
-st "ID_RegFileIn      : LC3b_word
-"
+st "ID_RegFileIn      : LC3b_word"
 )
 )
 *63 (Net
@@ -2175,8 +2168,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,11700,16500,12600"
-st "ID_SrcB           : LC3b_reg
-"
+st "ID_SrcB           : LC3b_reg"
 )
 )
 *64 (Net
@@ -2193,8 +2185,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,10800,16500,11700"
-st "ID_SrcA           : LC3b_reg
-"
+st "ID_SrcA           : LC3b_reg"
 )
 )
 *65 (Net
@@ -2211,8 +2202,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,12600,16500,13500"
-st "ID_dest           : LC3b_reg
-"
+st "ID_dest           : LC3b_reg"
 )
 )
 *66 (Net
@@ -2230,8 +2220,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,26100,20500,27000"
-st "SIGNAL StoreMuxsel       : std_logic
-"
+st "SIGNAL StoreMuxsel       : std_logic"
 )
 )
 *67 (Net
@@ -2249,8 +2238,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,9000,17000,9900"
-st "DRMuxsel          : std_logic
-"
+st "DRMuxsel          : std_logic"
 )
 )
 *68 (PortIoIn
@@ -2359,8 +2347,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,18000,17000,18900"
-st "WB_WriteRegisters : std_logic
-"
+st "WB_WriteRegisters : std_logic"
 )
 )
 *71 (PortIoIn
@@ -2423,8 +2410,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,13500,16500,14400"
-st "IF_dest           : LC3b_reg
-"
+st "IF_dest           : LC3b_reg"
 )
 )
 *73 (Net
@@ -2442,8 +2428,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,24300,20000,25200"
-st "SIGNAL F                 : LC3b_reg
-"
+st "SIGNAL F                 : LC3b_reg"
 )
 )
 *74 (Net
@@ -2460,8 +2445,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,18900,16500,19800"
-st "WB_dest           : LC3b_reg
-"
+st "WB_dest           : LC3b_reg"
 )
 )
 *75 (Net
@@ -2479,8 +2463,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,17100,17000,18000"
-st "WB_DRMuxsel       : std_logic
-"
+st "WB_DRMuxsel       : std_logic"
 )
 )
 *76 (PortIoIn
@@ -2852,8 +2835,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,15300,17000,16200"
-st "StoreMuxsel_Read  : STD_LOGIC
-"
+st "StoreMuxsel_Read  : STD_LOGIC"
 )
 )
 *87 (Net
@@ -2870,8 +2852,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,16200,17000,17100"
-st "StoreMuxsel_Write : STD_LOGIC
-"
+st "StoreMuxsel_Write : STD_LOGIC"
 )
 )
 *88 (PortIoIn
@@ -3714,13 +3695,13 @@ uid 722,0
 va (VaSet
 font "courier,8,0"
 )
-xt "24000,33100,30000,34000"
-st "StoreMuxsel"
+xt "24000,33100,32500,34000"
+st "StoreMuxsel_Read"
 blo "24000,33800"
 tm "WireNameMgr"
 )
 )
-on &66
+on &86
 )
 *110 (Wire
 uid 741,0
@@ -3986,6 +3967,7 @@ blo "78000,5800"
 tm "WireNameMgr"
 )
 s (Text
+uid 1461,0
 va (VaSet
 font "courier,8,0"
 )
@@ -4030,6 +4012,7 @@ blo "72000,8800"
 tm "WireNameMgr"
 )
 s (Text
+uid 1464,0
 va (VaSet
 font "courier,8,0"
 )
@@ -4074,6 +4057,7 @@ blo "72000,12800"
 tm "WireNameMgr"
 )
 s (Text
+uid 1467,0
 va (VaSet
 font "courier,8,0"
 )
@@ -4118,6 +4102,7 @@ blo "93750,10800"
 tm "WireNameMgr"
 )
 s (Text
+uid 1470,0
 va (VaSet
 font "courier,8,0"
 )
@@ -4283,12 +4268,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,23,2568,1321"
-viewArea "-8900,-15188,136986,54686"
+windowSize "-6,27,1926,1059"
+viewArea "-8900,-9180,110730,51090"
 cachedDiagramExtent "0,0,100400,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1393,0
+lastUid 1472,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

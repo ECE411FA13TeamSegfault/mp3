@@ -20,7 +20,7 @@ ENTITY Splitter_EX IS
 		ADDR2Muxsel	: OUT LC3B_4MUX_SEL;
 		ALUMuxsel			: OUT LC3B_4MUX_SEL;
 		ALUop			    : OUT LC3B_ALUOP;
-		EX_regWrite : OUT std_logic
+		EX_StoreMuxsel : OUT std_logic
 	);
 		
 END ENTITY Splitter_EX;
@@ -32,6 +32,6 @@ BEGIN
 	ADDR2Muxsel  <= CONTROL.ADDR2Muxsel;
 	ALUMuxsel			 <= CONTROL.ALUMuxsel;
 	ALUop			     <= CONTROL.ALUop;
-	EX_regWrite  <= CONTROL.RegWrite;
+	EX_StoreMuxsel  <= CONTROL.StoreMuxsel;
 END ARCHITECTURE untitled;
 

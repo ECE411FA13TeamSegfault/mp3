@@ -16,7 +16,7 @@ USE ece411.LC3b_types.all;
 
 ENTITY delay_unit IS
    PORT( 
-      clk : IN     STD_LOGIC;
+      CLK : IN     STD_LOGIC;
       A2  : OUT    STD_LOGIC
    );
 

@@ -68,9 +68,9 @@ tm "EolColHdrMgr"
 port (LogicalPort
 lang 11
 decl (Decl
-n "clk"
+n "CLK"
 t "STD_LOGIC"
-o 7
+o 1
 suid 1408,0
 )
 )
@@ -93,7 +93,7 @@ port (LogicalPort
 decl (Decl
 n "D_DATAIN"
 t "LC3B_WORD"
-o 1
+o 2
 suid 1410,0
 )
 )
@@ -128,7 +128,7 @@ port (LogicalPort
 decl (Decl
 n "D_MRESP_H"
 t "STD_LOGIC"
-o 2
+o 3
 suid 1413,0
 )
 )
@@ -175,7 +175,7 @@ port (LogicalPort
 decl (Decl
 n "I_DATAIN"
 t "LC3B_WORD"
-o 3
+o 4
 suid 1417,0
 )
 )
@@ -199,7 +199,7 @@ lang 11
 decl (Decl
 n "I_MRESP_H"
 t "STD_LOGIC"
-o 4
+o 5
 suid 1419,0
 )
 )
@@ -211,7 +211,7 @@ lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 5
+o 6
 suid 1420,0
 )
 )
@@ -222,7 +222,7 @@ port (LogicalPort
 decl (Decl
 n "Start_H"
 t "std_logic"
-o 6
+o 7
 suid 1421,0
 )
 )
@@ -591,23 +591,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chng2/ece411/mp3/hdl"
+value "/home/chao16/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chng2/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chng2/ece411/mp3/hds/@datapath/interface.info"
+value "/home/chao16/ece411/mp3/hds/@datapath2/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chng2/ece411/mp3/hds/@datapath/interface.user"
+value "/home/chao16/ece411/mp3/hds/@datapath2/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chng2/ece411/mp3/hds"
+value "/home/chao16/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -623,31 +623,31 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chng2/ece411/mp3/hds/@datapath"
+value "/home/chao16/ece411/mp3/hds/@datapath2"
 )
 (vvPair
 variable "d_logical"
-value "/home/chng2/ece411/mp3/hds/Datapath"
+value "/home/chao16/ece411/mp3/hds/Datapath2"
 )
 (vvPair
 variable "date"
-value "11/16/13"
+value "12/06/13"
 )
 (vvPair
 variable "day"
-value "Sat"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Saturday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "16"
+value "06"
 )
 (vvPair
 variable "entity_name"
-value "Datapath"
+value "Datapath2"
 )
 (vvPair
 variable "ext"
@@ -671,7 +671,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a3.ews.illinois.edu"
+value "gelib-057-18.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -687,27 +687,27 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "11"
+value "12"
 )
 (vvPair
 variable "module_name"
-value "Datapath"
+value "Datapath2"
 )
 (vvPair
 variable "month"
-value "Nov"
+value "Dec"
 )
 (vvPair
 variable "month_long"
-value "November"
+value "December"
 )
 (vvPair
 variable "p"
-value "/home/chng2/ece411/mp3/hds/@datapath/interface"
+value "/home/chao16/ece411/mp3/hds/@datapath2/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/chng2/ece411/mp3/hds/Datapath/interface"
+value "/home/chao16/ece411/mp3/hds/Datapath2/interface"
 )
 (vvPair
 variable "package_name"
@@ -731,7 +731,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -739,7 +739,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "/software/mentor/PS2012b/Mgc_home/bin"
+value "<TBD>"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -763,15 +763,15 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "21:41:04"
+value "07:34:19"
 )
 (vvPair
 variable "unit"
-value "Datapath"
+value "Datapath2"
 )
 (vvPair
 variable "user"
-value "chng2"
+value "chao16"
 )
 (vvPair
 variable "version"
@@ -819,7 +819,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "16000,24550,17500,25450"
-st "clk"
+st "CLK"
 blo "16000,25250"
 tm "CptPortNameMgr"
 )
@@ -829,15 +829,15 @@ uid 14055,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,7200,61000,8100"
-st "clk         : IN     STD_LOGIC  ;"
+xt "44000,1800,61000,2700"
+st "CLK         : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
-n "clk"
+n "CLK"
 t "STD_LOGIC"
-o 7
+o 1
 suid 1408,0
 )
 )
@@ -920,14 +920,14 @@ uid 14065,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,1800,61000,2700"
+xt "44000,2700,61000,3600"
 st "D_DATAIN    : IN     LC3B_WORD  ;"
 )
 thePort (LogicalPort
 decl (Decl
 n "D_DATAIN"
 t "LC3B_WORD"
-o 1
+o 2
 suid 1410,0
 )
 )
@@ -1056,14 +1056,14 @@ uid 14080,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,2700,61000,3600"
+xt "44000,3600,61000,4500"
 st "D_MRESP_H   : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
 decl (Decl
 n "D_MRESP_H"
 t "STD_LOGIC"
-o 2
+o 3
 suid 1413,0
 )
 )
@@ -1238,14 +1238,14 @@ uid 14100,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,3600,61000,4500"
+xt "44000,4500,61000,5400"
 st "I_DATAIN    : IN     LC3B_WORD  ;"
 )
 thePort (LogicalPort
 decl (Decl
 n "I_DATAIN"
 t "LC3B_WORD"
-o 3
+o 4
 suid 1417,0
 )
 )
@@ -1328,7 +1328,7 @@ uid 14110,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,4500,61000,5400"
+xt "44000,5400,61000,6300"
 st "I_MRESP_H   : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
@@ -1336,7 +1336,7 @@ lang 11
 decl (Decl
 n "I_MRESP_H"
 t "STD_LOGIC"
-o 4
+o 5
 suid 1419,0
 )
 )
@@ -1373,7 +1373,7 @@ uid 14115,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,5400,61000,6300"
+xt "44000,6300,61000,7200"
 st "RESET_L     : IN     STD_LOGIC  ;"
 )
 thePort (LogicalPort
@@ -1381,7 +1381,7 @@ lang 11
 decl (Decl
 n "RESET_L"
 t "STD_LOGIC"
-o 5
+o 6
 suid 1420,0
 )
 )
@@ -1418,14 +1418,14 @@ uid 14120,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,6300,61000,7200"
+xt "44000,7200,61000,8100"
 st "Start_H     : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
 n "Start_H"
 t "std_logic"
-o 6
+o 7
 suid 1421,0
 )
 )
@@ -1460,8 +1460,8 @@ uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "17000,16000,21000,16900"
-st "Datapath"
+xt "17000,16000,21500,16900"
+st "Datapath2"
 blo "17000,16700"
 )
 )
@@ -1516,7 +1516,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,44200,50950"
+xt "32200,50050,44700,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1802,7 +1802,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,45200,49950"
+xt "32200,49050,45700,49950"
 st "
 %library/%unit/%view
 "
@@ -2141,7 +2141,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 14792,0
+lastUid 15045,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
