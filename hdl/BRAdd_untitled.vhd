@@ -28,6 +28,6 @@ END BRadd ;
 --
 ARCHITECTURE untitled OF BRAdd IS
 BEGIN
-          BRaddout <= LC3b_word(SIGNED(A) + SIGNED(B) - 2);
+          BRaddout <= LC3b_word(SIGNED(A) + SIGNED(B));
 END ARCHITECTURE untitled;
 
