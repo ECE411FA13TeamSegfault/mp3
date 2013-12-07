@@ -36,6 +36,7 @@ ENTITY Reg_ID_EX IS
     IF_ADJ11out   : IN LC3b_word;
     IF_IMM5out    : IN LC3b_word;
     IF_SEXT6out   : IN LC3b_word;
+    IF_IR         : IN LC3b_word;
     
     IF_PCPlus2    : IN LC3b_word;
     
@@ -55,6 +56,8 @@ ENTITY Reg_ID_EX IS
     ID_ADJ11out   : OUT LC3b_word;
     ID_IMM5out    : OUT LC3b_word;
     ID_SEXT6out   : OUT LC3b_word;
+    
+    ID_IR         : OUT LC3b_word;
     
     ID_PCPlus2    : OUT LC3b_word;
 
@@ -92,6 +95,7 @@ BEGIN
   variable tempSEXT6    : LC3b_word;
   variable tempPCPlus2  : LC3b_word;
   variable tempCONTROL		: CONTROL_WORD;
+  variable tempIR       : LC3b_Word;
   
   BEGIN
     if (Reset_L = '0') then
@@ -114,6 +118,30 @@ BEGIN
       tempCONTROL.Read_H   := '0';
       tempCONTROL.Write_H  := '0';
       tempCONTROL.regWrite := '0';
+      tempControl.mem := "0000000000000000";
+      tempControl.wb := "0000000000000000";
+      tempControl.opcode := "0000";
+      tempControl.IR := "0000000000000000";
+      tempControl.LoadPC := '0';
+      tempControl.DRMuxsel := '0';
+      tempControl.StoreMuxsel := '0';
+      tempControl.ADDR1Muxsel := '0';
+      tempControl.ADDR2Muxsel := "00";
+      tempControl.ALUMuxsel := "00";
+      tempControl.ALUop := "000";
+      tempControl.MARMuxsel := "00";
+      tempControl.MDRMuxsel := "00";
+      tempControl.READ_H := '0';
+      tempControl.WRITE_H := '0';
+      tempControl.LDI := '0';
+      tempControl.STI := '0';
+      tempControl.STB := '0';
+      tempControl.GenCCMuxsel := '0';
+      tempControl.LoadNZP := '0';
+      tempControl.RFMux2sel := "00";
+      tempControl.RFMuxsel := '0';
+      tempControl.RegWrite := '0';
+      tempIR := "0000000000000000";
 --      tempCONTROL			:= (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then
@@ -133,6 +161,7 @@ BEGIN
         tempSEXT6     := IF_SEXT6out;
         tempPCPlus2   := IF_PCPlus2;
         tempCONTROL			:= ID_CONTROL_IN;
+        tempIR        := IF_IR;
       end if;
     end if;
     
@@ -156,6 +185,7 @@ BEGIN
     ID_PCPlus2    <= tempPCPlus2 after delay_reg;
     
     ID_CONTROL_OUT<= tempCONTROL after delay_reg;
+    ID_IR         <= tempIR after delay_reg;
     
   END PROCESS VHDL_REG_ID;
 END ARCHITECTURE untitled;

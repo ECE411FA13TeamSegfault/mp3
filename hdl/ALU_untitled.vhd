@@ -18,6 +18,7 @@ ENTITY ALU IS
    PORT( 
       Operand1 : IN     LC3b_word;
       Operand2 : IN     LC3b_word;
+      ID_IR    : IN     LC3b_word;
       ALUop    : IN     LC3b_aluop;
       ALUOUT   : OUT    LC3b_word
    );
@@ -30,7 +31,7 @@ END ALU ;
 ARCHITECTURE UNTITLED OF ALU IS
 BEGIN
 	----------------------------------------
-	VHDL_ALU : PROCESS (Operand1, Operand2, ALUOP)
+	VHDL_ALU : PROCESS (Operand1, Operand2, ALUOP, ID_IR)
 	----------------------------------------
 	VARIABLE TEMP_ALUOUT : LC3B_WORD;
 	VARIABLE SHIFT_AMT : INTEGER;

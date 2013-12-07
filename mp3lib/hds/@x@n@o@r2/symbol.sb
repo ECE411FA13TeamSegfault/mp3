@@ -14,7 +14,8 @@ itemName "ALL"
 )
 (DmPackageRef
 library "ECE411"
-unitName "LC3b_types"
+unitName "LC3B_TYPES"
+itemName "ALL"
 )
 ]
 libraryRefs [
@@ -22,8 +23,8 @@ libraryRefs [
 "ECE411"
 ]
 )
-version "22.1"
-appVersion "2005.3 (Build 75)"
+version "25.1"
+appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
@@ -239,27 +240,178 @@ vaOverrides [
 )
 uid 99,0
 )
+genericsCommonDM (CommonDM
+ldm (LogicalDM
+emptyRow *33 (LEmptyRow
+)
+uid 156,0
+optionalChildren [
+*34 (RefLabelRowHdr
+)
+*35 (TitleRowHdr
+)
+*36 (FilterRowHdr
+)
+*37 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*38 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*39 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*40 (NameColHdr
+tm "GenericNameColHdrMgr"
+)
+*41 (TypeColHdr
+tm "GenericTypeColHdrMgr"
+)
+*42 (InitColHdr
+tm "GenericValueColHdrMgr"
+)
+*43 (PragmaColHdr
+tm "GenericPragmaColHdrMgr"
+)
+*44 (EolColHdr
+tm "GenericEolColHdrMgr"
+)
+]
+)
+pdm (PhysicalDM
+uid 157,0
+optionalChildren [
+*45 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "courier,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "courier,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "courier,10,0"
+)
+emptyMRCItem *46 (MRCItem
+litem &33
+pos 3
+dimension 20
+)
+uid 119,0
+optionalChildren [
+*47 (MRCItem
+litem &34
+pos 0
+dimension 20
+uid 122,0
+)
+*48 (MRCItem
+litem &35
+pos 1
+dimension 23
+uid 124,0
+)
+*49 (MRCItem
+litem &36
+pos 2
+hidden 1
+dimension 20
+uid 126,0
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "courier,10,0"
+textAngle 90
+)
+uid 120,0
+optionalChildren [
+*50 (MRCItem
+litem &37
+pos 0
+dimension 20
+uid 128,0
+)
+*51 (MRCItem
+litem &39
+pos 1
+dimension 50
+uid 132,0
+)
+*52 (MRCItem
+litem &40
+pos 2
+dimension 100
+uid 134,0
+)
+*53 (MRCItem
+litem &41
+pos 3
+dimension 100
+uid 136,0
+)
+*54 (MRCItem
+litem &42
+pos 4
+dimension 50
+uid 138,0
+)
+*55 (MRCItem
+litem &43
+pos 5
+dimension 50
+uid 140,0
+)
+*56 (MRCItem
+litem &44
+pos 6
+dimension 80
+uid 142,0
+)
+]
+)
+fixedCol 3
+fixedRow 2
+name "Ports"
+uid 118,0
+vaOverrides [
+]
+)
+]
+)
+uid 155,0
+type 1
+)
 VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hdl"
+value "/home/li151/ece411/mp3/mp3lib/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds"
+value "/home/li151/ece411/mp3/mp3lib/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/@x@n@o@r2/symbol.sb.info"
+value "/home/li151/ece411/mp3/mp3lib/hds/@x@n@o@r2/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/@x@n@o@r2/symbol.sb.user"
+value "/home/li151/ece411/mp3/mp3lib/hds/@x@n@o@r2/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds"
+value "/home/li151/ece411/mp3/mp3lib/hds"
 )
 (vvPair
 variable "appl"
@@ -271,31 +423,31 @@ value "symbol"
 )
 (vvPair
 variable "config"
-value "%(unit)_config"
+value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/@x@n@o@r2"
+value "/home/li151/ece411/mp3/mp3lib/hds/@x@n@o@r2"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/XNOR2"
+value "/home/li151/ece411/mp3/mp3lib/hds/XNOR2"
 )
 (vvPair
 variable "date"
-value "08/25/10"
+value "12/06/13"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "25"
+value "06"
 )
 (vvPair
 variable "entity_name"
@@ -319,11 +471,11 @@ value "symbol"
 )
 (vvPair
 variable "group"
-value "stdt"
+value "ews"
 )
 (vvPair
 variable "host"
-value "eelnx6.ews.illinois.edu"
+value "gelib-057-21.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -339,7 +491,7 @@ value "$HDS_PROJECT_DIR/mp3lib/compile"
 )
 (vvPair
 variable "mm"
-value "08"
+value "12"
 )
 (vvPair
 variable "module_name"
@@ -347,19 +499,23 @@ value "XNOR2"
 )
 (vvPair
 variable "month"
-value "Aug"
+value "Dec"
 )
 (vvPair
 variable "month_long"
-value "August"
+value "December"
 )
 (vvPair
 variable "p"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/@x@n@o@r2/symbol.sb"
+value "/home/li151/ece411/mp3/mp3lib/hds/@x@n@o@r2/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/anbrown2/ece411/ece411_given/mp3lib/hds/XNOR2/symbol.sb"
+value "/home/li151/ece411/mp3/mp3lib/hds/XNOR2/symbol.sb"
+)
+(vvPair
+variable "package_name"
+value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
@@ -379,7 +535,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "$HDS_HOME/../Modeltech/linux"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -387,7 +543,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "$HDS_HOME/../Precision/Mgc_home/bin"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -398,8 +554,20 @@ variable "task_VCSPath"
 value "<TBD>"
 )
 (vvPair
+variable "this_ext"
+value "sb"
+)
+(vvPair
+variable "this_file"
+value "symbol"
+)
+(vvPair
+variable "this_file_logical"
+value "symbol"
+)
+(vvPair
 variable "time"
-value "14:15:15"
+value "17:54:28"
 )
 (vvPair
 variable "unit"
@@ -407,11 +575,11 @@ value "XNOR2"
 )
 (vvPair
 variable "user"
-value "anbrown2"
+value "li151"
 )
 (vvPair
 variable "version"
-value "2005.3 (Build 75)"
+value "2012.1 (Build 6)"
 )
 (vvPair
 variable "view"
@@ -419,21 +587,21 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2010"
+value "2013"
 )
 (vvPair
 variable "yy"
-value "10"
+value "13"
 )
 ]
 )
 LanguageMgr "VhdlLangMgr"
 uid 51,0
 optionalChildren [
-*33 (SymbolBody
+*57 (SymbolBody
 uid 8,0
 optionalChildren [
-*34 (CptPort
+*58 (CptPort
 uid 52,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -465,7 +633,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "56000,2600,68000,3500"
-st "A : IN     std_logic  ;"
+st "A : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -476,7 +645,7 @@ suid 1,0
 )
 )
 )
-*35 (CptPort
+*59 (CptPort
 uid 57,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -508,7 +677,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "56000,3500,68000,4400"
-st "B : IN     std_logic  ;"
+st "B : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -519,10 +689,10 @@ suid 2,0
 )
 )
 )
-*36 (CptPort
+*60 (CptPort
 uid 62,0
 optionalChildren [
-*37 (Circle
+*61 (Circle
 uid 67,0
 va (VaSet
 vasetType 1
@@ -563,7 +733,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "56000,4400,67000,5300"
-st "F : OUT    std_logic "
+st "F : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
@@ -608,7 +779,7 @@ st "XNOR2"
 blo "1800,15600"
 )
 )
-gi *38 (GenericInterface
+gi *62 (GenericInterface
 uid 13,0
 ps "CenterOffsetStrategy"
 matrix (Matrix
@@ -641,10 +812,10 @@ sTC 0
 sF 0
 )
 )
-*39 (Grouping
+*63 (Grouping
 uid 16,0
 optionalChildren [
-*40 (CommentText
+*64 (CommentText
 uid 18,0
 shape (Rectangle
 uid 19,0
@@ -674,7 +845,7 @@ visibleWidth 18600
 position 1
 ignorePrefs 1
 )
-*41 (CommentText
+*65 (CommentText
 uid 21,0
 shape (Rectangle
 uid 22,0
@@ -705,7 +876,7 @@ visibleWidth 25600
 position 1
 ignorePrefs 1
 )
-*42 (CommentText
+*66 (CommentText
 uid 24,0
 shape (Rectangle
 uid 25,0
@@ -735,7 +906,7 @@ visibleWidth 20600
 position 1
 ignorePrefs 1
 )
-*43 (CommentText
+*67 (CommentText
 uid 27,0
 shape (Rectangle
 uid 28,0
@@ -765,7 +936,7 @@ visibleWidth 5600
 position 1
 ignorePrefs 1
 )
-*44 (CommentText
+*68 (CommentText
 uid 30,0
 shape (Rectangle
 uid 31,0
@@ -795,7 +966,7 @@ visibleWidth 20600
 position 1
 ignorePrefs 1
 )
-*45 (CommentText
+*69 (CommentText
 uid 33,0
 shape (Rectangle
 uid 34,0
@@ -825,7 +996,7 @@ visibleWidth 4600
 position 1
 ignorePrefs 1
 )
-*46 (CommentText
+*70 (CommentText
 uid 36,0
 shape (Rectangle
 uid 37,0
@@ -855,7 +1026,7 @@ visibleWidth 4600
 position 1
 ignorePrefs 1
 )
-*47 (CommentText
+*71 (CommentText
 uid 39,0
 shape (Rectangle
 uid 40,0
@@ -884,7 +1055,7 @@ visibleWidth 24600
 )
 ignorePrefs 1
 )
-*48 (CommentText
+*72 (CommentText
 uid 42,0
 shape (Rectangle
 uid 43,0
@@ -914,7 +1085,7 @@ visibleWidth 20600
 position 1
 ignorePrefs 1
 )
-*49 (CommentText
+*73 (CommentText
 uid 45,0
 shape (Rectangle
 uid 46,0
@@ -969,11 +1140,11 @@ xShown 1
 yShown 1
 color "65535,0,0"
 )
-packageList *50 (PackageList
+packageList *74 (PackageList
 uid 48,0
 stg "VerticalLayoutStrategy"
 textVec [
-*51 (Text
+*75 (Text
 uid 49,0
 va (VaSet
 font "courier,10,1"
@@ -982,7 +1153,7 @@ xt "0,0,7800,1000"
 st "Package List"
 blo "0,800"
 )
-*52 (MLText
+*76 (MLText
 uid 50,0
 va (VaSet
 font "courier,12,0"
@@ -992,7 +1163,7 @@ st "LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 LIBRARY ECE411;
-USE ECE411.LC3b_types.all;"
+USE ECE411.LC3B_TYPES.ALL;"
 tm "PackageList"
 )
 ]
@@ -1002,7 +1173,6 @@ viewArea "-7900,-4600,60614,36346"
 cachedDiagramExtent "-14000,0,68000,18000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-active 1
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -1025,6 +1195,34 @@ tm "CommentText"
 wrapOption 3
 visibleHeight 4600
 visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "courier,8,0"
+)
+xt "450,2150,1450,3050"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
 )
 )
 defaultPanel (Panel
@@ -1081,7 +1279,7 @@ st "<cell>"
 blo "22800,16600"
 )
 )
-gi *53 (GenericInterface
+gi *77 (GenericInterface
 ps "CenterOffsetStrategy"
 matrix (Matrix
 text (MLText
@@ -1169,7 +1367,7 @@ o 0
 )
 )
 )
-DeclarativeBlock *54 (SymDeclBlock
+DeclarativeBlock *78 (SymDeclBlock
 uid 1,0
 stg "SymDeclLayoutStrategy"
 declLabel (Text
@@ -1225,5 +1423,6 @@ xt "54000,0,54000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 117,0
+lastUid 157,0
+activeModelName "Symbol"
 )

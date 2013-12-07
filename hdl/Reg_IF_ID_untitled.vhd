@@ -62,6 +62,29 @@ BEGIN
       tempCONTROL.Read_H   := '0';
       tempCONTROL.Write_H  := '0';
       tempCONTROL.regWrite := '0';
+      tempControl.mem := "0000000000000000";
+      tempControl.wb := "0000000000000000";
+      tempControl.opcode := "0000";
+      tempControl.IR := "0000000000000000";
+      tempControl.LoadPC := '0';
+      tempControl.DRMuxsel := '0';
+      tempControl.StoreMuxsel := '0';
+      tempControl.ADDR1Muxsel := '0';
+      tempControl.ADDR2Muxsel := "00";
+      tempControl.ALUMuxsel := "00";
+      tempControl.ALUop := "000";
+      tempControl.MARMuxsel := "00";
+      tempControl.MDRMuxsel := "00";
+      tempControl.READ_H := '0';
+      tempControl.WRITE_H := '0';
+      tempControl.LDI := '0';
+      tempControl.STI := '0';
+      tempControl.STB := '0';
+      tempControl.GenCCMuxsel := '0';
+      tempControl.LoadNZP := '0';
+      tempControl.RFMux2sel := "00";
+      tempControl.RFMuxsel := '0';
+      tempControl.RegWrite := '0';
 --      tempCONTROL := (others => '0');
     elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
       if (Load = '1') then

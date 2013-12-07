@@ -23,6 +23,7 @@ ENTITY Reg_MEM_WB IS
 		EX_BRAdd				: IN LC3b_word;
 		EX_PCPlus2				: IN LC3b_word;
 		EX_dest				: IN LC3b_reg;
+		EX_ADJ9out    : IN LC3b_word;
 		EX_Opcode : IN LC3b_opcode;
 		
 		MEM_MDRout				: IN LC3b_word;
@@ -40,6 +41,10 @@ ENTITY Reg_MEM_WB IS
 		
 		MEM_RFA     : OUT LC3b_word;
 		MEM_DRMUXSEL : OUT std_logic;
+		
+		MEM_ADJ9out   : OUT LC3b_word;
+		
+		MEM_PC  : OUT LC3b_word;
 		
 		MEM_CONTROL_IN		: IN CONTROL_WORD;
 		MEM_CONTROL_OUT	: OUT CONTROL_WORD;
@@ -66,6 +71,8 @@ BEGIN
 	variable tempPCMUXSEL   : LC3b_4MUX_SEL;
 	variable tempRFA        : LC3B_word;
 	variable tempDRMuxSEL   : std_logic;
+	variable tempPC        : LC3b_word;
+	variable tempADJ9 : LC3b_word;
 	
 	BEGIN
 		if (Reset_L = '0') then
@@ -76,7 +83,33 @@ BEGIN
 			tempOpcode := "0000";
 			tempMDR			:= "0000000000000000";
 			tempByteMuxsel := '0';
+      tempCONTROL.PCMuxsel := "00";
+      tempCONTROL.Read_H   := '0';
+      tempCONTROL.Write_H  := '0';
       tempCONTROL.regWrite := '0';
+      tempControl.mem := "0000000000000000";
+      tempControl.wb := "0000000000000000";
+      tempControl.opcode := "0000";
+      tempControl.IR := "0000000000000000";
+      tempControl.LoadPC := '0';
+      tempControl.DRMuxsel := '0';
+      tempControl.StoreMuxsel := '0';
+      tempControl.ADDR1Muxsel := '0';
+      tempControl.ADDR2Muxsel := "00";
+      tempControl.ALUMuxsel := "00";
+      tempControl.ALUop := "000";
+      tempControl.MARMuxsel := "00";
+      tempControl.MDRMuxsel := "00";
+      tempControl.READ_H := '0';
+      tempControl.WRITE_H := '0';
+      tempControl.LDI := '0';
+      tempControl.STI := '0';
+      tempControl.STB := '0';
+      tempControl.GenCCMuxsel := '0';
+      tempControl.LoadNZP := '0';
+      tempControl.RFMux2sel := "00";
+      tempControl.RFMuxsel := '0';
+      tempControl.RegWrite := '0';
 --			tempCONTROL	:= (others => '0');
 		elsif (clk'event and (clk = '1') and (clk'last_value = '0')) then
 			if (Load = '1') then
@@ -91,6 +124,8 @@ BEGIN
 				tempPCMuxSEL := MEM_CONTROL_IN.PCMUXSEL;
 				tempRFA := EX_RFA;
 				tempDRMuxSEL := MEM_CONTROL_IN.DRMuxSEL;
+				tempPC := LC3B_Word(unsigned(EX_PCPlus2) - 2);
+				tempADJ9 := EX_ADJ9out;
 			end if;
 		end if;
 		
@@ -105,6 +140,8 @@ BEGIN
 		MEM_PCMUXSEL <= tempPCMUXSEL after delay_reg;
 		MEM_RFA <= tempRFA after delay_reg;
 		MEM_DRMuxSEL <= tempDRMuxSEL after delay_reg;
+		MEM_PC <= tempPC after delay_reg;
+		MEM_ADJ9out <= tempADJ9 after delay_reg;
    END PROCESS VHDL_REG_MEM;
 END ARCHITECTURE untitled;
 

@@ -591,23 +591,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/chao16/ece411/mp3/hdl"
+value "/home/li151/ece411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/chao16/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/chao16/ece411/mp3/hds/@datapath2/interface.info"
+value "/home/li151/ece411/mp3/hds/@datapath2/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/chao16/ece411/mp3/hds/@datapath2/interface.user"
+value "/home/li151/ece411/mp3/hds/@datapath2/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/chao16/ece411/mp3/hds"
+value "/home/li151/ece411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -623,11 +623,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/chao16/ece411/mp3/hds/@datapath2"
+value "/home/li151/ece411/mp3/hds/@datapath2"
 )
 (vvPair
 variable "d_logical"
-value "/home/chao16/ece411/mp3/hds/Datapath2"
+value "/home/li151/ece411/mp3/hds/Datapath2"
 )
 (vvPair
 variable "date"
@@ -671,7 +671,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-18.ews.illinois.edu"
+value "gelib-057-21.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -703,11 +703,11 @@ value "December"
 )
 (vvPair
 variable "p"
-value "/home/chao16/ece411/mp3/hds/@datapath2/interface"
+value "/home/li151/ece411/mp3/hds/@datapath2/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/chao16/ece411/mp3/hds/Datapath2/interface"
+value "/home/li151/ece411/mp3/hds/Datapath2/interface"
 )
 (vvPair
 variable "package_name"
@@ -731,7 +731,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "<TBD>"
+value "/software/mentor/ModelSim-SE-10.1d/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -739,7 +739,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_PrecisionRTLPath"
-value "<TBD>"
+value "/software/mentor/PS2012b/Mgc_home/bin"
 )
 (vvPair
 variable "task_QuestaSimPath"
@@ -763,7 +763,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "07:34:19"
+value "19:53:33"
 )
 (vvPair
 variable "unit"
@@ -771,7 +771,7 @@ value "Datapath2"
 )
 (vvPair
 variable "user"
-value "chao16"
+value "li151"
 )
 (vvPair
 variable "version"
@@ -1516,7 +1516,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,44700,50950"
+xt "32200,50050,44200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -2141,7 +2141,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 15045,0
+lastUid 15413,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
